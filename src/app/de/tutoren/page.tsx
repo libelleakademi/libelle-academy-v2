@@ -18,7 +18,7 @@ const tutors = [
     name: "Firdevs Murad",
     area: "FSP MEDIZIN",
     title: "Tutorin für FSP Medizin",
-    text: "Begleitung innerhalb der medizinischen Sprach- und FSP-Vorbereitung bei Libelle Academy.",
+    text: "Nach ihrem Abitur am Istanbul Erkek Lisesi setzte Firdevs Murad ihr Medizinstudium an der Charité Berlin fort. Während des Studiums begann sie eine Doktorarbeit im Bereich Neurowissenschaften und war Mitgründerin des Kurses „Türkisch für Mediziner“ für Studierende und Ärztinnen und Ärzte der Charité.",
     course: "FSP Medizin Intensivkurs",
     href: "/de/fsp-medizin",
   },
@@ -27,7 +27,7 @@ const tutors = [
     name: "Alkış Şensoy",
     area: "FAMED",
     title: "Tutor für FaMed",
-    text: "Begleitung innerhalb der medizinischen Kommunikation und FaMed-Prüfungsvorbereitung bei Libelle Academy.",
+    text: "Alkış Şensoy begann nach seinem Abitur am Istanbul Erkek Lisesi sein Medizinstudium an der Charité Berlin. Von 2021 bis 2023 unterrichtete er Orthopädie am Lernzentrum der Charité und begleitet bei Libelle die FaMed-Vorbereitung.",
     course: "FaMed Intensivkurs",
     href: "/de/famed",
   },
@@ -96,8 +96,28 @@ export default function TutorenPage() {
             </div>
           </div>
 
-          <div className="rounded-[2.8rem] bg-[#17131c] p-6 shadow-[0_30px_90px_rgba(49,23,91,.16)]">
-            <div className="rounded-[2.1rem] bg-[#f3eff7] p-7 sm:p-9">
+          <div className="relative mt-8 lg:mt-0">
+
+            <div className="home-orbit absolute right-10 -top-10 z-20 hidden rounded-2xl bg-[#58ECF1] px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.18)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em]">
+                MEDICAL GERMAN
+              </div>
+              <div className="mt-1 text-sm font-semibold">
+                Medizinische Sprache aktiv anwenden
+              </div>
+            </div>
+
+            <div className="home-orbit-delay absolute bottom-[-46px] left-10 z-20 hidden rounded-2xl bg-white px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.16)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em] text-[#17666a]">
+                PRÜFUNGSNAH
+              </div>
+              <div className="mt-1 text-sm font-semibold">
+                Training + Feedback + Anwendung
+              </div>
+            </div>
+
+            <div className="rounded-[2.8rem] bg-[#17131c] p-6 shadow-[0_30px_90px_rgba(49,23,91,.16)]">
+              <div className="rounded-[2.1rem] bg-[#f3eff7] p-7 sm:p-9">
               <div className="text-xs font-bold tracking-[.17em] text-[#31175B]">
                 MEDICAL GERMAN
               </div>
@@ -133,6 +153,28 @@ export default function TutorenPage() {
                 </p>
               </div>
             </div>
+          </div>
+
+          <div className="mt-4 grid grid-cols-2 gap-3 lg:hidden">
+            <div className="home-orbit rounded-2xl bg-[#58ECF1] px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em]">
+                MEDICAL GERMAN
+              </div>
+              <div className="mt-1 text-xs font-semibold">
+                Medizinische Sprache aktiv anwenden
+              </div>
+            </div>
+
+            <div className="home-orbit-delay rounded-2xl bg-white px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em] text-[#17666a]">
+                PRÜFUNGSNAH
+              </div>
+              <div className="mt-1 text-xs font-semibold">
+                Training + Feedback + Anwendung
+              </div>
+            </div>
+          </div>
+
           </div>
         </div>
       </section>
@@ -196,21 +238,6 @@ export default function TutorenPage() {
           ))}
         </div>
 
-        <div className="mt-6 rounded-[2rem] border border-dashed border-[#31175B]/15 bg-[#f7f5f9] p-8 sm:p-10">
-          <div className="text-xs font-bold tracking-[.16em] text-[#31175B]">
-            WEITERE PROFILE
-          </div>
-
-          <h3 className="mt-4 text-2xl font-semibold">
-            Das Tutorenteam kann hier erweitert werden.
-          </h3>
-
-          <p className="mt-4 max-w-3xl leading-7 text-black/50">
-            Weitere Tutorinnen und Tutoren sowie ausführliche Profile,
-            Qualifikationen und Fotos werden ergänzt, sobald die finalen
-            Informationen vorliegen.
-          </p>
-        </div>
       </section>
 
       {/* PRINCIPLES */}
@@ -383,27 +410,6 @@ export default function TutorenPage() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* FUTURE PHOTO NOTE */}
-      <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
-        <div className="rounded-[2.5rem] bg-[#D2ECFF]/50 p-9 sm:p-12">
-          <div className="max-w-3xl">
-            <div className="text-xs font-bold tracking-[.17em] text-[#17666a]">
-              PROFILSEITE IN ENTWICKLUNG
-            </div>
-
-            <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">
-              Persönliche Profile werden Schritt für Schritt ergänzt.
-            </h2>
-
-            <p className="mt-6 text-lg leading-8 text-black/55">
-              Sobald finale Porträtfotos, berufliche Angaben und
-              Qualifikationen vorliegen, können die Tutorprofile hier
-              ausführlicher dargestellt werden.
-            </p>
           </div>
         </div>
       </section>

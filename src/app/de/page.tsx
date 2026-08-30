@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import SiteHeader from "@/components/SiteHeader";
 import HomeConversion from "@/components/HomeConversion";
 import { whatsappLink } from "@/lib/whatsapp";
@@ -210,6 +211,89 @@ export default function GermanHomePage() {
         </div>
       </section>
 
+      {/* FUTURE IN GERMANY */}
+      <section className="overflow-hidden bg-white py-24">
+        <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 lg:grid-cols-[1.05fr_.95fr] lg:px-8">
+
+          <div className="relative min-h-[570px] sm:min-h-[650px]">
+            <div className="absolute left-0 top-0 h-[82%] w-[78%] overflow-hidden rounded-[2.8rem] shadow-[0_35px_90px_rgba(49,23,91,.12)]">
+              <Image
+                src="/images/home-germany-future.jpg"
+                alt="Alltag und Leben in Deutschland"
+                fill
+                sizes="(max-width: 1024px) 78vw, 520px"
+                className="object-cover"
+              />
+            </div>
+
+            <div className="absolute bottom-0 right-0 h-[46%] w-[54%] overflow-hidden rounded-[2.2rem] border-[8px] border-white shadow-[0_28px_70px_rgba(49,23,91,.18)]">
+              <Image
+                src="/images/home-general-german-learning.jpg"
+                alt="Deutsch online lernen"
+                fill
+                sizes="(max-width: 1024px) 54vw, 360px"
+                className="object-cover"
+              />
+            </div>
+
+            <div className="home-orbit absolute right-[4%] top-[8%] z-20 rounded-2xl bg-[#58ECF1] px-5 py-4 shadow-xl">
+              <div className="text-[10px] font-bold tracking-[.14em]">
+                A1 → B2
+              </div>
+              <div className="mt-1 max-w-[170px] text-sm font-semibold leading-5">
+                Vom ersten Satz zur selbstständigen Kommunikation
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
+              MEHR ALS EIN SPRACHKURS
+            </div>
+
+            <h2 className="mt-5 text-4xl font-semibold leading-[1.05] tracking-[-.045em] sm:text-5xl lg:text-6xl">
+              Deutsch ist nicht das eigentliche Ziel.
+              <span className="block text-[#31175B]">
+                Das Leben, das dadurch möglich wird, ist es.
+              </span>
+            </h2>
+
+            <p className="mt-7 max-w-xl text-lg leading-8 text-black/55">
+              Im Alltag selbstständig kommunizieren. Im Beruf sicherer auftreten.
+              Gespräche verstehen, Entscheidungen treffen und sich in Deutschland
+              Schritt für Schritt zu Hause fühlen.
+            </p>
+
+            <div className="mt-9 grid gap-3 sm:grid-cols-3">
+              {[
+                ["ALLTAG", "Selbstständig kommunizieren"],
+                ["BERUF", "Sicherer auftreten"],
+                ["ZUKUNFT", "Neue Möglichkeiten öffnen"],
+              ].map(([title, text]) => (
+                <div
+                  key={title}
+                  className="rounded-[1.6rem] bg-[#f3eff7] p-5"
+                >
+                  <div className="text-[10px] font-bold tracking-[.14em] text-[#31175B]">
+                    {title}
+                  </div>
+                  <div className="mt-3 text-sm font-semibold leading-6">
+                    {text}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <Link
+              href="/de/pakete/deutsch-a1-b2"
+              className="mt-9 inline-block rounded-full bg-[#31175B] px-7 py-3.5 text-sm font-semibold text-white"
+            >
+              A1–B2 Lernweg entdecken
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
           <div>
@@ -270,7 +354,44 @@ export default function GermanHomePage() {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-5 md:grid-cols-2">
+          <div className="mt-12 grid overflow-hidden rounded-[2.8rem] bg-[#31175B] lg:grid-cols-[1.05fr_.95fr]">
+            <div className="relative min-h-[340px] lg:min-h-[430px]">
+              <Image
+                src="/images/home-medical-german-learning.jpg"
+                alt="Medizinisches Deutsch digital lernen"
+                fill
+                sizes="(max-width: 1024px) 100vw, 55vw"
+                className="object-cover"
+              />
+            </div>
+
+            <div className="flex items-center p-8 text-white sm:p-10 lg:p-12">
+              <div>
+                <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
+                  MEDICAL GERMAN
+                </div>
+
+                <h3 className="mt-4 text-3xl font-semibold tracking-[-.035em] sm:text-4xl">
+                  Medizinisches Wissen muss auch sprachlich abrufbar sein.
+                </h3>
+
+                <p className="mt-5 max-w-xl text-lg leading-8 text-white/60">
+                  Fachsprache, Patientengespräch und Prüfungssituation werden
+                  dort relevant, wo allgemeines Deutsch allein nicht mehr
+                  ausreicht.
+                </p>
+
+                <Link
+                  href="/de/pruefungsvorbereitung"
+                  className="mt-7 inline-block rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#31175B]"
+                >
+                  Medizinische Lernwege ansehen
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-8 grid gap-5 md:grid-cols-2">
             {medical.map((course) => (
               <Link
                 key={course.title}

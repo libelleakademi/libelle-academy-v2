@@ -11,6 +11,7 @@ const navItems = [
   { label: "Über Libelle", href: "/de/ueber-libelle" },
   { label: "Tutoren", href: "/de/tutoren" },
   { label: "Ressourcen", href: "/de/ressourcen" },
+  { label: "Blog", href: "/de/blog" },
 ];
 
 export default function SiteHeader() {

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import SiteHeader from "@/components/SiteHeader";
+import EditorialStorySection from "@/components/EditorialStorySection";
 import { germanCourses, GermanLevel } from "@/lib/german-courses";
 import { whatsappLink } from "@/lib/whatsapp";
 
@@ -63,7 +64,27 @@ export default async function GermanCoursePage({
             </a>
           </div>
 
-          <div className="rounded-[2.8rem] border border-[#58ECF1] bg-white p-7 shadow-[0_30px_80px_rgba(49,23,91,0.08)] sm:p-10">
+          <div className="relative mt-8 lg:mt-0">
+
+            <div className="home-orbit absolute right-10 -top-10 z-20 hidden rounded-2xl bg-[#58ECF1] px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.18)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em]">
+                {course.level} · IHR NÄCHSTER SCHRITT
+              </div>
+              <div className="mt-1 text-sm font-semibold">
+                Lernen mit klarer Progression
+              </div>
+            </div>
+
+            <div className="home-orbit-delay absolute bottom-[-46px] left-10 z-20 hidden rounded-2xl bg-white px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.16)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em] text-[#17666a]">
+                BIS B2 WEITERDENKEN
+              </div>
+              <div className="mt-1 text-sm font-semibold">
+                Jede Stufe baut auf der nächsten auf
+              </div>
+            </div>
+
+            <div className="rounded-[2.8rem] border border-[#58ECF1] bg-white p-7 shadow-[0_30px_80px_rgba(49,23,91,0.08)] sm:p-10">
             <div className="flex items-start justify-between gap-5">
               <div>
                 <div className="text-xs font-bold tracking-[0.16em] text-[#17666a]">
@@ -94,8 +115,41 @@ export default async function GermanCoursePage({
               <p className="mt-3 leading-7 text-white/75">{course.forWhom}</p>
             </div>
           </div>
+
+          <div className="mt-4 grid grid-cols-2 gap-3 lg:hidden">
+            <div className="home-orbit rounded-2xl bg-[#58ECF1] px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em]">
+                {course.level} · NÄCHSTER SCHRITT
+              </div>
+              <div className="mt-1 text-xs font-semibold">
+                Klare Progression
+              </div>
+            </div>
+
+            <div className="home-orbit-delay rounded-2xl bg-white px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em] text-[#17666a]">
+                BIS B2
+              </div>
+              <div className="mt-1 text-xs font-semibold">
+                Schritt für Schritt weiter
+              </div>
+            </div>
+          </div>
+
+          </div>
         </div>
       </section>
+
+      {/* PHOTO-STORY-GERMAN-LEVEL */}
+      <EditorialStorySection
+        eyebrow={`${course.level} IM ALLTAG`}
+        title="Ein Sprachniveau ist mehr als eine Liste von Grammatikthemen."
+        text="Mit jeder Stufe wächst, was Sie selbstständig verstehen, ausdrücken und im Alltag anwenden können. Der Kurs ist deshalb Teil eines größeren Lernwegs – nicht nur ein einzelnes Zertifikatsniveau."
+        image="/images/a1-b2-life-in-germany.jpg"
+        alt="Leben und Alltag in Deutschland"
+        chip={`${course.level} · NÄCHSTER SCHRITT`}
+        reverse
+      />
 
       <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="max-w-3xl">

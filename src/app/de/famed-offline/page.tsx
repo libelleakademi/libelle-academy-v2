@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
+import EditorialStorySection from "@/components/EditorialStorySection";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
   title: "FaMed Offline Kurs | Libelle Academy",
   description:
-    "FaMed flexibel vorbereiten: 9 Module, Dokumentationen und Übungen. FaMed Offline Kurs für 200 € oder inklusive 5 Prüfungssimulationen für 575 €.",
+    "FaMed flexibel vorbereiten: strukturierte Module, Dokumentationen und Übungen. FaMed Offline Kurs für 200 € oder inklusive 5 Prüfungssimulationen für 575 €.",
 };
 
 const modules = [
@@ -21,7 +22,7 @@ const modules = [
 ];
 
 const benefits = [
-  "9 strukturierte Module",
+  "Strukturierte Module",
   "Dokumentationen und Übungen",
   "Lernen im eigenen Tempo",
   "Digitale Materialien für die Prüfungsvorbereitung",
@@ -54,7 +55,7 @@ export default function FamedOfflinePage() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-black/55">
-              Ein strukturierter Offline-Kurs mit 9 Modulen, Dokumentationen und Übungen für eine flexible FaMed-Vorbereitung.
+              Ein strukturierter Offline-Kurs mit digitalen Modulen, Dokumentationen und Übungen für eine flexible FaMed-Vorbereitung.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-2">
@@ -86,7 +87,27 @@ export default function FamedOfflinePage() {
             </div>
           </div>
 
-          <div className="rounded-[2.6rem] bg-[#17131c] p-5 shadow-[0_30px_90px_rgba(49,23,91,0.16)] sm:p-7">
+          <div className="relative mt-8 lg:mt-0">
+
+            <div className="home-orbit absolute right-10 -top-10 z-20 hidden rounded-2xl bg-[#58ECF1] px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.18)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em]">
+                FLEXIBEL
+              </div>
+              <div className="mt-1 text-sm font-semibold">
+                Lernen im eigenen Tempo
+              </div>
+            </div>
+
+            <div className="home-orbit-delay absolute bottom-[-46px] left-10 z-20 hidden rounded-2xl bg-white px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.16)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em] text-[#17666a]">
+                OFFLINE + LIVE
+              </div>
+              <div className="mt-1 text-sm font-semibold">
+                Mit Simulationen kombinierbar
+              </div>
+            </div>
+
+            <div className="rounded-[2.6rem] bg-[#17131c] p-5 shadow-[0_30px_90px_rgba(49,23,91,0.16)] sm:p-7">
             <div className="rounded-[2rem] bg-[#f3eff7] p-6 sm:p-7">
               <div className="flex items-center justify-between gap-4">
                 <div>
@@ -96,7 +117,7 @@ export default function FamedOfflinePage() {
                   <div className="mt-2 text-2xl font-semibold">FaMed Lernbereich</div>
                 </div>
                 <div className="rounded-full bg-[#31175B] px-4 py-2 text-xs font-semibold text-white">
-                  9 Module
+                  Flexibel
                 </div>
               </div>
 
@@ -115,12 +136,45 @@ export default function FamedOfflinePage() {
               </div>
 
               <div className="mt-4 rounded-2xl border border-[#31175B]/10 bg-white/55 px-5 py-4 text-sm text-black/45">
-                + weitere Module, Dokumentationen und Übungen
+                + weitere Inhalte, Dokumentationen und Übungen
               </div>
             </div>
           </div>
+
+          <div className="mt-4 grid grid-cols-2 gap-3 lg:hidden">
+            <div className="home-orbit rounded-2xl bg-[#58ECF1] px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em]">
+                FLEXIBEL
+              </div>
+              <div className="mt-1 text-xs font-semibold">
+                Eigenes Lerntempo
+              </div>
+            </div>
+
+            <div className="home-orbit-delay rounded-2xl bg-white px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em] text-[#17666a]">
+                OFFLINE + LIVE
+              </div>
+              <div className="mt-1 text-xs font-semibold">
+                Simulationen ergänzen
+              </div>
+            </div>
+          </div>
+
+          </div>
         </div>
       </section>
+
+      {/* PHOTO-STORY-FAMED-OFFLINE */}
+      <EditorialStorySection
+        eyebrow="FLEXIBEL VORBEREITEN"
+        title="Selbstständig lernen – und das Gelernte anschließend praktisch testen."
+        text="Der FaMed Offline Kurs ermöglicht eine flexible Vorbereitung mit digitalen Inhalten, Dokumentationen und Übungen. Wer die Anwendung zusätzlich unter Prüfungsbedingungen trainieren möchte, kann den Lernweg mit Live-Simulationen ergänzen."
+        image="/images/home-medical-german-learning.jpg"
+        alt="Medizinisches Lernen mit digitalen Materialien"
+        chip="OFFLINE LERNEN · LIVE ANWENDEN"
+        reverse
+      />
 
       <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
@@ -170,10 +224,10 @@ export default function FamedOfflinePage() {
               </div>
               <div className="mt-7 text-5xl font-semibold">200 €</div>
               <p className="mt-5 max-w-xl leading-7 text-white/60">
-                Der komplette Offline-Kurs mit 9 Modulen, Dokumentationen und Übungen.
+                Der komplette Offline-Kurs mit Flexibeln, Dokumentationen und Übungen.
               </p>
               <ul className="mt-8 space-y-3 text-sm text-white/75">
-                <li>✓ 9 Module</li>
+                <li>✓ Flexibel</li>
                 <li>✓ Dokumentationen</li>
                 <li>✓ Übungen</li>
                 <li>✓ Flexible Selbstlernphase</li>

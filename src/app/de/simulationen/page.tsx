@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
+import EditorialStorySection from "@/components/EditorialStorySection";
+import SimulationConversion from "@/components/SimulationConversion";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
@@ -150,8 +152,28 @@ export default function SimulationenPage() {
             </div>
           </div>
 
-          <div className="rounded-[2.8rem] bg-[#17131c] p-5 shadow-[0_30px_90px_rgba(49,23,91,.18)] sm:p-7">
-            <div className="rounded-[2.2rem] bg-[#f3eff7] p-6 sm:p-8">
+          <div className="relative mt-8 lg:mt-0">
+
+            <div className="home-orbit absolute right-10 -top-12 z-20 hidden rounded-2xl bg-[#58ECF1] px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.18)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em]">
+                REALITÄTSCHECK
+              </div>
+              <div className="mt-1 text-sm font-semibold">
+                Wissen unter Druck testen
+              </div>
+            </div>
+
+            <div className="home-orbit-delay absolute bottom-[-48px] left-10 z-20 hidden rounded-2xl bg-white px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.16)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em] text-[#17666a]">
+                FEEDBACK
+              </div>
+              <div className="mt-1 text-sm font-semibold">
+                Wissen, was als Nächstes zählt
+              </div>
+            </div>
+
+            <div className="rounded-[2.8rem] bg-[#17131c] p-5 shadow-[0_30px_90px_rgba(49,23,91,.18)] sm:p-7">
+              <div className="rounded-[2.2rem] bg-[#f3eff7] p-6 sm:p-8">
               <div className="flex items-start justify-between gap-5">
                 <div>
                   <div className="text-xs font-bold tracking-[.16em] text-[#31175B]">
@@ -218,6 +240,28 @@ export default function SimulationenPage() {
                 </p>
               </div>
             </div>
+          </div>
+
+          <div className="mt-4 grid grid-cols-2 gap-3 lg:hidden">
+            <div className="home-orbit rounded-2xl bg-[#58ECF1] px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em]">
+                REALITÄTSCHECK
+              </div>
+              <div className="mt-1 text-xs font-semibold">
+                Wissen unter Druck testen
+              </div>
+            </div>
+
+            <div className="home-orbit-delay rounded-2xl bg-white px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em] text-[#17666a]">
+                FEEDBACK
+              </div>
+              <div className="mt-1 text-xs font-semibold">
+                Wissen, was als Nächstes zählt
+              </div>
+            </div>
+          </div>
+
           </div>
         </div>
       </section>
@@ -315,6 +359,18 @@ export default function SimulationenPage() {
         </div>
       </section>
 
+      {/* PHOTO-STORY-SIMULATION */}
+      <EditorialStorySection
+        eyebrow="VOM TEST ZUM NÄCHSTEN SCHRITT"
+        title="Eine gute Simulation endet nicht mit dem letzten Satz."
+        text="Entscheidend ist, was danach sichtbar wird: Wo verlieren Sie Struktur? Welche Formulierungen fehlen unter Druck? Und was sollten Sie vor der echten Prüfung gezielt verbessern?"
+        image="/images/medical-path-doctor-explanation.jpg"
+        alt="Medizinische Notizen und Feedback"
+        chip="SIMULIEREN → ANALYSIEREN → VERBESSERN"
+        reverse
+        dark
+      />
+
       {/* PROCESS */}
       <section
         id="ablauf"
@@ -404,33 +460,7 @@ export default function SimulationenPage() {
         </div>
       </section>
 
-      {/* FAQ */}
-      <section className="mx-auto max-w-4xl px-5 py-24 lg:px-8">
-        <div className="text-center">
-          <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-            HÄUFIGE FRAGEN
-          </div>
-
-          <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-            Vor der Buchung wissen, was Sie erwartet.
-          </h2>
-        </div>
-
-        <div className="mt-12 space-y-4">
-          {faqs.map(([question, answer]) => (
-            <div
-              key={question}
-              className="rounded-[1.8rem] bg-[#f7f9fb] p-7"
-            >
-              <h3 className="text-xl font-semibold">{question}</h3>
-
-              <p className="mt-4 leading-7 text-black/50">
-                {answer}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <SimulationConversion />
 
       {/* FINAL CTA */}
       <section className="px-5 pb-20 lg:px-8">

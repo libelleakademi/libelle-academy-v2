@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
+import EditorialStorySection from "@/components/EditorialStorySection";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
@@ -98,8 +99,28 @@ export default function RessourcenPage() {
             </div>
           </div>
 
-          <div className="rounded-[2.8rem] bg-[#17131c] p-6 shadow-[0_30px_90px_rgba(49,23,91,.16)]">
-            <div className="rounded-[2.1rem] bg-[#f3eff7] p-7 sm:p-9">
+          <div className="relative mt-8 lg:mt-0">
+
+            <div className="home-orbit absolute right-10 -top-10 z-20 hidden rounded-2xl bg-[#58ECF1] px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.18)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em]">
+                PELEXA
+              </div>
+              <div className="mt-1 text-sm font-semibold">
+                Lernen zwischen den Live-Terminen
+              </div>
+            </div>
+
+            <div className="home-orbit-delay absolute bottom-[-46px] left-10 z-20 hidden rounded-2xl bg-white px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.16)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em] text-[#17666a]">
+                WEITERLERNEN
+              </div>
+              <div className="mt-1 text-sm font-semibold">
+                Wiederholen · vertiefen · anwenden
+              </div>
+            </div>
+
+            <div className="rounded-[2.8rem] bg-[#17131c] p-6 shadow-[0_30px_90px_rgba(49,23,91,.16)]">
+              <div className="rounded-[2.1rem] bg-[#f3eff7] p-7 sm:p-9">
               <div className="text-xs font-bold tracking-[.17em] text-[#31175B]">
                 DIGITAL LERNEN
               </div>
@@ -136,8 +157,40 @@ export default function RessourcenPage() {
               </div>
             </div>
           </div>
+
+          <div className="mt-4 grid grid-cols-2 gap-3 lg:hidden">
+            <div className="home-orbit rounded-2xl bg-[#58ECF1] px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em]">
+                PELEXA
+              </div>
+              <div className="mt-1 text-xs font-semibold">
+                Lernen zwischen den Live-Terminen
+              </div>
+            </div>
+
+            <div className="home-orbit-delay rounded-2xl bg-white px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em] text-[#17666a]">
+                WEITERLERNEN
+              </div>
+              <div className="mt-1 text-xs font-semibold">
+                Wiederholen · vertiefen · anwenden
+              </div>
+            </div>
+          </div>
+
+          </div>
         </div>
       </section>
+
+      {/* PHOTO-STORY-RESOURCES */}
+      <EditorialStorySection
+        eyebrow="LERNEN ZWISCHEN DEN TERMINEN"
+        title="Fortschritt entsteht nicht nur während des Live-Unterrichts."
+        text="Digitale Materialien, Wiederholung und selbstständige Vertiefung helfen dabei, Inhalte zwischen den Kursterminen verfügbar zu halten und gezielt weiterzuarbeiten."
+        image="/images/resources-digital-study.jpg"
+        alt="Digitales Lernen mit Laptop und Lernmaterialien"
+        chip="PELEXA · MATERIALIEN · WIEDERHOLEN"
+      />
 
       {/* RESOURCE TYPES */}
       <section id="ressourcen" className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
@@ -243,77 +296,6 @@ export default function RessourcenPage() {
           >
             Instagram öffnen
           </a>
-        </div>
-      </section>
-
-      {/* PDF / FUTURE RESOURCES */}
-      <section className="bg-[#f7f5f9]">
-        <div className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
-          <div className="grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
-            <div>
-              <div className="text-xs font-bold tracking-[.18em] text-[#31175B]">
-                WEITERE MATERIALIEN
-              </div>
-
-              <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-                Die Ressourcenbibliothek kann weiter wachsen.
-              </h2>
-
-              <p className="mt-6 max-w-xl text-lg leading-8 text-black/55">
-                PDF-Guides, zusätzliche Lernmaterialien und weitere
-                themenspezifische Ressourcen können hier Schritt für Schritt
-                ergänzt werden.
-              </p>
-            </div>
-
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div className="rounded-[2rem] bg-white p-8">
-                <div className="text-xs font-bold tracking-[.15em] text-[#17666a]">
-                  GENERAL GERMAN
-                </div>
-
-                <h3 className="mt-5 text-2xl font-semibold">
-                  Grammatik & Wortschatz
-                </h3>
-
-                <p className="mt-4 leading-7 text-black/50">
-                  Zusätzliche Lernhilfen für A1 bis B2 können hier gebündelt
-                  werden.
-                </p>
-              </div>
-
-              <div className="rounded-[2rem] bg-white p-8">
-                <div className="text-xs font-bold tracking-[.15em] text-[#17666a]">
-                  MEDICAL GERMAN
-                </div>
-
-                <h3 className="mt-5 text-2xl font-semibold">
-                  FSP & FaMed Materialien
-                </h3>
-
-                <p className="mt-4 leading-7 text-black/50">
-                  Medizinische Kommunikation und Prüfungsvorbereitung können
-                  mit weiteren Ressourcen ergänzt werden.
-                </p>
-              </div>
-
-              <div className="rounded-[2rem] bg-white p-8 sm:col-span-2">
-                <div className="text-xs font-bold tracking-[.15em] text-[#31175B]">
-                  COMING SOON
-                </div>
-
-                <h3 className="mt-5 text-2xl font-semibold">
-                  Weitere PDF-Ressourcen und Lernmaterialien
-                </h3>
-
-                <p className="mt-4 max-w-2xl leading-7 text-black/50">
-                  Neue Materialien können künftig als eigene Ressourcen oder
-                  Landingpages ergänzt werden, ohne die Kursstruktur ändern
-                  zu müssen.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 

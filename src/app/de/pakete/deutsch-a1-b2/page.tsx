@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
+import EditorialStorySection from "@/components/EditorialStorySection";
+import GermanPathConversion from "@/components/GermanPathConversion";
 import { germanCourses } from "@/lib/german-courses";
 import { whatsappLink } from "@/lib/whatsapp";
 
@@ -56,8 +58,19 @@ export default function DeutschA1B2BundlePage() {
             </div>
           </div>
 
-          <div className="rounded-[2.8rem] bg-[#17131c] p-5 shadow-[0_30px_90px_rgba(49,23,91,.16)] sm:p-7">
-            <div className="rounded-[2.2rem] bg-[#f3eff7] p-6 sm:p-8">
+          <div className="relative mt-8 lg:mt-0">
+            <div className="home-orbit absolute right-10 -top-10 z-20 hidden rounded-2xl bg-[#58ECF1] px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.18)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em]">KLARER WEG</div>
+              <div className="mt-1 text-sm font-semibold">A1 → A2 → B1 → B2</div>
+            </div>
+
+            <div className="home-orbit-delay absolute bottom-[-46px] left-10 z-20 hidden rounded-2xl bg-white px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.16)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em] text-[#17666a]">VORKENNTNISSE?</div>
+              <div className="mt-1 text-sm font-semibold">Beim richtigen Niveau starten</div>
+            </div>
+
+            <div className="rounded-[2.8rem] bg-[#17131c] p-5 shadow-[0_30px_90px_rgba(49,23,91,.16)] sm:p-7">
+              <div className="rounded-[2.2rem] bg-[#f3eff7] p-6 sm:p-8">
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <div className="text-xs font-bold tracking-[.16em] text-[#31175B]">LIBELLE LERNWEG</div>
@@ -86,8 +99,31 @@ export default function DeutschA1B2BundlePage() {
               </div>
             </div>
           </div>
+
+          <div className="mt-4 grid grid-cols-2 gap-3 lg:hidden">
+            <div className="home-orbit rounded-2xl bg-[#58ECF1] px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em]">KLARER WEG</div>
+              <div className="mt-1 text-xs font-semibold">A1 → A2 → B1 → B2</div>
+            </div>
+
+            <div className="home-orbit-delay rounded-2xl bg-white px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em] text-[#17666a]">VORKENNTNISSE?</div>
+              <div className="mt-1 text-xs font-semibold">Richtig einsteigen</div>
+            </div>
+          </div>
+          </div>
         </div>
       </section>
+
+      {/* PHOTO-STORY-A1B2 */}
+      <EditorialStorySection
+        eyebrow="DER WEG HINTER DEN NIVEAUS"
+        title="Vier Niveaus. Aber ein größeres Ziel: selbstständig kommunizieren."
+        text="A1, A2, B1 und B2 sind keine isolierten Etappen. Jede Stufe erweitert, was Sie im Alltag, im Beruf und in Deutschland selbstständig verstehen und ausdrücken können."
+        image="/images/a1-b2-life-in-germany.jpg"
+        alt="Alltag und Leben in Deutschland"
+        chip="A1 → A2 → B1 → B2"
+      />
 
       <section id="lernweg" className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="max-w-3xl">
@@ -164,19 +200,7 @@ export default function DeutschA1B2BundlePage() {
         </div>
       </section>
 
-      <section className="bg-[#f7f9fb]">
-        <div className="mx-auto max-w-5xl px-5 py-24 lg:px-8">
-          <div className="text-center">
-            <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">HÄUFIGE FRAGEN</div>
-            <h2 className="mt-4 text-4xl font-semibold sm:text-5xl">Vor der Buchung wissen, woran Sie sind.</h2>
-          </div>
-          <div className="mt-12 space-y-4">
-            {faqs.map(([q, a]) => (
-              <div key={q} className="rounded-[1.8rem] bg-white p-7"><h3 className="text-xl font-semibold">{q}</h3><p className="mt-3 leading-7 text-black/55">{a}</p></div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <GermanPathConversion />
 
       <section className="px-5 py-20 lg:px-8">
         <div className="mx-auto max-w-7xl rounded-[2.8rem] bg-[#17131c] p-9 text-white sm:p-14">

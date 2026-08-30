@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
+import EditorialStorySection from "@/components/EditorialStorySection";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
@@ -123,8 +124,28 @@ export default function KursePage() {
             </div>
           </div>
 
-          <div className="rounded-[2.8rem] bg-[#17131c] p-6 shadow-[0_30px_90px_rgba(49,23,91,.16)]">
-            <div className="rounded-[2.1rem] bg-[#f3eff7] p-7 sm:p-9">
+          <div className="relative mt-8 lg:mt-0">
+
+            <div className="home-orbit absolute right-10 -top-10 z-20 hidden rounded-2xl bg-[#58ECF1] px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.18)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em]">
+                A1 → B2
+              </div>
+              <div className="mt-1 text-sm font-semibold">
+                Deutsch systematisch aufbauen
+              </div>
+            </div>
+
+            <div className="home-orbit-delay absolute bottom-[-46px] left-10 z-20 hidden rounded-2xl bg-white px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.16)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em] text-[#17666a]">
+                MEDIZINISCH
+              </div>
+              <div className="mt-1 text-sm font-semibold">
+                FSP · FaMed · Simulationen
+              </div>
+            </div>
+
+            <div className="rounded-[2.8rem] bg-[#17131c] p-6 shadow-[0_30px_90px_rgba(49,23,91,.16)]">
+              <div className="rounded-[2.1rem] bg-[#f3eff7] p-7 sm:p-9">
               <div className="text-xs font-bold tracking-[.17em] text-[#31175B]">
                 ZWEI LERNWELTEN
               </div>
@@ -162,8 +183,42 @@ export default function KursePage() {
               </div>
             </div>
           </div>
+
+          <div className="mt-4 grid grid-cols-2 gap-3 lg:hidden">
+            <div className="home-orbit rounded-2xl bg-[#58ECF1] px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em]">
+                A1 → B2
+              </div>
+              <div className="mt-1 text-xs font-semibold">
+                Deutsch systematisch aufbauen
+              </div>
+            </div>
+
+            <div className="home-orbit-delay rounded-2xl bg-white px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em] text-[#17666a]">
+                MEDIZINISCH
+              </div>
+              <div className="mt-1 text-xs font-semibold">
+                FSP · FaMed · Simulationen
+              </div>
+            </div>
+          </div>
+
+          </div>
         </div>
       </section>
+
+      {/* PHOTO-STORY-KURSE */}
+      <EditorialStorySection
+        eyebrow="ZWEI LERNWELTEN"
+        title="Deutsch lernen – und es dort einsetzen, wo es für Sie zählt."
+        text="Für manche beginnt der Weg mit A1. Für andere mit medizinischer Fachsprache oder einer konkreten Prüfung. Entscheidend ist nicht, wo andere starten, sondern welcher nächste Schritt zu Ihrem Ziel passt."
+        image="/images/home-general-german-learning.jpg"
+        alt="Erwachsene Person beim Deutschlernen"
+        secondaryImage="/images/home-medical-german-learning.jpg"
+        secondaryAlt="Medizinisches Deutsch digital lernen"
+        chip="GENERAL GERMAN + MEDICAL GERMAN"
+      />
 
       {/* GERMAN */}
       <section

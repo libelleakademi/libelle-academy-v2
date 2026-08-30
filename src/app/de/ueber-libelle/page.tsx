@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
+import EditorialStorySection from "@/components/EditorialStorySection";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
@@ -93,8 +94,28 @@ export default function UeberLibellePage() {
             </div>
           </div>
 
-          <div className="rounded-[2.8rem] bg-[#17131c] p-6 shadow-[0_30px_90px_rgba(49,23,91,.16)]">
-            <div className="rounded-[2.1rem] bg-[#f3eff7] p-7 sm:p-9">
+          <div className="relative mt-8 lg:mt-0">
+
+            <div className="home-orbit absolute right-10 -top-10 z-20 hidden rounded-2xl bg-[#58ECF1] px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.18)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em]">
+                LIVE + DIGITAL
+              </div>
+              <div className="mt-1 text-sm font-semibold">
+                Lernen endet nicht nach dem Unterricht
+              </div>
+            </div>
+
+            <div className="home-orbit-delay absolute bottom-[-46px] left-10 z-20 hidden rounded-2xl bg-white px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.16)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em] text-[#17666a]">
+                KLARER LERNWEG
+              </div>
+              <div className="mt-1 text-sm font-semibold">
+                Vom aktuellen Stand zum nächsten Ziel
+              </div>
+            </div>
+
+            <div className="rounded-[2.8rem] bg-[#17131c] p-6 shadow-[0_30px_90px_rgba(49,23,91,.16)]">
+              <div className="rounded-[2.1rem] bg-[#f3eff7] p-7 sm:p-9">
               <div className="text-xs font-bold tracking-[.17em] text-[#31175B]">
                 LIBELLE LERNPRINZIP
               </div>
@@ -132,8 +153,40 @@ export default function UeberLibellePage() {
               </div>
             </div>
           </div>
+
+          <div className="mt-4 grid grid-cols-2 gap-3 lg:hidden">
+            <div className="home-orbit rounded-2xl bg-[#58ECF1] px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em]">
+                LIVE + DIGITAL
+              </div>
+              <div className="mt-1 text-xs font-semibold">
+                Lernen endet nicht nach dem Unterricht
+              </div>
+            </div>
+
+            <div className="home-orbit-delay rounded-2xl bg-white px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em] text-[#17666a]">
+                KLARER LERNWEG
+              </div>
+              <div className="mt-1 text-xs font-semibold">
+                Vom aktuellen Stand zum nächsten Ziel
+              </div>
+            </div>
+          </div>
+
+          </div>
         </div>
       </section>
+
+      {/* PHOTO-STORY-ABOUT */}
+      <EditorialStorySection
+        eyebrow="LERNEN MIT EINEM ZIEL"
+        title="Unterricht ist wichtig. Entscheidend ist, was danach abrufbar bleibt."
+        text="Libelle verbindet Live-Unterricht, digitale Vertiefung und aktive Anwendung, damit Lernen nicht aus einzelnen Terminen besteht, sondern aus einem nachvollziehbaren Weg."
+        image="/images/home-general-german-learning.jpg"
+        alt="Digitales und selbstständiges Deutschlernen"
+        chip="LIVE + DIGITAL + ANWENDUNG"
+      />
 
       {/* PRINCIPLES */}
       <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">

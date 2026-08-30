@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
+import EditorialStorySection from "@/components/EditorialStorySection";
+import FamedConversion from "@/components/FamedConversion";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
@@ -156,8 +158,28 @@ export default function FamedPage() {
             </div>
           </div>
 
-          <div className="rounded-[2.8rem] bg-[#17131c] p-5 shadow-[0_30px_90px_rgba(49,23,91,.18)] sm:p-7">
-            <div className="rounded-[2.2rem] bg-[#f3eff7] p-6 sm:p-8">
+          <div className="relative mt-8 lg:mt-0">
+
+            <div className="home-orbit absolute right-12 -top-12 z-20 hidden rounded-2xl bg-[#58ECF1] px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.18)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em]">
+                6 SIMULATIONEN
+              </div>
+              <div className="mt-1 text-sm font-semibold">
+                Vom Lernen ins Prüfungsgespräch
+              </div>
+            </div>
+
+            <div className="home-orbit-delay absolute bottom-[-48px] left-12 z-20 hidden rounded-2xl bg-white px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.16)] lg:block">
+              <div className="text-[10px] font-bold tracking-[.14em] text-[#17666a]">
+                LIVE + DIGITAL
+              </div>
+              <div className="mt-1 text-sm font-semibold">
+                Pelexa zwischen den Terminen
+              </div>
+            </div>
+
+            <div className="rounded-[2.8rem] bg-[#17131c] p-5 shadow-[0_30px_90px_rgba(49,23,91,.18)] sm:p-7">
+              <div className="rounded-[2.2rem] bg-[#f3eff7] p-6 sm:p-8">
 
               <div className="flex items-start justify-between gap-5">
                 <div>
@@ -222,8 +244,40 @@ export default function FamedPage() {
             </div>
           </div>
 
+          <div className="mt-4 grid grid-cols-2 gap-3 lg:hidden">
+            <div className="home-orbit rounded-2xl bg-[#58ECF1] px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em]">
+                6 SIMULATIONEN
+              </div>
+              <div className="mt-1 text-xs font-semibold">
+                Vom Lernen ins Prüfungsgespräch
+              </div>
+            </div>
+
+            <div className="home-orbit-delay rounded-2xl bg-white px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
+              <div className="text-[9px] font-bold tracking-[.13em] text-[#17666a]">
+                LIVE + DIGITAL
+              </div>
+              <div className="mt-1 text-xs font-semibold">
+                Pelexa zwischen den Terminen
+              </div>
+            </div>
+          </div>
+
+          </div>
         </div>
       </section>
+
+      {/* PHOTO-STORY-FAMED */}
+      <EditorialStorySection
+        eyebrow="FAMED IN DER ANWENDUNG"
+        title="Wenn medizinisches Wissen auch sprachlich funktionieren muss."
+        text="FaMed verlangt nicht nur medizinisches Verständnis. Entscheidend ist, wie sicher Informationen erklärt, strukturiert und in professioneller Kommunikation angewendet werden."
+        image="/images/famed-medical-communication.jpg"
+        alt="Medizinisches Gespräch zwischen Fachkraft und Patient"
+        chip="FAMED · KOMMUNIKATION · ANWENDUNG"
+        reverse
+      />
 
       <section id="kurs" className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="max-w-4xl">

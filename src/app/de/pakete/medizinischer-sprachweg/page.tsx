@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
+import EditorialStorySection from "@/components/EditorialStorySection";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
@@ -189,6 +190,17 @@ export default function MedizinischerSprachwegPage() {
           </div>
         </div>
       </section>
+
+      {/* PHOTO-STORY-MEDPATH */}
+      <EditorialStorySection
+        eyebrow="VOM FACHWISSEN ZUR KOMMUNIKATION"
+        title="Medizinisches Deutsch verbindet Wissen mit verständlicher Sprache."
+        text="Je nach aktuellem Stand kann zuerst die medizinische Sprachkompetenz gestärkt, anschließend gezielt auf FSP oder FaMed vorbereitet und schließlich unter realistischen Bedingungen simuliert werden."
+        image="/images/medical-path-doctor-explanation.jpg"
+        alt="Ärztliche Erklärung im medizinischen Gespräch"
+        chip="SPRACHE → PRÜFUNG → SIMULATION"
+        reverse
+      />
 
       {/* PATH */}
       <section id="lernweg" className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
