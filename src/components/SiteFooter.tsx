@@ -11,7 +11,9 @@ export default function SiteFooter() {
   const isTurkish = pathname.startsWith("/tr");
   const isEnglish = pathname.startsWith("/en");
 
-  const base = isTurkish ? "/tr" : isEnglish ? "/en" : "/de";
+  if (!isGerman) return null;
+
+  const base = "/de";
 
   const labels = isTurkish
     ? {

@@ -14,10 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Libelle Academy | Deutsch & Medical German",
-    template: "%s | Libelle Academy",
-  },
+  title: "Libelle Academy | Deutsch & Medical German",
   description:
     "Deutschkurse von A1 bis B2 sowie medizinische Sprach- und Prüfungsvorbereitung für FSP, FaMed und Zahnmedizin.",
   applicationName: "Libelle Academy",
