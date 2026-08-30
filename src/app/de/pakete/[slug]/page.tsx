@@ -4,6 +4,8 @@ import SiteHeader from "@/components/SiteHeader";
 import { bundlePages, BundleSlug } from "@/lib/bundle-pages";
 import { whatsappLink } from "@/lib/whatsapp";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return Object.keys(bundlePages).map((slug) => ({ slug }));
 }
@@ -17,6 +19,7 @@ export default async function BundlePage({
   const bundle = bundlePages[slug as BundleSlug];
 
   if (!bundle) notFound();
+
 
   const general = "general" in bundle && bundle.general;
 
