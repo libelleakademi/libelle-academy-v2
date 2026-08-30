@@ -1,3 +1,4 @@
+import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import { bundles, germanLevels, medicalCourses } from "@/lib/site-data";
 import { whatsappLink } from "@/lib/whatsapp";
@@ -126,7 +127,7 @@ export default function GermanHomePage() {
                   </div>
                 </div>
 
-                <h3 className="mt-8 text-2xl font-semibold">{course.title}</h3>
+                <h3 className="mt-8 text-2xl font-semibold"><Link href={course.href} className="hover:text-[#31175B]">{course.title} →</Link></h3>
                 <p className="mt-4 leading-7 text-black/50">{course.description}</p>
 
                 <a
@@ -146,7 +147,7 @@ export default function GermanHomePage() {
           <div className="p-9 sm:p-12">
             <span className="rounded-full bg-[#58ECF1] px-3 py-1.5 text-xs font-bold text-black">NEU</span>
             <h2 className="mt-7 text-4xl font-semibold tracking-tight">
-              FaMed lernen – in Ihrem eigenen Tempo.
+              <Link href="/de/famed-offline" className="hover:underline">FaMed lernen – in Ihrem eigenen Tempo. →</Link>
             </h2>
             <p className="mt-5 leading-7 text-white/60">
               9 Module, Dokumentationen, Übungen und flexible Prüfungsvorbereitung.
@@ -204,7 +205,7 @@ export default function GermanHomePage() {
           <div className="mt-12 grid gap-5 lg:grid-cols-3">
             {bundles.map((bundle) => (
               <div key={bundle.title} className="rounded-[2rem] border border-white/10 bg-white/8 p-7">
-                <h3 className="text-xl font-semibold">{bundle.title}</h3>
+                <h3 className="text-xl font-semibold"><Link href={bundle.href}>{bundle.title} →</Link></h3>
                 <div className="mt-6 space-y-2">
                   {bundle.steps.map((step) => (
                     <div key={step} className="rounded-xl bg-white/10 p-3 text-sm">{step}</div>
@@ -227,7 +228,7 @@ export default function GermanHomePage() {
           <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-4">
             {germanLevels.map((level) => (
               <div key={level} className="rounded-[2rem] border border-[#58ECF1] bg-white p-7">
-                <div className="text-5xl font-semibold">{level}</div>
+                <Link href={`/de/deutsch/${level.toLowerCase()}`} className="block text-5xl font-semibold">{level}</Link>
                 <div className="mt-10 text-sm font-semibold text-[#17666a]">Deutschkurs →</div>
               </div>
             ))}
