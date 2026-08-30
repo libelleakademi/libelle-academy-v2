@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
+import HomeExtras from "@/components/HomeExtras";
 import { bundles, germanLevels, medicalCourses } from "@/lib/site-data";
 import { whatsappLink } from "@/lib/whatsapp";
 
@@ -235,6 +236,8 @@ export default function GermanHomePage() {
           </div>
         </div>
       </section>
+
+      <HomeExtras />
 
       <section className="px-5 py-20 lg:px-8">
         <div className="mx-auto max-w-7xl rounded-[2.5rem] bg-[#31175B] p-10 text-white sm:p-14">
