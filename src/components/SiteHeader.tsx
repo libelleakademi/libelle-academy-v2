@@ -4,45 +4,55 @@ import { whatsappLink } from "@/lib/whatsapp";
 export default function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-black/5 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        <Link href="/de" className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-2xl border border-[#31175B]/15 bg-[#31175B]/5">
-            <span className="text-lg font-semibold text-[#31175B]">L</span>
-          </div>
-          <div>
-            <div className="text-sm font-bold tracking-[0.22em] text-[#31175B]">
-              LIBELLE
-            </div>
-            <div className="text-[10px] tracking-[0.18em] text-black/45">
-              AKADEMIE
-            </div>
-          </div>
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-3 lg:px-8">
+        <Link href="/de" className="flex shrink-0 items-center" aria-label="Libelle Academy Startseite">
+          <img
+            src="/libelle-logo.png"
+            alt="Libelle Academy"
+            className="h-12 w-auto max-w-[132px] object-contain sm:h-14 sm:max-w-[150px]"
+          />
         </Link>
 
         <nav className="hidden items-center gap-7 text-sm text-black/65 lg:flex">
-          <a href="#kurse" className="transition hover:text-[#31175B]">Kurse</a>
-          <a href="#pruefungen" className="transition hover:text-[#31175B]">Prüfungsvorbereitung</a>
-          <a href="#libelle" className="transition hover:text-[#31175B]">Über Libelle</a>
-          <a href="#tutoren" className="transition hover:text-[#31175B]">Tutoren</a>
-          <a href="#ressourcen" className="transition hover:text-[#31175B]">Ressourcen</a>
+          <Link href="/de#kurse" className="transition hover:text-[#31175B]">
+            Kurse
+          </Link>
+          <Link href="/de#pruefungen" className="transition hover:text-[#31175B]">
+            Prüfungsvorbereitung
+          </Link>
+          <Link href="/de#libelle" className="transition hover:text-[#31175B]">
+            Über Libelle
+          </Link>
+          <Link href="/de#tutoren" className="transition hover:text-[#31175B]">
+            Tutoren
+          </Link>
+          <Link href="/de#ressourcen" className="transition hover:text-[#31175B]">
+            Ressourcen
+          </Link>
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           <a
             href="https://www.instagram.com/almancahedefim/"
             target="_blank"
             rel="noreferrer"
-            className="hidden text-sm font-medium text-black/55 transition hover:text-[#31175B] sm:block"
+            className="hidden text-sm font-medium text-black/55 transition hover:text-[#31175B] xl:block"
           >
             Instagram
           </a>
 
           <div className="hidden items-center gap-1 text-xs font-semibold text-black/45 md:flex">
-            <Link href="/de" className="text-[#31175B]">DE</Link>
+            <Link href="/de" className="text-[#31175B]">
+              DE
+            </Link>
             <span>/</span>
-            <Link href="/tr">TR</Link>
+            <Link href="/tr" className="transition hover:text-[#31175B]">
+              TR
+            </Link>
             <span>/</span>
-            <Link href="/en">EN</Link>
+            <Link href="/en" className="transition hover:text-[#31175B]">
+              EN
+            </Link>
           </div>
 
           <a
@@ -51,7 +61,7 @@ export default function SiteHeader() {
             )}
             target="_blank"
             rel="noreferrer"
-            className="rounded-full bg-[#31175B] px-4 py-2.5 text-xs font-semibold text-white transition hover:bg-[#4B238B] sm:text-sm"
+            className="rounded-full bg-[#31175B] px-4 py-2.5 text-xs font-semibold text-white transition hover:bg-[#4B238B] sm:px-5 sm:text-sm"
           >
             WhatsApp
           </a>
