@@ -6,7 +6,7 @@ import { coursePages, getCoursePage } from "@/lib/course-pages";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export function generateStaticParams() {
-  return coursePages.filter((course) => course.slug !== "famed-offline" && course.slug !== "fsp-medizin" && course.slug !== "fsp-zahnmedizin" && course.slug !== "famed").map((course) => ({ slug: course.slug }));
+  return coursePages.filter((course) => course.slug !== "famed-offline" && course.slug !== "fsp-medizin" && course.slug !== "fsp-zahnmedizin" && course.slug !== "famed" && course.slug !== "simulationen").map((course) => ({ slug: course.slug }));
 }
 
 export async function generateMetadata({
