@@ -2,7 +2,11 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #17131c;
+  --libelle-purple: #31175b;
+  --libelle-purple-light: #4b238b;
+  --libelle-cyan: #58ecf1;
+  --libelle-ease: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 @theme inline {
@@ -12,15 +16,260 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:
+    var(--font-geist-sans),
+    Arial,
+    Helvetica,
+    sans-serif;
+  overflow-x: hidden;
+}
+
+/* ========================================
+   PAGE TRANSITION
+======================================== */
+
+.motion-page {
+  animation: libelle-page-enter 700ms
+    var(--libelle-ease) both;
+}
+
+@keyframes libelle-page-enter {
+  from {
+    opacity: 0.92;
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* ========================================
+   SCROLL PROGRESS
+======================================== */
+
+.libelle-scroll-progress {
+  --scroll-progress: 0;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    #31175b 0%,
+    #4b238b 52%,
+    #58ecf1 100%
+  );
+
+  transform: scaleX(var(--scroll-progress));
+  transform-origin: left center;
+  pointer-events: none;
+  will-change: transform;
+}
+
+/* ========================================
+   SCROLL REVEALS
+======================================== */
+
+.libelle-motion .motion-reveal {
+  opacity: 0;
+  transform: translate3d(0, 28px, 0) scale(0.988);
+  filter: blur(5px);
+
+  transition:
+    opacity 780ms var(--libelle-ease),
+    transform 880ms var(--libelle-ease),
+    filter 760ms var(--libelle-ease);
+
+  transition-delay: var(--motion-delay, 0ms);
+
+  will-change: opacity, transform, filter;
+}
+
+.libelle-motion .motion-reveal.motion-from-left {
+  transform: translate3d(-32px, 12px, 0)
+    scale(0.99);
+}
+
+.libelle-motion .motion-reveal.motion-from-right {
+  transform: translate3d(32px, 12px, 0)
+    scale(0.99);
+}
+
+.libelle-motion .motion-reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) scale(1);
+  filter: blur(0);
+}
+
+/* ========================================
+   HERO TITLE
+======================================== */
+
+.libelle-motion
+  .motion-hero-title.is-visible {
+  animation: hero-title-settle 1s
+    var(--libelle-ease) both;
+}
+
+@keyframes hero-title-settle {
+  0% {
+    letter-spacing: -0.055em;
+  }
+
+  100% {
+    letter-spacing: -0.045em;
+  }
+}
+
+/* ========================================
+   PREMIUM CARD MOVEMENT
+======================================== */
+
+.libelle-motion
+  .motion-card.is-visible {
+  transition:
+    transform 500ms var(--libelle-ease),
+    box-shadow 500ms var(--libelle-ease),
+    border-color 400ms ease,
+    background-color 400ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .libelle-motion
+    .motion-card.is-visible:hover {
+    transform: translate3d(0, -7px, 0)
+      scale(1.006);
+
+    box-shadow:
+      0 24px 55px rgba(49, 23, 91, 0.09),
+      0 7px 18px rgba(23, 19, 28, 0.04);
+  }
+}
+
+/* ========================================
+   CTA MICRO INTERACTIONS
+======================================== */
+
+.motion-magnetic {
+  --mag-x: 0px;
+  --mag-y: 0px;
+
+  transform: translate3d(
+    var(--mag-x),
+    var(--mag-y),
+    0
+  );
+
+  transition:
+    transform 350ms var(--libelle-ease),
+    box-shadow 350ms var(--libelle-ease),
+    background-color 250ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .motion-magnetic:hover {
+    box-shadow:
+      0 13px 30px rgba(49, 23, 91, 0.16);
+  }
+}
+
+/* ========================================
+   HERO 3D DEPTH
+======================================== */
+
+.motion-tilt-container {
+  perspective: 1200px;
+}
+
+.motion-tilt-surface {
+  --tilt-x: 0deg;
+  --tilt-y: 0deg;
+
+  transform:
+    rotateX(var(--tilt-x))
+    rotateY(var(--tilt-y));
+
+  transform-style: preserve-3d;
+
+  transition:
+    transform 180ms ease-out;
+
+  will-change: transform;
+}
+
+.motion-tilt-container:hover
+  .motion-tilt-surface {
+  transition-duration: 80ms;
+}
+
+/* ========================================
+   INTERACTIVE LINKS
+======================================== */
+
+main a,
+header a,
+footer a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+main a:focus-visible,
+header a:focus-visible,
+footer a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgba(88, 236, 241, 0.72);
+  outline-offset: 4px;
+}
+
+/* ========================================
+   SUBTLE SECTION DEPTH
+======================================== */
+
+.motion-section {
+  position: relative;
+}
+
+.motion-heading {
+  text-wrap: balance;
+}
+
+/* ========================================
+   REDUCED MOTION
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .libelle-motion .motion-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+
+  .libelle-scroll-progress {
+    display: none;
+  }
 }
