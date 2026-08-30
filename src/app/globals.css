@@ -273,3 +273,143 @@ button:focus-visible {
     display: none;
   }
 }
+
+/* ========================================
+   HOMEPAGE BESPOKE INTERACTIONS
+======================================== */
+
+@keyframes libelle-path-change {
+  from {
+    opacity: 0.45;
+    transform: translate3d(18px, 0, 0) scale(0.985);
+    filter: blur(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.home-orbit {
+  animation: home-orbit-float 6s ease-in-out infinite;
+}
+
+.home-orbit-delay {
+  animation: home-orbit-float 7.5s ease-in-out 1.2s infinite;
+}
+
+@keyframes home-orbit-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+.home-pulse-dot {
+  position: relative;
+}
+
+.home-pulse-dot::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border: 1px solid rgba(88, 236, 241, 0.5);
+  border-radius: 999px;
+  animation: home-pulse-ring 2.2s ease-out infinite;
+}
+
+@keyframes home-pulse-ring {
+  0% {
+    opacity: 0.9;
+    transform: scale(0.65);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.8);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-orbit,
+  .home-orbit-delay,
+  .home-pulse-dot::after {
+    animation: none !important;
+  }
+}
+
+/* ========================================
+   HOMEPAGE BESPOKE INTERACTIONS
+======================================== */
+
+@keyframes libelle-path-change {
+  from {
+    opacity: 0.45;
+    transform: translate3d(18px, 0, 0) scale(0.985);
+    filter: blur(4px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.home-orbit {
+  animation: home-orbit-float 6s ease-in-out infinite;
+}
+
+.home-orbit-delay {
+  animation: home-orbit-float 7.5s ease-in-out 1.2s infinite;
+}
+
+@keyframes home-orbit-float {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+.home-pulse-dot {
+  position: relative;
+}
+
+.home-pulse-dot::after {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  border: 1px solid rgba(88, 236, 241, 0.5);
+  border-radius: 999px;
+  animation: home-pulse-ring 2.2s ease-out infinite;
+}
+
+@keyframes home-pulse-ring {
+  0% {
+    opacity: 0.9;
+    transform: scale(0.65);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1.8);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-orbit,
+  .home-orbit-delay,
+  .home-pulse-dot::after {
+    animation: none !important;
+  }
+}
