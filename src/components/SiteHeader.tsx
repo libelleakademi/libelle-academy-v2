@@ -14,19 +14,19 @@ export default function SiteHeader() {
         </Link>
 
         <nav className="hidden items-center gap-7 text-sm text-black/65 lg:flex">
-          <Link href="/de#kurse" className="transition hover:text-[#31175B]">
+          <Link href="/de/kurse" className="transition hover:text-[#31175B]">
             Kurse
           </Link>
-          <Link href="/de#pruefungen" className="transition hover:text-[#31175B]">
+          <Link href="/de/pruefungsvorbereitung" className="transition hover:text-[#31175B]">
             Prüfungsvorbereitung
           </Link>
-          <Link href="/de#libelle" className="transition hover:text-[#31175B]">
+          <Link href="/de/ueber-libelle" className="transition hover:text-[#31175B]">
             Über Libelle
           </Link>
-          <Link href="/de#tutoren" className="transition hover:text-[#31175B]">
+          <Link href="/de/tutoren" className="transition hover:text-[#31175B]">
             Tutoren
           </Link>
-          <Link href="/de#ressourcen" className="transition hover:text-[#31175B]">
+          <Link href="/de/ressourcen" className="transition hover:text-[#31175B]">
             Ressourcen
           </Link>
         </nav>
