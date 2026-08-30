@@ -1,6 +1,441 @@
-import NavPage from "@/components/NavPage";
-import { navPages } from "@/lib/nav-pages";
+import type { Metadata } from "next";
+import Link from "next/link";
+import SiteHeader from "@/components/SiteHeader";
+import { whatsappLink } from "@/lib/whatsapp";
 
-export default function Page() {
-  return <NavPage data={navPages.tutoren} />;
+export const metadata: Metadata = {
+  title: "Tutoren | Libelle Academy",
+  description:
+    "Lernen Sie die Tutorinnen und Tutoren der medizinischen Sprach- und Prüfungsvorbereitung bei Libelle Academy kennen.",
+};
+
+const consultationMessage =
+  "Hallo, ich interessiere mich für einen medizinischen Kurs bei Libelle Academy und möchte wissen, welcher Kurs zu meiner Prüfung passt. Quelle: TUTOREN-SEITE";
+
+const tutors = [
+  {
+    initials: "FM",
+    name: "Firdevs Murad",
+    area: "FSP MEDIZIN",
+    title: "Tutorin für FSP Medizin",
+    text: "Begleitung innerhalb der medizinischen Sprach- und FSP-Vorbereitung bei Libelle Academy.",
+    course: "FSP Medizin Intensivkurs",
+    href: "/de/fsp-medizin",
+  },
+  {
+    initials: "AŞ",
+    name: "Alkış Şensoy",
+    area: "FAMED",
+    title: "Tutor für FaMed",
+    text: "Begleitung innerhalb der medizinischen Kommunikation und FaMed-Prüfungsvorbereitung bei Libelle Academy.",
+    course: "FaMed Intensivkurs",
+    href: "/de/famed",
+  },
+];
+
+const principles = [
+  {
+    number: "01",
+    title: "Praktisch trainieren",
+    text: "Medizinische Sprache wird nicht nur erklärt, sondern in konkreten Kommunikations- und Prüfungssituationen angewendet.",
+  },
+  {
+    number: "02",
+    title: "Aktiv kommunizieren",
+    text: "Anamnese, Patientengespräch, Dokumentation oder Patientenvorstellung werden durch aktive Anwendung trainiert.",
+  },
+  {
+    number: "03",
+    title: "Gezielt Feedback erhalten",
+    text: "Rückmeldung hilft dabei, sprachliche Unsicherheiten und prüfungsrelevante Schwachstellen konkreter zu erkennen.",
+  },
+  {
+    number: "04",
+    title: "Mit Struktur vorbereiten",
+    text: "Die Vorbereitung folgt klaren Kursinhalten und verbindet Sprachtraining mit dem jeweiligen Prüfungsweg.",
+  },
+];
+
+export default function TutorenPage() {
+  return (
+    <main className="min-h-screen bg-white text-[#17131c]">
+      <SiteHeader />
+
+      {/* HERO */}
+      <section className="overflow-hidden bg-[#D2ECFF]/55">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:min-h-[650px] lg:grid-cols-[1.05fr_.95fr] lg:px-8">
+          <div>
+            <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
+              TUTOREN
+            </div>
+
+            <h1 className="mt-5 max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-.045em] sm:text-6xl lg:text-7xl">
+              Medizinische Sprache mit persönlicher Begleitung trainieren.
+            </h1>
+
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-black/60">
+              Unsere Tutorinnen und Tutoren begleiten die medizinische Sprach-
+              und Prüfungsvorbereitung mit einem klaren Fokus auf aktive
+              Kommunikation, Anwendung und Prüfungstraining.
+            </p>
+
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="#team"
+                className="rounded-full bg-[#31175B] px-7 py-3.5 text-center text-sm font-semibold text-white"
+              >
+                Tutoren kennenlernen
+              </a>
+
+              <Link
+                href="/de/pruefungsvorbereitung"
+                className="rounded-full border border-black/10 bg-white px-7 py-3.5 text-center text-sm font-semibold"
+              >
+                Prüfungsvorbereitung ansehen
+              </Link>
+            </div>
+          </div>
+
+          <div className="rounded-[2.8rem] bg-[#17131c] p-6 shadow-[0_30px_90px_rgba(49,23,91,.16)]">
+            <div className="rounded-[2.1rem] bg-[#f3eff7] p-7 sm:p-9">
+              <div className="text-xs font-bold tracking-[.17em] text-[#31175B]">
+                MEDICAL GERMAN
+              </div>
+
+              <div className="mt-3 text-3xl font-semibold">
+                Lernen für Kommunikation – nicht nur für Theorie.
+              </div>
+
+              <div className="mt-7 space-y-3">
+                {[
+                  "Medizinische Fachsprache",
+                  "Patientenkommunikation",
+                  "Prüfungsorientiertes Training",
+                  "Feedback & Anwendung",
+                ].map((item) => (
+                  <div
+                    key={item}
+                    className="rounded-2xl bg-white px-5 py-4 text-sm font-semibold"
+                  >
+                    ✓ {item}
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-5 rounded-[1.6rem] bg-[#31175B] p-5 text-white">
+                <div className="text-xs font-bold tracking-[.15em] text-[#58ECF1]">
+                  DER FOKUS
+                </div>
+
+                <p className="mt-2 leading-7 text-white/70">
+                  Medizinische Kommunikation strukturiert lernen und aktiv
+                  unter prüfungsnahen Bedingungen anwenden.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TEAM */}
+      <section id="team" className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+        <div className="max-w-4xl">
+          <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
+            DAS TEAM
+          </div>
+
+          <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
+            Ihre Begleitung in der medizinischen Prüfungsvorbereitung.
+          </h2>
+
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">
+            Die Tutorenzuordnung orientiert sich an den jeweiligen
+            medizinischen Kurs- und Prüfungsschwerpunkten.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-6 lg:grid-cols-2">
+          {tutors.map((tutor) => (
+            <article
+              key={tutor.name}
+              className="overflow-hidden rounded-[2.5rem] border border-black/5 bg-[#f7f9fb]"
+            >
+              <div className="grid min-h-[430px] sm:grid-cols-[.8fr_1.2fr]">
+                <div className="flex items-center justify-center bg-[#31175B] p-8">
+                  <div className="flex h-40 w-40 items-center justify-center rounded-full border border-white/20 bg-white/10 text-5xl font-semibold text-white">
+                    {tutor.initials}
+                  </div>
+                </div>
+
+                <div className="flex flex-col justify-center p-8 sm:p-10">
+                  <div className="text-xs font-bold tracking-[.16em] text-[#17666a]">
+                    {tutor.area}
+                  </div>
+
+                  <h3 className="mt-4 text-3xl font-semibold">
+                    {tutor.name}
+                  </h3>
+
+                  <div className="mt-2 text-lg font-medium text-[#31175B]">
+                    {tutor.title}
+                  </div>
+
+                  <p className="mt-5 leading-7 text-black/55">
+                    {tutor.text}
+                  </p>
+
+                  <Link
+                    href={tutor.href}
+                    className="mt-8 inline-flex w-fit rounded-full bg-[#31175B] px-6 py-3 text-sm font-semibold text-white"
+                  >
+                    {tutor.course} ansehen
+                  </Link>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <div className="mt-6 rounded-[2rem] border border-dashed border-[#31175B]/15 bg-[#f7f5f9] p-8 sm:p-10">
+          <div className="text-xs font-bold tracking-[.16em] text-[#31175B]">
+            WEITERE PROFILE
+          </div>
+
+          <h3 className="mt-4 text-2xl font-semibold">
+            Das Tutorenteam kann hier erweitert werden.
+          </h3>
+
+          <p className="mt-4 max-w-3xl leading-7 text-black/50">
+            Weitere Tutorinnen und Tutoren sowie ausführliche Profile,
+            Qualifikationen und Fotos werden ergänzt, sobald die finalen
+            Informationen vorliegen.
+          </p>
+        </div>
+      </section>
+
+      {/* PRINCIPLES */}
+      <section className="bg-[#31175B] text-white">
+        <div className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+          <div className="max-w-4xl">
+            <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
+              IM UNTERRICHT
+            </div>
+
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
+              Gute Prüfungsvorbereitung entsteht durch aktive Anwendung.
+            </h2>
+          </div>
+
+          <div className="mt-12 grid gap-4 md:grid-cols-2">
+            {principles.map((item) => (
+              <article
+                key={item.number}
+                className="rounded-[2rem] bg-white/10 p-8"
+              >
+                <div className="text-xs font-bold text-[#58ECF1]">
+                  {item.number}
+                </div>
+
+                <h3 className="mt-5 text-2xl font-semibold">
+                  {item.title}
+                </h3>
+
+                <p className="mt-4 leading-7 text-white/60">
+                  {item.text}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* MEDICAL PATHS */}
+      <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+        <div className="max-w-4xl">
+          <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
+            MEDIZINISCHE LERNWEGE
+          </div>
+
+          <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
+            Der passende Tutor gehört zum passenden Prüfungsweg.
+          </h2>
+
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">
+            Entscheidend ist nicht nur, wer unterrichtet, sondern welche
+            medizinische Prüfung Sie vorbereiten und welche Trainingsform Sie
+            aktuell benötigen.
+          </p>
+        </div>
+
+        <div className="mt-12 grid gap-5 lg:grid-cols-3">
+          <Link
+            href="/de/fsp-medizin"
+            className="rounded-[2rem] bg-[#f7f9fb] p-8 transition hover:-translate-y-1"
+          >
+            <div className="text-xs font-bold tracking-[.15em] text-[#17666a]">
+              FSP MEDIZIN
+            </div>
+
+            <h3 className="mt-5 text-2xl font-semibold">
+              FSP Medizin Intensivkurs
+            </h3>
+
+            <p className="mt-4 leading-7 text-black/50">
+              Medizinische Fachsprache, Anamnese, Dokumentation und
+              Patientenvorstellung.
+            </p>
+
+            <div className="mt-8 text-sm font-semibold text-[#31175B]">
+              Kurs ansehen →
+            </div>
+          </Link>
+
+          <Link
+            href="/de/famed"
+            className="rounded-[2rem] bg-[#f7f9fb] p-8 transition hover:-translate-y-1"
+          >
+            <div className="text-xs font-bold tracking-[.15em] text-[#17666a]">
+              FAMED
+            </div>
+
+            <h3 className="mt-5 text-2xl font-semibold">
+              FaMed Intensivkurs
+            </h3>
+
+            <p className="mt-4 leading-7 text-black/50">
+              Medizinische Kommunikation, Patientenaufklärung,
+              Dokumentation und Prüfungssimulationen.
+            </p>
+
+            <div className="mt-8 text-sm font-semibold text-[#31175B]">
+              Kurs ansehen →
+            </div>
+          </Link>
+
+          <Link
+            href="/de/fsp-zahnmedizin"
+            className="rounded-[2rem] bg-[#D2ECFF]/60 p-8 transition hover:-translate-y-1"
+          >
+            <div className="text-xs font-bold tracking-[.15em] text-[#17666a]">
+              ZAHNMEDIZIN
+            </div>
+
+            <h3 className="mt-5 text-2xl font-semibold">
+              FSP & FaMed Zahnmedizin
+            </h3>
+
+            <p className="mt-4 leading-7 text-black/50">
+              Medizinische Fachsprache und Prüfungsvorbereitung speziell für
+              Zahnärztinnen und Zahnärzte.
+            </p>
+
+            <div className="mt-8 text-sm font-semibold text-[#31175B]">
+              Kurs ansehen →
+            </div>
+          </Link>
+        </div>
+      </section>
+
+      {/* SIMULATIONS */}
+      <section className="bg-[#f7f5f9]">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-24 lg:grid-cols-[1fr_1fr] lg:px-8">
+          <div>
+            <div className="text-xs font-bold tracking-[.18em] text-[#31175B]">
+              VOM UNTERRICHT ZUR PRÜFUNG
+            </div>
+
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
+              Lernen wird besonders wertvoll, wenn Sie es unter
+              Prüfungsbedingungen testen.
+            </h2>
+
+            <p className="mt-6 max-w-xl text-lg leading-8 text-black/55">
+              Prüfungssimulationen helfen dabei, das Gelernte praktisch
+              anzuwenden und gezieltes Feedback für die weitere Vorbereitung
+              zu erhalten.
+            </p>
+
+            <Link
+              href="/de/simulationen"
+              className="mt-8 inline-block rounded-full bg-[#31175B] px-7 py-3.5 text-sm font-semibold text-white"
+            >
+              Simulationen ansehen
+            </Link>
+          </div>
+
+          <div className="rounded-[2.5rem] bg-white p-8 sm:p-10">
+            <div className="space-y-4">
+              {[
+                ["01", "Prüfungssituation erleben"],
+                ["02", "Kommunikation anwenden"],
+                ["03", "Feedback erhalten"],
+                ["04", "Gezielter weitertrainieren"],
+              ].map(([number, title]) => (
+                <div
+                  key={number}
+                  className="flex items-center gap-5 rounded-[1.6rem] bg-[#f7f9fb] p-5"
+                >
+                  <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#31175B] text-xs font-bold text-white">
+                    {number}
+                  </span>
+
+                  <span className="font-semibold">{title}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FUTURE PHOTO NOTE */}
+      <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+        <div className="rounded-[2.5rem] bg-[#D2ECFF]/50 p-9 sm:p-12">
+          <div className="max-w-3xl">
+            <div className="text-xs font-bold tracking-[.17em] text-[#17666a]">
+              PROFILSEITE IN ENTWICKLUNG
+            </div>
+
+            <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">
+              Persönliche Profile werden Schritt für Schritt ergänzt.
+            </h2>
+
+            <p className="mt-6 text-lg leading-8 text-black/55">
+              Sobald finale Porträtfotos, berufliche Angaben und
+              Qualifikationen vorliegen, können die Tutorprofile hier
+              ausführlicher dargestellt werden.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FINAL CTA */}
+      <section className="px-5 pb-24 lg:px-8">
+        <div className="mx-auto grid max-w-7xl gap-8 rounded-[2.8rem] bg-[#17131c] p-9 text-white sm:p-14 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div>
+            <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
+              IHR NÄCHSTER SCHRITT
+            </div>
+
+            <h2 className="mt-4 max-w-3xl text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
+              Welche Prüfung bereiten Sie gerade vor?
+            </h2>
+
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/55">
+              Schreiben Sie uns kurz Ihr Prüfungsziel und Ihren aktuellen
+              Stand. Wir helfen Ihnen beim passenden Kurs.
+            </p>
+          </div>
+
+          <a
+            href={whatsappLink(consultationMessage)}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-full bg-white px-8 py-4 text-center text-sm font-semibold text-[#31175B]"
+          >
+            Über WhatsApp beraten lassen
+          </a>
+        </div>
+      </section>
+    </main>
+  );
 }
