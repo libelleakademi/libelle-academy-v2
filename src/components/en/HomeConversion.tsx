@@ -7,32 +7,32 @@ import { whatsappLink } from "@/lib/whatsapp";
 const paths = [
   {
     id: "german",
-    label: "DEUTSCH AUFBAUEN",
-    question: "Ich möchte mein Deutsch bis B2 entwickeln.",
-    title: "Deutsch A1–B2",
+    label: "BUILD YOUR GERMAN",
+    question: "I want to develop my German up to B2.",
+    title: "German A1–B2",
     text: "Wenn B2 Ihr Ziel ist, brauchen Sie nicht vier zufällige Kurse, sondern einen klaren Sprachweg, bei dem jede Stufe auf der vorherigen aufbaut.",
     next: "Aktuelles Niveau → passende Stufe → Schritt für Schritt bis B2",
-    href: "/de/pakete/deutsch-a1-b2",
+    href: "/en/pakete/deutsch-a1-b2",
     cta: "A1–B2 Lernweg ansehen",
   },
   {
     id: "exam",
-    label: "PRÜFUNG VORBEREITEN",
-    question: "Ich bereite mich auf FSP, FaMed oder Zahnmedizin vor.",
-    title: "Medizinische Prüfungsvorbereitung",
+    label: "PREPARE FOR YOUR EXAM",
+    question: "I am preparing for FSP, FaMed or a dentistry exam.",
+    title: "Medical Exam Preparation",
     text: "Hier reicht es nicht, medizinische Wörter zu kennen. Sprache muss in Anamnese, Gespräch, Dokumentation und Prüfungssituation abrufbar werden.",
     next: "Prüfung bestimmen → gezielt vorbereiten → realistisch simulieren",
-    href: "/de/pruefungsvorbereitung",
+    href: "/en/pruefungsvorbereitung",
     cta: "Prüfungsweg finden",
   },
   {
     id: "simulation",
-    label: "FAST PRÜFUNGSBEREIT",
-    question: "Ich habe schon gelernt und möchte mich realistisch testen.",
-    title: "Prüfungssimulationen",
+    label: "ALMOST EXAM-READY",
+    question: "I have already prepared and want to test myself realistically.",
+    title: "Exam Simulations",
     text: "Kurz vor der Prüfung ist mehr Theorie nicht immer die Lösung. Jetzt wird entscheidend, was unter Zeitdruck tatsächlich abrufbar ist.",
     next: "Simulation → individuelles Feedback → gezielt nachschärfen",
-    href: "/de/simulationen",
+    href: "/en/simulationen",
     cta: "Simulationen ansehen",
   },
 ];
@@ -72,16 +72,15 @@ export default function HomeConversion() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="max-w-4xl">
             <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
-              WAS IST IHR ZIEL?
+              WHAT IS YOUR GOAL?
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.04em] sm:text-5xl">
-              Beginnen Sie nicht mit einem Kurs. Beginnen Sie mit Ihrem Ziel.
+              Do not start with a course. Start with your goal.
             </h2>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-white/55">
-              Der sinnvollste Kurs hängt davon ab, wo Sie heute stehen und
-              was Sie als Nächstes erreichen möchten.
+              The right course depends on where you are today and what you want to achieve next.
             </p>
           </div>
 
@@ -130,7 +129,7 @@ export default function HomeConversion() {
               className="rounded-[2.4rem] bg-[#f3eff7] p-8 text-[#17131c] shadow-[0_30px_90px_rgba(0,0,0,.18)] sm:p-10"
             >
               <div className="text-xs font-bold tracking-[.16em] text-[#31175B]">
-                IHRE RICHTUNG
+                YOUR DIRECTION
               </div>
 
               <h3 className="mt-5 text-3xl font-semibold">
@@ -143,7 +142,7 @@ export default function HomeConversion() {
 
               <div className="mt-7 rounded-[1.5rem] bg-white p-5">
                 <div className="text-xs font-bold text-[#17666a]">
-                  SINNVOLLER NÄCHSTER SCHRITT
+                  SENSIBLE NEXT STEP
                 </div>
                 <p className="mt-3 font-medium">{current.next}</p>
               </div>
@@ -162,7 +161,7 @@ export default function HomeConversion() {
                   )}
                   className="rounded-full border border-black/10 bg-white px-6 py-3 text-center text-sm font-semibold"
                 >
-                  Unverbindlich Orientierung erhalten
+                  Get free guidance
                 </a>
               </div>
             </div>
@@ -174,11 +173,11 @@ export default function HomeConversion() {
         <div className="grid gap-12 lg:grid-cols-[.75fr_1.25fr]">
           <div>
             <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-              VOR DER ENTSCHEIDUNG
+              BEFORE YOU DECIDE
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.04em] sm:text-5xl">
-              Vielleicht ist der Preis gar nicht Ihre größte Frage.
+              Price may not actually be your biggest question.
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-black/55">

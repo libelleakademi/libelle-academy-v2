@@ -5,18 +5,42 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { whatsappLink } from "@/lib/whatsapp";
 
-const navItems = [
-  { label: "Kurse", href: "/de/kurse" },
-  { label: "Prüfungsvorbereitung", href: "/de/pruefungsvorbereitung" },
+const navDE = [
+  { label: "Deutsch A1–B2", href: "/de/pakete/deutsch-a1-b2" },
+  { label: "Medizinische Kurse", href: "/de/pruefungsvorbereitung" },
+  { label: "Simulationen", href: "/de/simulationen" },
   { label: "Über Libelle", href: "/de/ueber-libelle" },
-  { label: "Tutoren", href: "/de/tutoren" },
   { label: "Ressourcen", href: "/de/ressourcen" },
   { label: "Blog", href: "/de/blog" },
+];
+
+const navTR = [
+  { label: "Almanca A1–B2", href: "/tr/pakete/deutsch-a1-b2" },
+  { label: "Medikal Kurslar", href: "/tr/pruefungsvorbereitung" },
+  { label: "Simülasyonlar", href: "/tr/simulationen" },
+  { label: "Libelle Hakkında", href: "/tr/ueber-libelle" },
+  { label: "Kaynaklar", href: "/tr/ressourcen" },
+  { label: "Blog", href: "/tr/blog" },
+];
+
+const navEN = [
+  { label: "German A1–B2", href: "/en/pakete/deutsch-a1-b2" },
+  { label: "Medical Courses", href: "/en/pruefungsvorbereitung" },
+  { label: "Simulations", href: "/en/simulationen" },
+  { label: "About Libelle", href: "/en/ueber-libelle" },
+  { label: "Resources", href: "/en/ressourcen" },
+  { label: "Blog", href: "/en/blog" },
 ];
 
 export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
+
+  const navItems = pathname.startsWith("/tr")
+    ? navTR
+    : pathname.startsWith("/en")
+    ? navEN
+    : navDE;
 
   const isActive = (href: string) =>
     pathname === href || pathname.startsWith(`${href}/`);

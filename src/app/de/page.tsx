@@ -101,7 +101,7 @@ export default function GermanHomePage() {
                 )}
                 className="rounded-full border border-black/10 bg-white px-7 py-3.5 text-center text-sm font-semibold"
               >
-                Persönlich beraten lassen
+                Unverbindlich Orientierung erhalten
               </a>
             </div>
 
@@ -114,7 +114,7 @@ export default function GermanHomePage() {
           </div>
 
           <div className="relative">
-            <div className="home-orbit absolute left-8 -top-10 z-10 hidden rounded-2xl bg-white px-5 py-4 shadow-xl sm:block">
+            <div className="home-orbit absolute left-8 -top-10 z-10 hidden rounded-2xl bg-white px-5 py-4 shadow-xl lg:block">
               <div className="text-[10px] font-bold tracking-[.14em] text-[#17666a]">
                 LIVE + DIGITAL
               </div>
@@ -123,7 +123,7 @@ export default function GermanHomePage() {
               </div>
             </div>
 
-            <div className="home-orbit-delay absolute -right-2 -bottom-6 z-10 hidden rounded-2xl bg-[#58ECF1] px-5 py-4 shadow-xl sm:block">
+            <div className="home-orbit-delay absolute -right-2 -bottom-6 z-10 hidden rounded-2xl bg-[#58ECF1] px-5 py-4 shadow-xl lg:block">
               <div className="text-[10px] font-bold tracking-[.14em]">
                 PRÜFUNGSNAH
               </div>
@@ -190,6 +190,105 @@ export default function GermanHomePage() {
                   </p>
                 </div>
               </div>
+            </div>
+
+            {/* MOBILE / TABLET HERO CARDS */}
+            <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:hidden">
+              <div className="home-orbit rounded-2xl bg-white px-5 py-4 shadow-xl">
+                <div className="text-[10px] font-bold tracking-[.14em] text-[#17666a]">
+                  LIVE + DIGITAL
+                </div>
+                <div className="mt-1 text-sm font-semibold">
+                  Lernen zwischen den Terminen
+                </div>
+              </div>
+
+              <div className="home-orbit-delay rounded-2xl bg-[#58ECF1] px-5 py-4 shadow-xl">
+                <div className="text-[10px] font-bold tracking-[.14em]">
+                  PRÜFUNGSNAH
+                </div>
+                <div className="mt-1 text-sm font-semibold">
+                  Anwenden statt nur lesen
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      {/* MARKETING-PROOF */}
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+          <div className="overflow-hidden rounded-[2.8rem] bg-[#17131c] text-white shadow-[0_30px_90px_rgba(49,23,91,.12)]">
+            <div className="grid gap-0 lg:grid-cols-[1.15fr_.85fr]">
+
+              <div className="p-8 sm:p-10 lg:p-14">
+                <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
+                  WARUM LIBELLE
+                </div>
+
+                <h2 className="mt-5 max-w-3xl text-3xl font-semibold leading-[1.08] tracking-[-.04em] sm:text-4xl lg:text-5xl">
+                  Ein Lernweg.
+                  <span className="block text-white/55">
+                    Von allgemeinem Deutsch bis zur medizinischen Prüfung.
+                  </span>
+                </h2>
+
+                <p className="mt-7 max-w-2xl text-lg leading-8 text-white/55">
+                  Libelle Academy verbindet Deutschunterricht, medizinische
+                  Fachsprache und realistische Prüfungsvorbereitung in einem
+                  strukturierten Lernweg.
+                </p>
+
+                <div className="mt-8 flex flex-wrap gap-2">
+                  {[
+                    "Deutsch A1–B2",
+                    "FSP Medizin",
+                    "FaMed",
+                    "Zahnmedizin",
+                    "Simulationen",
+                  ].map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-white/10 bg-white/[.06] px-4 py-2 text-xs font-semibold text-white/75"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="m-5 rounded-[2.2rem] bg-[#f3eff7] p-8 text-[#17131c] sm:m-7 sm:p-10 lg:m-8">
+                <div className="inline-flex items-center gap-2 rounded-full bg-[#58ECF1]/35 px-4 py-2 text-[10px] font-bold tracking-[.15em] text-[#17666a]">
+                  EXTERNE EINORDNUNG
+                </div>
+
+                <h3 className="mt-6 text-2xl font-semibold leading-tight sm:text-3xl">
+                  Bei FaMed als Sprachschule gelistet.
+                </h3>
+
+                <p className="mt-5 leading-7 text-black/55">
+                  FaMed führt Libelle Academy in seiner offiziellen Übersicht
+                  der Sprachschulen für die Vorbereitung auf das Prüfungsformat.
+                </p>
+
+                <a
+                  href="https://famed-test.de/sprachschulen/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-7 inline-flex items-center gap-2 rounded-full bg-[#31175B] px-6 py-3 text-sm font-semibold text-white"
+                >
+                  Eintrag bei FaMed ansehen
+                  <span aria-hidden="true">↗</span>
+                </a>
+
+                <p className="mt-5 text-xs leading-5 text-black/35">
+                  FaMed beschreibt für gelistete Sprachschulen definierte
+                  Qualitätskriterien für Vorbereitungskurse.
+                </p>
+              </div>
+
             </div>
           </div>
         </div>
@@ -335,6 +434,90 @@ export default function GermanHomePage() {
         <HomeConversion />
       </div>
 
+
+
+      {/* SOCIAL-PROOF */}
+      <section className="bg-[#D2ECFF]/30 py-24">
+        <div className="mx-auto max-w-7xl px-5 lg:px-8">
+
+          <div className="grid gap-10 lg:grid-cols-[.72fr_1.28fr]">
+
+            <div>
+              <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
+                ERFAHRUNGEN AUS DER VORBEREITUNG
+              </div>
+
+              <h2 className="mt-5 text-4xl font-semibold leading-[1.06] tracking-[-.045em] sm:text-5xl">
+                Nicht nur der Lernweg zählt.
+                <span className="block text-[#31175B]">
+                  Sondern wie er sich in der Praxis anfühlt.
+                </span>
+              </h2>
+
+              <p className="mt-6 max-w-lg text-lg leading-8 text-black/50">
+                Zwei Stimmen aus bereits öffentlich geteilten
+                Erfahrungsberichten von Libelle Academy.
+              </p>
+            </div>
+
+            <div className="grid gap-4">
+
+              <article className="rounded-[2.2rem] bg-white p-7 shadow-[0_20px_60px_rgba(49,23,91,.07)] sm:p-9">
+                <div className="text-4xl leading-none text-[#58ECF1]">
+                  “
+                </div>
+
+                <blockquote className="mt-3 text-xl font-medium leading-8 sm:text-2xl">
+                  Sehr effektiver und lehrreicher Kurs. Ich empfehle ihn
+                  besonders Kollegen, die in Deutschland arbeiten möchten.
+                </blockquote>
+
+                <div className="mt-7 flex flex-wrap items-end justify-between gap-4 border-t border-black/5 pt-6">
+                  <div>
+                    <div className="font-semibold">
+                      Dr. Hayriye Erpak
+                    </div>
+                    <div className="mt-1 text-sm text-black/40">
+                      Zahnärztin · Hamburg
+                    </div>
+                  </div>
+
+                  <div className="rounded-full bg-[#f3eff7] px-4 py-2 text-xs font-semibold text-[#31175B]">
+                    FSP Zahnmedizin
+                  </div>
+                </div>
+              </article>
+
+              <article className="rounded-[2.2rem] bg-[#17131c] p-7 text-white shadow-[0_20px_60px_rgba(49,23,91,.10)] sm:p-9">
+                <div className="text-4xl leading-none text-[#58ECF1]">
+                  “
+                </div>
+
+                <blockquote className="mt-3 text-xl font-medium leading-8 sm:text-2xl">
+                  Vor allem möchte ich mich bei Ezgi bedanken für die sehr
+                  effiziente und produktive Gestaltung dieses Kurses.
+                </blockquote>
+
+                <div className="mt-7 flex flex-wrap items-end justify-between gap-4 border-t border-white/10 pt-6">
+                  <div>
+                    <div className="font-semibold">
+                      Doz. Dr. Özge Özdal Zincir
+                    </div>
+                    <div className="mt-1 text-sm text-white/40">
+                      Fachärztin für Innere Medizin · Berlin
+                    </div>
+                  </div>
+
+                  <div className="rounded-full bg-white/10 px-4 py-2 text-xs font-semibold text-[#58ECF1]">
+                    FSP Medizin
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* MEDICAL COURSES */}
       <section className="bg-[#f7f5f9] py-24">
