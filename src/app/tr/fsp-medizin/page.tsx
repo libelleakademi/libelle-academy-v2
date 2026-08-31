@@ -508,7 +508,7 @@ export default function FspMedizinPage() {
                 rel="noreferrer"
                 className="mt-8 inline-block rounded-full bg-[#31175B] px-7 py-3.5 text-sm font-semibold text-white"
               >
-                Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+                FSP · FAMED · DİŞ HEKİMLİĞİ
               </a>
             </div>
           </div>

@@ -113,7 +113,7 @@ export default function PruefungsvorbereitungPage() {
 
             <div className="home-orbit absolute right-10 -top-10 z-20 hidden rounded-2xl bg-[#58ECF1] px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.18)] lg:block">
               <div className="text-[10px] font-bold tracking-[.14em]">
-                Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+                FSP · FAMED · DİŞ HEKİMLİĞİ
               </div>
               <div className="mt-1 text-sm font-semibold">
                 Sınavınıza uygun hazırlanın
@@ -171,7 +171,7 @@ export default function PruefungsvorbereitungPage() {
           <div className="mt-4 grid grid-cols-2 gap-3 lg:hidden">
             <div className="home-orbit rounded-2xl bg-[#58ECF1] px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
               <div className="text-[9px] font-bold tracking-[.13em]">
-                Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+                FSP · FAMED · DİŞ HEKİMLİĞİ
               </div>
               <div className="mt-1 text-xs font-semibold">
                 Sınavınıza uygun hazırlanın

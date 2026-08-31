@@ -6,7 +6,7 @@ import { coursePages, getCoursePage } from "@/lib/course-pages";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export function generateStaticParams() {
-  return coursePages.filter((course) => course.slug !== "famed-offline" && course.slug !== "fsp ilacı" && course.slug !== "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." && course.slug !== "famed" && course.slug !== "simülasyonlar").map((course) => ({ slug: course.slug }));
+  return coursePages.filter((course) => course.slug !== "famed-offline" && course.slug !== "fsp ilacı" && course.slug !== "FSP · FAMED · DİŞ HEKİMLİĞİ" && course.slug !== "famed" && course.slug !== "simülasyonlar").map((course) => ({ slug: course.slug }));
 }
 
 export async function generateMetadata({
@@ -65,7 +65,7 @@ export default async function CoursePage({
                 href={whatsappLink(message)}
                 className="rounded-full bg-[#31175B] px-6 py-3.5 text-sm font-semibold text-white"
               >
-                Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+                FSP · FAMED · DİŞ HEKİMLİĞİ
               </a>
 
               <a

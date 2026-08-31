@@ -11,7 +11,7 @@ const situations = [
     question: "Çalıştım ama gerçekten hazır olup olmadığımı bilmiyorum.",
     title: "Tahmin etmeyin. Mevcut seviyenizi gerçekten görün.",
     text: "Bir simülasyon size sınav benzeri koşullar altında neyin işe yaradığını ve dilin, yapının veya tepkilerin hala belirsiz olduğu yerleri gösterir.",
-    next: "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+    next: "FSP · FAMED · DİŞ HEKİMLİĞİ",
   },
   {
     id: "pressure",

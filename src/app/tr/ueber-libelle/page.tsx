@@ -327,7 +327,7 @@ export default function UeberLibellePage() {
             <div className="rounded-[2rem] bg-white p-8">
               <div className="text-xs font-bold text-[#17666a]">03</div>
               <h3 className="mt-5 text-2xl font-semibold">
-                Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+                FSP · FAMED · DİŞ HEKİMLİĞİ
               </h3>
               <p className="mt-4 leading-7 text-black/50">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
             </div>

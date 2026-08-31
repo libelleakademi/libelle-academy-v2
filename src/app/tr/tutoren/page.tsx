@@ -428,7 +428,7 @@ export default function TutorenPage() {
             rel="noreferrer"
             className="rounded-full bg-white px-8 py-4 text-center text-sm font-semibold text-[#31175B]"
           >
-            Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+            FSP · FAMED · DİŞ HEKİMLİĞİ
           </a>
         </div>
       </section>

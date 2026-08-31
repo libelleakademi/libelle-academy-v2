@@ -5,7 +5,7 @@ import EditorialStorySection from "@/components/EditorialStorySection";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
-  title: "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+  title: "FSP · FAMED · DİŞ HEKİMLİĞİ",
   description:
     "FaMed'e esnek şekilde hazırlanın: yapılandırılmış modüller, dokümantasyonlar ve alıştırmalar. FaMed Offline Kursuuuuuuu 200 €, 5 sınav simülasyonu dahil paket 575 €.",
 };
@@ -319,7 +319,7 @@ export default function FamedOfflinePage() {
               rel="noreferrer"
               className="mt-8 inline-block rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-[#17131c]"
             >
-              Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
+              FSP · FAMED · DİŞ HEKİMLİĞİ
             </a>
           </div>
         </div>
