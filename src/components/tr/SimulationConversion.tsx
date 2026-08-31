@@ -10,8 +10,8 @@ const situations = [
     label: "HÂLÂ EMİN DEĞİLİM",
     question: "Çalıştım ama gerçekten hazır olup olmadığımı bilmiyorum.",
     title: "Tahmin etmeyin. Mevcut seviyenizi gerçekten görün.",
-    text: "Eine Simulation zeigt Ihnen, was unter prüfungsnahen Bedingungen bereits funktioniert – und wo Sprache, Struktur oder Reaktion noch unsicher werden.",
-    next: "Simulieren → Feedback bekommen → gezielter weiterlernen",
+    text: "Bir simülasyon size sınav benzeri koşullar altında neyin işe yaradığını ve dilin, yapının veya tepkilerin hala belirsiz olduğu yerleri gösterir.",
+    next: "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
   },
   {
     id: "pressure",
@@ -19,8 +19,8 @@ const situations = [
     label: "BASKI ALTINDA",
     question: "Çalışırken yapabiliyorum ama zaman baskısında güvenimi kaybediyorum.",
     title: "Sınav yalnızca bilgi değil, bilgiyi kullanabilme becerisi ister.",
-    text: "Wenn mehrere Aufgaben gleichzeitig zusammenkommen, verändert sich die Situation. Genau diesen Wechsel vom Wissen zur Anwendung sollte man vor dem echten Prüfungstag erleben.",
-    next: "Prüfungsdruck erleben → Reaktion analysieren → Routinen festigen",
+    text: "Birkaç görev aynı anda bir araya geldiğinde durum değişir. Bu tam olarak gerçek sınav gününden önce deneyimlemeniz gereken bilgiden uygulamaya geçiştir.",
+    next: "Sınav baskısını deneyimleyin → tepkileri analiz edin → rutinleri pekiştirin",
   },
   {
     id: "final",
@@ -28,31 +28,31 @@ const situations = [
     label: "SON KONTROL",
     question: "Sınavım yakında ve artık zamanımı yanlış noktaya harcamak istemiyorum.",
     title: "Artık hazırlığınız daha hedefli olmalı.",
-    text: "Kurz vor der Prüfung ist allgemeines Weiterlernen oft weniger wertvoll als zu wissen, welche zwei oder drei Punkte tatsächlich noch Aufmerksamkeit brauchen.",
-    next: "Realistisch testen → Schwachstellen priorisieren → letzte Phase fokussieren",
+    text: "Sınavdan kısa bir süre önce genel olarak çalışmaya devam etmek, hangi iki veya üç noktaya gerçekten dikkat edilmesi gerektiğini bilmekten genellikle daha az değerlidir.",
+    next: "Gerçekçi bir şekilde test edin → güvenlik açıklarını önceliklendirin → son aşamaya odaklanın",
   },
 ];
 
 const faq = [
   [
     "Simülasyon beklediğimden kötü geçerse ne olur?",
-    "Dann hat sie einen wichtigen Zweck erfüllt: Sie haben die Unsicherheit vor der echten Prüfung entdeckt. Das Feedback hilft anschließend dabei, Ihre verbleibende Lernzeit konkreter einzusetzen.",
+    "O zaman önemli bir amaca hizmet etti: Gerçek sınavdan önce belirsizliği keşfettiniz. Geri bildirim daha sonra kalan öğrenme sürenizi daha spesifik olarak kullanmanıza yardımcı olur.",
   ],
   [
     "Tek bir simülasyon yeterli olur mu?",
-    "Das hängt von Ihrem Stand ab. Eine Simulation kann einen sehr guten ersten Realitätscheck geben. Wenn sich mehrere Unsicherheiten zeigen oder Sie Abläufe wiederholt unter Druck trainieren möchten, können mehrere Simulationen sinnvoll sein.",
+    "Bu sizin durumunuza bağlıdır. Bir simülasyon çok iyi bir ilk gerçeklik kontrolü sağlayabilir. Birkaç belirsizlik ortaya çıkarsa veya baskı altındaki süreçleri tekrar tekrar eğitmek istiyorsanız çeşitli simülasyonlar faydalı olabilir.",
   ],
   [
-    "Yoğun kurs aldıysam yine de simülasyona ihtiyacım var mı?",
-    "Ein Kurs und eine Simulation erfüllen unterschiedliche Aufgaben. Im Kurs bauen und trainieren Sie Fähigkeiten. In der Simulation überprüfen Sie, wie zuverlässig diese Fähigkeiten in einer zusammenhängenden Prüfungssituation abrufbar sind.",
+    "Yoğun ders aldıysam yine de simülasyona ihtiyacım var mı?",
+    "Gerçekçi sınav simülasyonu ve hedefli geri bildirim.",
   ],
   [
     "Simülasyon sırasında kötü görünmekten korkuyorum.",
-    "Die Simulation ist genau der Ort, an dem Fehler passieren dürfen. Sie dient nicht dazu, Sie zu bewerten wie am echten Prüfungstag, sondern Unsicherheiten sichtbar zu machen, solange noch Zeit besteht, daran zu arbeiten.",
+    "Simülasyon tam olarak hataların olmasına izin verilen yerdir. Sizi gerçek sınav gününde olduğu gibi değerlendirmek değil, henüz üzerinde çalışmak için zaman varken belirsizlikleri görünür kılmak amaçlanıyor.",
   ],
   [
     "Şimdi WhatsApp'tan yazarsam ne olur?",
-    "Sie nennen uns Ihre Prüfung und ungefähr, wo Sie in der Vorbereitung stehen. Danach können freie Termine und die passende Simulationsoption besprochen werden. Sie müssen vorher noch nichts endgültig auswählen.",
+    "Bize sınavınızı ve hazırlık sürecinizde yaklaşık olarak nerede olduğunuzu anlatırsınız. Serbest tarihler ve uygun simülasyon seçeneği daha sonra tartışılabilir. Önceden son bir seçim yapmanıza gerek yoktur.",
   ],
 ];
 
@@ -143,7 +143,7 @@ export default function SimulationConversion() {
 
               <a
                 href={whatsappLink(
-                  `Hallo, ich interessiere mich für eine Prüfungssimulation. Meine Situation: ${current.question} Quelle: SIM-DECISION`
+                  `Merhaba, sınav simülasyonu ile ilgileniyorum. Durumum: ${current.question} Kaynak: SIM-DECISION`
                 )}
                 className="mt-8 inline-block rounded-full bg-[#31175B] px-6 py-3.5 text-center text-sm font-semibold text-white"
               >

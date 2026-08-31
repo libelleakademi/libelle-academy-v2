@@ -10,53 +10,53 @@ const paths = [
     label: "ALMANCA GELİŞTİR",
     question: "Almancamı B2 seviyesine kadar geliştirmek istiyorum.",
     title: "Almanca A1–B2",
-    text: "Wenn B2 Ihr Ziel ist, brauchen Sie nicht vier zufällige Kurse, sondern einen klaren Sprachweg, bei dem jede Stufe auf der vorherigen aufbaut.",
-    next: "Aktuelles Niveau → passende Stufe → Schritt für Schritt bis B2",
+    text: "Hedefiniz B2 ise, dört rastgele kursa değil, her seviyenin bir öncekinin üzerine inşa edildiği net bir dil yoluna ihtiyacınız vardır.",
+    next: "Mevcut seviye → uygun seviye → adım adım B2'e kadar",
     href: "/tr/pakete/deutsch-a1-b2",
-    cta: "A1–B2 Lernweg ansehen",
+    cta: "A1–B2 Öğrenme yolunu görüntüle",
   },
   {
     id: "exam",
     label: "SINAVA HAZIRLAN",
     question: "FSP, FaMed veya diş hekimliği sınavına hazırlanıyorum.",
     title: "Medikal Sınav Hazırlığı",
-    text: "Hier reicht es nicht, medizinische Wörter zu kennen. Sprache muss in Anamnese, Gespräch, Dokumentation und Prüfungssituation abrufbar werden.",
-    next: "Prüfung bestimmen → gezielt vorbereiten → realistisch simulieren",
+    text: "Burada tıbbi kelimeleri bilmek yeterli değildir. Anamnez, konuşma, dokümantasyon ve muayene durumlarında dil mevcut olmalıdır.",
+    next: "Testi belirleyin → özel olarak hazırlayın → gerçekçi bir şekilde simüle edin",
     href: "/tr/pruefungsvorbereitung",
-    cta: "Prüfungsweg finden",
+    cta: "Bir sınav rotası bulun",
   },
   {
     id: "simulation",
     label: "SINAVA NEREDEYSE HAZIR",
     question: "Hazırlığımı yaptım ve kendimi gerçekçi şekilde test etmek istiyorum.",
     title: "Sınav Simülasyonları",
-    text: "Kurz vor der Prüfung ist mehr Theorie nicht immer die Lösung. Jetzt wird entscheidend, was unter Zeitdruck tatsächlich abrufbar ist.",
-    next: "Simulation → individuelles Feedback → gezielt nachschärfen",
+    text: "Sınavdan kısa bir süre önce daha fazla teori her zaman çözüm değildir. Artık zaman baskısı altında gerçekte neye erişilebileceği hayati önem taşıyor.",
+    next: "Simülasyon → bireysel geri bildirim → hedeflenen yeniden keskinleştirme",
     href: "/tr/simulationen",
-    cta: "Simulationen ansehen",
+    cta: "Simülasyonları görüntüle",
   },
 ];
 
 const faq = [
   [
-    "Ich weiß noch gar nicht, welcher Kurs zu mir passt.",
-    "Das müssen Sie vor der Kontaktaufnahme nicht wissen. Schreiben Sie uns Ihr aktuelles Niveau, Ihr Ziel und – falls vorhanden – Ihre Prüfung. Der erste Schritt ist Orientierung, nicht sofort eine Buchung.",
+    "Hangi kursun bana uygun olduğunu bile bilmiyorum.",
+    "Bizimle iletişime geçmeden önce bunu bilmenize gerek yok. Mevcut seviyeniz, hedefiniz ve varsa sınavınız hakkında bize yazın. İlk adım oryantasyondur, hemen rezervasyon yapmak değil.",
   ],
   [
-    "Was, wenn mein Deutsch für die medizinische Vorbereitung noch nicht reicht?",
-    "Dann kann es sinnvoller sein, zuerst die sprachliche Grundlage zu stabilisieren. Zu früh nur Prüfungsabläufe zu trainieren schafft häufig zusätzliche Unsicherheit statt Sicherheit.",
+    "Almancam henüz tıbbi hazırlık için yeterli değilse ne olur?",
+    "O halde öncelikle dilsel temeli sağlamlaştırmak daha mantıklı olabilir. Sınav prosedürlerini çok erken eğitmek genellikle güvenlik yerine ek belirsizlik yaratır.",
   ],
   [
-    "Ich habe schon sehr viel gelernt. Warum fühle ich mich trotzdem nicht bereit?",
-    "Mehr Material bedeutet nicht automatisch mehr Sicherheit. Entscheidend ist, ob Sie Sprache aktiv anwenden, Rückmeldung bekommen und genau wissen, welcher Schwachpunkt als Nächstes trainiert werden sollte.",
+    "Zaten çok şey öğrendim. Neden hâlâ kendimi hazır hissetmiyorum?",
+    "Daha fazla malzeme otomatik olarak daha fazla güvenlik anlamına gelmez. Önemli olan dili aktif olarak kullanıp kullanmadığınız, geri bildirim alıp almadığınız ve bir sonraki adımda hangi zayıf noktanın eğitilmesi gerektiğini tam olarak bilip bilmediğinizdir.",
   ],
   [
-    "Was, wenn ich in der echten Prüfung plötzlich blockiere?",
-    "Genau deshalb gehören realistische Anwendung und Simulationen zur Vorbereitung. Wissen muss nicht nur vorhanden sein – es muss auch unter Druck abrufbar werden.",
+    "Ya gerçek sınavda aniden bloke edersem?",
+    "İşte tam da bu yüzden gerçekçi uygulamalar ve simülasyonlar hazırlığın bir parçası. Bilginin yalnızca mevcut olması yetmez, aynı zamanda baskı altında da erişilebilir olması gerekir.",
   ],
   [
-    "Was passiert, wenn ich Libelle auf WhatsApp schreibe?",
-    "Sie schildern kurz Ihre Situation. Danach schauen wir gemeinsam, welcher nächste Schritt sinnvoll ist. Sie müssen nicht schon entschieden haben, welchen Kurs Sie buchen möchten.",
+    "WhatsApp'e yusufçuk yazarsam ne olur?",
+    "Kısaca durumunuzu anlatıyorsunuz. Daha sonra hangi adımın mantıklı olacağını birlikte göreceğiz. Hangi kursa rezervasyon yapmak istediğinize önceden karar vermiş olmanıza gerek yok.",
   ],
 ];
 
@@ -80,7 +80,7 @@ export default function HomeConversion() {
             </h2>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-white/55">
-              En doğru kurs, bugün hangi seviyede olduğunuza ve bundan sonra neye ulaşmak istediğinize bağlıdır.
+              Bu gidişat, bugün hangi seviyede olacağınıza ve bundan sonra başarıya ulaşmak istediğinize bağlıdır.
             </p>
           </div>
 
@@ -157,7 +157,7 @@ export default function HomeConversion() {
 
                 <a
                   href={whatsappLink(
-                    `Hallo, ich brauche Hilfe bei meinem Lernweg. Mein Ziel: ${current.question} Quelle: HOME-PATH`
+                    `Merhaba, öğrenme yolculuğumda yardıma ihtiyacım var. Hedefim: ${current.question} Kaynak: HOME-PATH`
                   )}
                   className="rounded-full border border-black/10 bg-white px-6 py-3 text-center text-sm font-semibold"
                 >
@@ -181,8 +181,8 @@ export default function HomeConversion() {
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-black/55">
-              Oft geht es zuerst um etwas anderes: Bin ich bereit? Reicht mein
-              Deutsch? Was, wenn ich wieder Zeit verliere?
+              Çoğunlukla önce başka bir şey gelir: Hazır mıyım? Bu kadar yeter
+              Alman mı? Ya yine zaman kaybedersem?
             </p>
           </div>
 

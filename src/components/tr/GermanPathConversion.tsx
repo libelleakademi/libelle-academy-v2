@@ -9,47 +9,47 @@ const situations = [
     label: "YENİ BAŞLIYORUM",
     question: "Çok az Almanca biliyorum ve baştan sağlam bir temel oluşturmak istiyorum.",
     title: "Bu durumda çok fazla materyalden daha önemli olan net bir öğrenme yoludur.",
-    text: "Wenn die Grundlagen sauber aufgebaut werden, müssen Sie später weniger Lücken reparieren. A1 ist dann nicht nur der erste Kurs, sondern das Fundament für die nächsten Stufen.",
-    next: "A1 aufbauen → A2 festigen → B1 erweitern → B2 sicher anwenden",
+    text: "Almanca seviyenize uygun yapılandırılmış öğrenme adımı.",
+    next: "A1'i oluşturun → A2'i güçlendirin → B1'i genişletin → B2'i güvenle kullanın",
   },
   {
     id: "existing",
     label: "ÖN BİLGİM VAR",
     question: "Daha önce Almanca öğrendim ancak hangi seviyeden başlamam gerektiğini bilmiyorum.",
-    title: "Otomatik olarak yeniden A1'den başlamanız gerekmez.",
-    text: "Zu niedrig einzusteigen kostet Zeit. Zu hoch einzusteigen erzeugt neue Lücken. Deshalb ist die richtige Einstufung wichtiger als die Frage, welcher Kurs zuerst beworben wird.",
-    next: "Stand einschätzen → richtige Stufe wählen → von dort konsequent weitergehen",
+    title: "Almanca seviyenize uygun yapılandırılmış öğrenme adımı.",
+    text: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    next: "Durumunuzu değerlendirin → doğru seviyeyi seçin → oradan tutarlı bir şekilde devam edin",
   },
   {
     id: "stuck",
     label: "İLERLEYEMİYORUM",
     question: "Sürekli çalışıyorum ama Almancam düzenli şekilde ilerlemiyor.",
     title: "Sorun motivasyonunuz değil, net bir öğrenme yolunun eksikliği olabilir.",
-    text: "Wenn Methoden, Kurse und Materialien ständig wechseln, beginnt man gedanklich immer wieder neu. Ein zusammenhängender Weg reduziert diese Neustarts und macht Fortschritt leichter nachvollziehbar.",
-    next: "Lücken erkennen → klare Reihenfolge → kontinuierlich bis zum nächsten Niveau",
+    text: "Yöntemler, dersler ve materyaller sürekli değiştiğinde her zaman yeniden başlarsınız. Uyumlu bir yol, bu yeniden başlatmaları azaltır ve ilerlemenin izlenmesini kolaylaştırır.",
+    next: "Boşlukları tanımlayın → sırayı temizleyin → bir sonraki seviyeye kadar sürekli",
   },
 ];
 
 const faq = [
   [
     "Daha önce Almanca öğrenip çoğunu unuttuysam ne olur?",
-    "Dann ist nicht automatisch ein kompletter Neustart nötig. Entscheidend ist, welche Grundlagen noch stabil sind. Eine sinnvolle Einstufung verhindert, dass Sie unnötig Zeit mit bereits sicheren Inhalten verbringen.",
+    "Daha sonra otomatik olarak tam bir yeniden başlatma gerekli değildir. Önemli olan hangi temellerin hala istikrarlı olduğudur. Mantıklı bir sınıflandırma, zaten güvenli olan içeriklere gereksiz zaman harcamanızı önler.",
   ],
   [
     "Bugün B2'ye kadar tüm öğrenme yoluna karar vermek zorunda mıyım?",
-    "Nein. Sie können auch einzelne Stufen buchen. Der Vorteil des Gesamtlernwegs liegt darin, dass Sie schon wissen, wie Ihre nächsten Schritte aussehen können.",
+    "Hayır. Bireysel etaplara da rezervasyon yaptırabilirsiniz. Genel öğrenme yolunun avantajı, sonraki adımlarınızın nasıl görünebileceğini zaten bilmenizdir.",
   ],
   [
     "Daha önce birkaç kursa başlayıp bıraktım. Bu kez ne farklı olacak?",
-    "Ein klarer Lernweg nimmt Ihnen nicht die Arbeit ab. Er reduziert aber Entscheidungen und Neustarts: Sie wissen, wo Sie stehen, welches Niveau folgt und worauf jede Stufe vorbereitet.",
+    "Açık bir öğrenme yolu işi sizin yerinize yapmaz. Ancak kararları azaltır ve yeniden başlar: Nerede durduğunuzu, hangi seviyenin onu takip ettiğini ve her seviyenin sizi neye hazırladığını bilirsiniz.",
   ],
   [
     "Bir sonraki seviyeye gerçekten hazır olduğumu nasıl anlarım?",
-    "Nicht allein daran, dass ein Kurs beendet ist. Wichtig ist, ob zentrale Inhalte aktiv verstanden und angewendet werden können. Bei Unsicherheit kann vor dem nächsten Einstieg der aktuelle Stand besprochen werden.",
+    "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
   ],
   [
     "Libelle'ye WhatsApp'tan yazarsam ne olur?",
-    "Sie können einfach Ihre bisherigen Deutschkenntnisse und Ihr Ziel nennen. Danach kann zuerst geklärt werden, welche Stufe sinnvoll ist. Sie müssen vorher noch keine endgültige Buchungsentscheidung treffen.",
+    "Basitçe önceki Almanca bilginizi ve hedefinizi belirtebilirsiniz. Daha sonra öncelikle hangi düzeyin anlamlı olduğunu netleştirebilirsiniz. Önceden nihai bir rezervasyon kararı vermenize gerek yoktur.",
   ],
 ];
 
@@ -133,7 +133,7 @@ export default function GermanPathConversion() {
 
               <a
                 href={whatsappLink(
-                  `Hallo, ich interessiere mich für den Deutsch-Lernweg. Meine Situation: ${current.question} Können Sie mir beim richtigen Einstieg helfen? Quelle: A1-B2-DECISION`
+                  `Merhaba, Almanca öğrenme yolu ile ilgileniyorum. Durumum: ${current.question} Doğru şekilde başlamama yardım edebilir misin? Kaynak: A1-B2-DECISION`
                 )}
                 target="_blank"
                 rel="noreferrer"

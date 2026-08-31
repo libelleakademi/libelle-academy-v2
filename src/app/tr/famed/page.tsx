@@ -6,91 +6,91 @@ import FamedConversion from "@/components/tr/FamedConversion";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
-  title: "FaMed Intensivkurs | Libelle Academy",
+  title: "FaMed Yoğun Kursu | Libelle Academy",
   description:
-    "6 hafta FaMed-Vorbereitung mit 54 ders saati, Pelexa üzerinden Blended Learning, kleinen Gruppen und 6 sınav simülasyonları.",
+    "6 haftalık FaMed hazırlığı: 54 ders saati, Pelexa üzerinden Blended Learning, küçük gruplar ve 6 sınav simülasyonu.",
 };
 
 const mainMessage =
-  "Hallo, ich interessiere mich für den FaMed Intensivkurs für 600 €. Bitte senden Sie mir Informationen zur nächsten Gruppe und zu freien Plätzen. Quelle: FAMED-LANDING";
+  "Merhaba, 600 €'luk FaMed Yoğun Kursu ile ilgileniyorum. Yeni grup ve mevcut kontenjan hakkında bilgi alabilir miyim? Kaynak: FAMED-LANDING";
 
 const consultationMessage =
-  "Hallo, ich bereite mich auf die FaMed-Prüfung vor und möchte wissen, ob der Intensivkurs zu meinem aktuellen Stand passt. Quelle: FAMED-BERATUNG";
+  "Merhaba, FaMed sınavına hazırlanıyorum. Yoğun kursun mevcut seviyeme uygun olup olmadığını öğrenmek istiyorum. Kaynak: FAMED-BERATUNG";
 
 const outcomes = [
   {
     number: "01",
     title: "Anamnezi yapılandırılmış şekilde yürütün",
-    text: "Medizinische Informationen systematisch erfragen und das Patientengespräch sprachlich sicherer gestalten.",
+    text: "Medikal bilgileri sistematik şekilde sorgulayın ve hasta görüşmesini dil açısından daha güvenli yürütün.",
   },
   {
     number: "02",
     title: "Hastayı anlaşılır şekilde bilgilendirin",
-    text: "Medizinische Sachverhalte klar, strukturiert und adressatengerecht erklären.",
+    text: "Medikal durumları açık, yapılandırılmış ve hastanın anlayabileceği şekilde açıklayın.",
   },
   {
     number: "03",
     title: "Dokümantasyonu hedefli çalışın",
-    text: "Relevante Informationen aus dem Gespräch geordnet erfassen und schriftlich aufbereiten.",
+    text: "Görüşmedeki önemli bilgileri düzenli şekilde kaydedin ve yazılı dokümantasyona aktarın.",
   },
   {
     number: "04",
     title: "Hasta vakalarını güvenle sunun",
-    text: "Fälle strukturiert präsentieren und medizinische Zusammenhänge nachvollziehbar vermitteln.",
+    text: "Vakaları yapılandırılmış şekilde sunun ve medikal bağlantıları anlaşılır biçimde aktarın.",
   },
 ];
 
 const program = [
-  "FaMed-Prüfungsformat",
-  "Anamnese",
-  "Patientenaufklärung",
-  "Patientenvorstellung",
-  "Dokumentation",
+  "FaMed sınav formatı",
+  "Anamnez",
+  "Hasta bilgilendirmesi",
+  "Hasta sunumu",
+  "Dokümantasyon",
   "sınav simülasyonları",
 ];
 
 const phases = [
   {
     number: "01",
-    eyebrow: "WOCHEN 1–4",
-    title: "Sprache und Prüfungsstruktur aufbauen",
-    text: "Zwei Online-Live-Kurstage pro Woche werden durch einen Blended-Learning- und Self-Simulation-Tag über Pelexa ergänzt.",
+    eyebrow: "1–4. HAFTALAR",
+    title: "Dil ve sınav yapısını geliştirin",
+    text: "Haftada iki online canlı ders günü, Pelexa üzerinden Blended Learning ve bireysel simülasyon çalışmalarıyla desteklenir.",
   },
   {
     number: "02",
-    eyebrow: "WOCHEN 5–6",
-    title: "Unter Prüfungsbedingungen simulieren",
-    text: "In der Schlussphase liegt der Schwerpunkt auf intensiven FaMed-sınav simülasyonları.",
+    eyebrow: "5–6. HAFTALAR",
+    title: "Sınav koşullarında simülasyon yapın",
+    text: "Son aşamada yoğun FaMed sınav simülasyonlarına odaklanılır.",
   },
   {
     number: "03",
-    eyebrow: "NACH DEM KURS",
-    title: "Weiter auf Materialien zugreifen",
-    text: "Die Kursaufzeichnungen stehen während des Kurses und noch einen Monat nach Kursende über Pelexa zur Verfügung.",
+    eyebrow: "DERS SONRASI",
+    title: "Materyallere erişmeye devam edin",
+    text: "Bu kayıtlara parkur boyunca ve parkur bitiminden sonra bir ay daha Pelexa üzerinden erişebilirsiniz.",
   },
 ];
 
 const faqs = [
-  ["Wie lange dauert der FaMed Intensivkurs?", "Der Kurs dauert 6 hafta."],
+  ["FaMed Yoğun Kursu ne kadar sürüyor?", "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı."],
   [
-    "Wie umfangreich ist der Unterricht?",
-    "Der Kurs umfasst 54 ders saati. Eine Unterrichtsstunde entspricht 40 Minuten.",
+    "Ders kaç ders saatinden oluşuyor mu?",
+    "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
   ],
   [
-    "Wie groß sind die Gruppen?",
-    "Der Kurs wird in kleinen Gruppen mit 6–8 Teilnehmenden durchgeführt.",
+    "Gruplar kaç kişilik?",
+    "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
   ],
   [
-    "Sind sınav simülasyonları enthalten?",
-    "Ja. Insgesamt sind 6 FaMed-sınav simülasyonları vorgesehen.",
+    "Sınav simülasyonları dahil mi?",
+    "Evet. Programda toplam 6 FaMed sınav simülasyonu bulunmaktadır.",
   ],
   [
-    "Welche Sprachkenntnisse brauche ich?",
-    "Der Kurs richtet sich an Ärztinnen und Ärzte in der FaMed-Vorbereitung. Voraussetzung ist mindestens ein B2-Sprachzertifikat.",
+    "Hangi dil seviyesine ihtiyacım var?",
+    "FaMed sınavına yönelik yapılandırılmış hazırlık.",
   ],
   [
-    "Kann ich die Aufzeichnungen später ansehen?",
-    "Ja. Die Aufzeichnungen stehen während des Kurses und noch einen Monat nach Kursende über Pelexa zur Verfügung.",
+    "Ders kayıtlarını daha sonra izleyebilir miyim?",
+    "Evet. Bu kayıtlara parkur boyunca ve parkur bitiminden sonra bir ay daha Pelexa üzerinden erişebilirsiniz.",
   ],
 ];
 
@@ -111,7 +111,7 @@ export default function FamedPage() {
             </Link>
 
             <div className="mt-10 text-xs font-bold tracking-[.18em] text-[#17666a]">
-              FAMED · YOĞUN KURS
+              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
             </div>
 
             <h1 className="mt-5 max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-.045em] sm:text-6xl lg:text-7xl">
@@ -126,7 +126,7 @@ export default function FamedPage() {
               {[
                 "6 hafta",
                 "54 ders saati",
-                "6 FaMed-Simulationen",
+                "6 FaMed simülasyonu",
               ].map((item) => (
                 <span
                   key={item}
@@ -160,7 +160,7 @@ export default function FamedPage() {
 
             <div className="home-orbit absolute right-12 -top-12 z-20 hidden rounded-2xl bg-[#58ECF1] px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.18)] lg:block">
               <div className="text-[10px] font-bold tracking-[.14em]">
-                6 SİMÜLASYONLAR
+                6 SİMÜLASYON
               </div>
               <div className="mt-1 text-sm font-semibold">
                 Öğrenmeden sınav görüşmesine
@@ -169,10 +169,10 @@ export default function FamedPage() {
 
             <div className="home-orbit-delay absolute bottom-[-48px] left-12 z-20 hidden rounded-2xl bg-white px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.16)] lg:block">
               <div className="text-[10px] font-bold tracking-[.14em] text-[#17666a]">
-                LIVE + DIGITAL
+                CANLI + DİJİTAL
               </div>
               <div className="mt-1 text-sm font-semibold">
-                Pelexa zwischen den Terminen
+                Dersler arasında Pelexa desteği
               </div>
             </div>
 
@@ -182,7 +182,7 @@ export default function FamedPage() {
               <div className="flex items-start justify-between gap-5">
                 <div>
                   <div className="text-xs font-bold tracking-[.16em] text-[#31175B]">
-                    IHR YOĞUN KURS
+                    YOĞUN KURSUNUZ
                   </div>
                   <div className="mt-2 text-3xl font-semibold">
                     FaMed
@@ -217,8 +217,8 @@ export default function FamedPage() {
               <div className="mt-4 space-y-3">
                 {[
                   "54 ders saati",
-                  "Küçük gruplar mit 6–8 Teilnehmenden",
-                  "Pelexa üzerinden Blended Learning",
+                  "6–8 kişilik küçük gruplar",
+                  "Pelexa üzerinden Harmanlanmış Öğrenme",
                 ].map((item) => (
                   <div
                     key={item}
@@ -244,7 +244,7 @@ export default function FamedPage() {
           <div className="mt-4 grid grid-cols-2 gap-3 lg:hidden">
             <div className="home-orbit rounded-2xl bg-[#58ECF1] px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
               <div className="text-[9px] font-bold tracking-[.13em]">
-                6 SİMÜLASYONLAR
+                6 SİMÜLASYON
               </div>
               <div className="mt-1 text-xs font-semibold">
                 Öğrenmeden sınav görüşmesine
@@ -253,10 +253,10 @@ export default function FamedPage() {
 
             <div className="home-orbit-delay rounded-2xl bg-white px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
               <div className="text-[9px] font-bold tracking-[.13em] text-[#17666a]">
-                LIVE + DIGITAL
+                CANLI + DİJİTAL
               </div>
               <div className="mt-1 text-xs font-semibold">
-                Pelexa zwischen den Terminen
+                Dersler arasında Pelexa desteği
               </div>
             </div>
           </div>
@@ -267,28 +267,27 @@ export default function FamedPage() {
 
       {/* PHOTO-STORY-FAMED */}
       <EditorialStorySection
-        eyebrow="FAMED IN DER ANWENDUNG"
-        title="Wenn medizinisches Wissen auch sprachlich funktionieren muss."
-        text="FaMed verlangt nicht nur medizinisches Verständnis. Entscheidend ist, wie sicher Informationen erklärt, strukturiert und in professioneller Kommunikation angewendet werden."
+        eyebrow="FAMED UYGULAMADA"
+        title="Medikal bilginin Almanca olarak da güvenle kullanılabilmesi gerekir."
+        text="FaMed yalnızca medikal bilgiyi değil, bu bilgiyi ne kadar güvenli açıkladığınızı, yapılandırdığınızı ve profesyonel iletişimde kullanabildiğinizi da değerlendirir."
         image="/images/famed-medical-communication.jpg"
-        alt="Medizinisches Gespräch zwischen Fachkraft und Patient"
-        chip="FAMED · KOMMUNIKATION · ANWENDUNG"
+        alt="Sağlık profesyoneli ve hasta arasında medikal görüşme"
+        chip="FAMED · İLETİŞİM · UYGULAMA"
         reverse
       />
 
-      <section id="kurs" className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+      <section id="Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı." className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="max-w-4xl">
           <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-            WAS SIE TRAINIEREN
+            NELERİ ÇALIŞACAKSINIZ?
           </div>
 
           <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-            Nicht einzelne Aufgaben auswendig lernen. Medizinisch reagieren.
+            Tek tek görevleri ezberlemeyin. Medikal durumlara aktif şekilde yanıt verin.
           </h2>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">
-            Die Vorbereitung verbindet die zentralen Kommunikationsaufgaben
-            der FaMed-Prüfung zu einem zusammenhängenden Trainingsweg.
+            Hazırlık, FaMed sınavındaki temel iletişim görevlerini bütünlüklü bir çalışma sürecinde bir araya getirir.
           </p>
         </div>
 
@@ -319,16 +318,15 @@ export default function FamedPage() {
 
           <div>
             <div className="text-xs font-bold tracking-[.18em] text-[#31175B]">
-              KURSINHALTE
+              DERS İÇERİĞİ
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              Die zentralen Bereiche Ihrer FaMed-Vorbereitung.
+              FaMed hazırlığınızın temel alanları.
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-black/55">
-              Vom Prüfungsformat bis zur Simulation: Die einzelnen Bereiche
-              werden gezielt miteinander verbunden.
+              Sınav formatından simülasyonlara kadar tüm alanlar birbiriyle bağlantılı şekilde çalışılır.
             </p>
           </div>
 
@@ -355,11 +353,11 @@ export default function FamedPage() {
       <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="max-w-4xl">
           <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-            6 WOCHEN · KLARER AUFBAU
+            6 HAFTA · NET YAPI
           </div>
 
           <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-            Erst vorbereiten. Dann unter Prüfungsbedingungen anwenden.
+            Önce hazırlanın. Ardından sınav koşullarında uygulayın.
           </h2>
         </div>
 
@@ -396,16 +394,15 @@ export default function FamedPage() {
 
           <div>
             <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
-              MEHR ALS LIVE-UNTERRICHT
+              CANLI DERSTEN DAHA FAZLASI
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              Der Kurs endet nicht, wenn der Live-Unterricht vorbei ist.
+              Canlı ders bittiğinde öğrenme süreci sona ermez.
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/60">
-              Live-Unterricht, Pelexa-Lernphasen, Self-Simulation und
-              sınav simülasyonları greifen ineinander.
+              Canlı dersler, Pelexa öğrenme aşamaları, bireysel simülasyon çalışmaları ve sınav simülasyonları birbirini tamamlar.
             </p>
           </div>
 
@@ -413,19 +410,19 @@ export default function FamedPage() {
             {[
               [
                 "54 ders saati",
-                "Strukturierter Aufbau der prüfungsrelevanten Kommunikationsbereiche.",
+                "Sınavda gerekli iletişim alanlarının yapılandırılmış şekilde geliştirilmesi.",
               ],
               [
                 "Pelexa",
-                "Digitale Lernphasen und Self-Simulation ergänzen den Live-Unterricht.",
+                "Dijital öğrenme aşamaları ve bireysel simülasyon çalışmaları canlı dersleri destekler.",
               ],
               [
-                "6–8 Personen",
-                "Küçük gruplar schaffen mehr Raum für aktives sprachliches Training.",
+                "6–8 kişi",
+                "Küçük gruplar aktif dil pratiği için daha fazla alan sağlar.",
               ],
               [
-                "6 Simulationen",
-                "Die Schlussphase richtet den Fokus auf die praktische Prüfungssituation.",
+                "6 simülasyon",
+                "Son aşama, gerçek sınava yakın uygulamalara odaklanır.",
               ],
             ].map(([title, text]) => (
               <div
@@ -451,17 +448,15 @@ export default function FamedPage() {
 
           <div className="rounded-[2.3rem] bg-white p-8 sm:p-10">
             <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-              FÜR WEN?
+              KİMLER İÇİN?
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">
-              Für Ärztinnen und Ärzte auf dem Weg zur FaMed-Prüfung.
+              FaMed sınavına hazırlanan doktorlar için.
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-black/55">
-              Der Kurs ist für medizinische Fachkräfte konzipiert, die ihre
-              FaMed-Vorbereitung strukturiert aufbauen und in Deutschland als
-              Ärztin oder Arzt arbeiten möchten.
+              FaMed sınavına yönelik yapılandırılmış hazırlık.
             </p>
           </div>
 
@@ -471,13 +466,11 @@ export default function FamedPage() {
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">
-              Mindestens B2 – und ein Kurs, der zu Ihrem Stand passen soll.
+              En az B2 – ve mevcut seviyenize uygun bir hazırlık.
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-black/55">
-              Voraussetzung ist mindestens ein B2-Sprachzertifikat. Wenn Sie
-              unsicher sind, ob der Intensivkurs der richtige nächste Schritt
-              ist, klären wir das vor der Anmeldung mit Ihnen.
+              En az B2 dil sertifikası gereklidir. Yoğun kursun sizin için doğru sonraki adım olup olmadığından emin değilseniz kayıt öncesinde birlikte değerlendirebiliriz.
             </p>
 
             <a
@@ -486,7 +479,7 @@ export default function FamedPage() {
               rel="noreferrer"
               className="mt-8 inline-block rounded-full bg-[#31175B] px-7 py-3.5 text-sm font-semibold text-white"
             >
-              Persönlich beraten lassen
+              Ücretsiz yönlendirme alın
             </a>
           </div>
 
@@ -496,21 +489,21 @@ export default function FamedPage() {
       <section className="bg-[#31175B] py-20 text-white">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
-            EMPFOHLENER LERNWEG
+            ÖNERİLEN ÖĞRENME YOLU
           </div>
 
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             {[
-              "Exzellenz / Feinschliff",
-              "FaMed Intensivkurs",
-              "Simulationen",
+              "İleri Seviye / İnce Ayar",
+              "FaMed Yoğun Kursu",
+              "Simülasyonlar",
             ].map((step, index) => (
               <div
                 key={step}
                 className="rounded-[1.6rem] bg-white/10 p-6"
               >
                 <div className="text-xs text-white/35">
-                  SCHRITT {index + 1}
+                  ADIM {index + 1}
                 </div>
 
                 <div className="mt-3 text-xl font-semibold">
@@ -527,11 +520,11 @@ export default function FamedPage() {
 
           <div className="text-center">
             <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-              HÄUFIGE FRAGEN
+              SIK SORULAN SORULAR
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              Vor der Anmeldung wissen, was Sie erwartet.
+              Kayıt öncesinde sizi nelerin beklediğini bilin.
             </h2>
           </div>
 
@@ -560,16 +553,15 @@ export default function FamedPage() {
 
           <div>
             <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
-              IHR NÄCHSTER SCHRITT
+              SONRAKİ ADIMINIZ
             </div>
 
             <h2 className="mt-5 max-w-4xl text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              Bereiten Sie sich strukturiert auf Ihre FaMed-Prüfung vor.
+              FaMed sınavınıza yapılandırılmış şekilde hazırlanın.
             </h2>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/55">
-              Fragen Sie über WhatsApp nach der nächsten Gruppe, freien
-              Plätzen und den aktuellen Kursinformationen.
+              Yeni grup, mevcut kontojan ve güncel dersi WhatsApp üzerinden öğrenin.
             </p>
           </div>
 
@@ -579,7 +571,7 @@ export default function FamedPage() {
             rel="noreferrer"
             className="rounded-full bg-white px-7 py-4 text-center text-sm font-semibold text-[#31175B]"
           >
-            FaMed Intensivkurs anfragen
+            FaMed sınavına yönelik yapılandırılmış hazırlık.
           </a>
 
         </div>

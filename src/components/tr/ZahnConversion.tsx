@@ -11,8 +11,8 @@ const situations = [
     label: "MESLEKİ DİL",
     question: "Diş hekimliğini biliyorum ancak Almancada doğru ifadeleri bulmakta zorlanıyorum.",
     title: "Mesleki bilgi ile mesleki dil aynı şey değildir.",
-    text: "Sie können medizinisch genau wissen, was Sie sagen möchten, und trotzdem sprachlich ins Stocken geraten. Dann sollte die Vorbereitung Fachwissen nicht wiederholen, sondern dabei helfen, es auf Deutsch sicherer auszudrücken.",
-    next: "Fachsprache festigen → typische Gesprächsstrukturen trainieren → aktiv anwenden",
+    text: "Tıbbi açıdan tam olarak ne söylemek istediğinizi bilseniz de dilsel açıdan bocalayabilirsiniz. O zaman hazırlık, uzmanlık bilgisini tekrarlamamalı, aksine bunu Almanca'da daha güvenli bir şekilde ifade etmenize yardımcı olmalıdır.",
+    next: "Teknik dili pekiştirin → tipik konuşma yapılarını eğitin → bunları aktif olarak uygulayın",
   },
   {
     id: "communication",
@@ -20,8 +20,8 @@ const situations = [
     label: "HASTA GÖRÜŞMESİ",
     question: "Hasta görüşmesinde yapıyı kaybediyor veya kendimden emin olamıyorum.",
     title: "İyi bir görüşme yalnızca doğru terimlerden oluşmaz.",
-    text: "Anamnese, verständliche Erklärung und strukturierte Kommunikation müssen gleichzeitig funktionieren. Genau dort zeigt sich, ob Sprache unter realen Gesprächsbedingungen wirklich abrufbar ist.",
-    next: "Gespräch strukturieren → aktiv formulieren → Dokumentation und Vorstellung verbinden",
+    text: "Anamnez, anlaşılır anlatım ve yapılandırılmış iletişimin aynı anda çalışması gerekir. Bu tam olarak dile gerçek konuşma koşulları altında gerçekten erişilip erişilemeyeceğinin netleştiği yerdir.",
+    next: "Konuşmayı yapılandırma → aktif olarak formüle etme → dokümantasyon ile sunumu birleştirme",
   },
   {
     id: "exam",
@@ -29,35 +29,35 @@ const situations = [
     label: "SINAVA YAKINLIK",
     question: "FSP veya FaMed sınavım yaklaşıyor ve hazır olup olmadığımı bilmek istiyorum.",
     title: "Sınav yaklaştıkça uygulama, yeni materyalden daha önemli hale gelir.",
-    text: "Jetzt zählt nicht nur, wie viel Sie gelernt haben. Entscheidend wird, ob Sie unter Zeitdruck strukturiert sprechen, relevante Informationen erkennen und angemessen reagieren können.",
-    next: "Prüfungsnah trainieren → Feedback bekommen → letzte Unsicherheiten gezielt bearbeiten",
+    text: "Artık önemli olan sadece ne kadar öğrendiğiniz değil. Belirleyici faktör, zaman baskısı altında yapılandırılmış bir şekilde konuşup konuşamayacağınız, ilgili bilgileri tanıyıp tanıyamayacağınız ve uygun şekilde tepki verip veremeyeceğinizdir.",
+    next: "Sınava yakın eğitim alın → geri bildirim alın → kalan belirsizlikler üzerinde hedefe yönelik bir şekilde çalışın",
   },
 ];
 
 const questions = [
   {
-    q: "Ich bin fachlich sicher als Zahnärztin oder Zahnarzt. Warum brauche ich trotzdem spezielle Prüfungsvorbereitung?",
-    a: "Weil die Herausforderung nicht Ihr zahnmedizinisches Fachwissen allein ist. Sie müssen dieses Wissen in einer fremden Sprache strukturiert erklären, erfragen, dokumentieren und präsentieren. Genau diese Verbindung wird trainiert.",
+    q: "Bir diş hekimi olarak mesleki açıdan kendime güveniyorum. Neden hala özel sınav hazırlığına ihtiyacım var?",
+    a: "Çünkü zorluk yalnızca diş hekimliği uzmanlığınız değil. Bu bilgiyi yabancı dilde açıklamalı, sorgulamalı, belgelemeli ve yapılandırılmış bir şekilde sunmalısınız. Eğitimli olan tam olarak bu bağlantıdır.",
   },
   {
-    q: "Woher weiß ich, ob ich eher FSP- oder FaMed-Vorbereitung brauche?",
-    a: "Das hängt von Ihrer konkreten Prüfung und Ihrem aktuellen Stand ab. Der Zahnmedizin-Kurs verbindet relevante sprachliche Kommunikationsbereiche. Wenn Sie uns Ihre Prüfungssituation nennen, kann zuerst geklärt werden, welcher Schwerpunkt für Sie wichtig ist.",
+    q: "FSP veya FaMed hazırlığına ihtiyacım olup olmadığını nasıl anlarım?",
+    a: "Bu, özel sınavınıza ve mevcut durumunuza bağlıdır. Diş hekimliği kursu ilgili dilsel iletişim alanlarını birleştirir. Bize sınav durumunuzu anlatırsanız öncelikle hangi odağın sizin için önemli olduğunu netleştirebiliriz.",
   },
   {
-    q: "Ich verstehe Patienten gut, aber beim Antworten suche ich ständig nach Wörtern. Ist das ein Problem?",
-    a: "Das ist ein typischer Punkt, an dem aktives Training wichtig wird. Verstehen und spontan formulieren sind unterschiedliche Fähigkeiten. Ziel ist deshalb nicht nur mehr Wortschatz, sondern schnellerer und strukturierter Zugriff auf die Sprache.",
+    q: "Hastaları iyi anlıyorum ama cevap verirken sürekli kelime arıyorum. Bu bir sorun mu?",
+    a: "Bu, aktif eğitimin önem kazandığı tipik bir noktadır. Anlamak ve kendiliğinden formüle etmek farklı becerilerdir. Bu nedenle amaç sadece daha fazla kelime dağarcığı değil, aynı zamanda dile daha hızlı ve yapılandırılmış erişimdir.",
   },
   {
-    q: "Was, wenn ich während einer Simulation viele Fehler mache?",
-    a: "Dann erfüllt die Simulation genau ihren Zweck. Fehler vor der echten Prüfung sind wertvoll, wenn sie sichtbar machen, woran Sie anschließend gezielt arbeiten sollten. Eine Simulation ist Training und Diagnose – kein finales Urteil.",
+    q: "Bir simülasyon sırasında çok fazla hata yaparsam ne olur?",
+    a: "O zaman simülasyon tam olarak amacını yerine getirir. Gerçek sınavdan önce yapılan hatalar, daha sonra ne üzerinde çalışmanız gerektiğini görünür kılıyorsa değerlidir. Simülasyon eğitim ve teşhistir; nihai bir karar değildir.",
   },
   {
-    q: "Ich habe schon viel alleine gelernt. Brauche ich wirklich noch einen Intensivkurs?",
-    a: "Nicht automatisch. Entscheidend ist, was heute noch fehlt. Wenn Inhalte bereits sitzen und Sie hauptsächlich realistische Prüfungspraxis benötigen, können Simulationen ausreichen. Wenn Kommunikation, Struktur oder Fachsprache noch instabil sind, kann der Intensivkurs sinnvoller sein.",
+    q: "Kendi başıma çok şey öğrendim. Gerçekten başka bir yoğun kursa ihtiyacım var mı?",
+    a: "Gerçekçi sınav simülasyonu ve hedefli geri bildirim.",
   },
   {
-    q: "Was passiert, wenn ich Libelle jetzt über WhatsApp kontaktiere?",
-    a: "Sie müssen noch nichts buchen. Schreiben Sie kurz, welche Prüfung Sie vorbereiten, wie Ihr aktueller Sprachstand ist und wobei Sie sich unsicher fühlen. Danach kann zuerst der passende nächste Schritt eingeordnet werden.",
+    q: "Libelle ile şimdi WhatsApp aracılığıyla iletişime geçersem ne olur?",
+    a: "Henüz rezervasyon yaptırmanıza gerek yok. Hangi sınava hazırlandığınız, mevcut dil seviyenizin ne olduğu ve nelerden emin olmadığınızı kısaca yazın. Uygun bir sonraki adım daha sonra ilk olarak sınıflandırılabilir.",
   },
 ];
 
@@ -153,7 +153,7 @@ export default function ZahnConversion() {
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <a
                   href={whatsappLink(
-                    `Hallo, ich bereite mich im Bereich Zahnmedizin vor. Meine aktuelle Situation: ${current.question} Bitte helfen Sie mir einzuschätzen, welcher nächste Schritt sinnvoll ist. Quelle: ZAHN-DECISION`
+                    `Merhaba diş hekimliği alanında hazırlanıyorum. Şu anki durumum: ${current.question} Lütfen sonraki adımın hangisinin anlamlı olduğunu değerlendirmeme yardım edin. Kaynak: ZAHN-DECISION`
                   )}
                   className="rounded-full bg-[#31175B] px-6 py-3.5 text-center text-sm font-semibold text-white"
                 >
@@ -180,7 +180,7 @@ export default function ZahnConversion() {
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.04em] sm:text-5xl">
-              En önemli sorular kurs açıklamasında yazmaz.
+              Bilmeniz gereken ders budur.
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-black/55">

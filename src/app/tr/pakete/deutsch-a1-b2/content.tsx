@@ -26,7 +26,7 @@ export default async function GermanCoursePage({
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-20 lg:min-h-[680px] lg:grid-cols-[1.08fr_.92fr] lg:px-8">
           <div>
             <Link href="/tr/kurse" className="text-sm font-semibold text-[#17666a]">
-              ← Alle Deutschkurse
+              ← Alle Almancakurse
             </Link>
 
             <div className="mt-10 text-xs font-bold tracking-[0.18em] text-[#17666a]">
@@ -55,20 +55,16 @@ export default async function GermanCoursePage({
 
             <a
               href={whatsappLink(
-                `Hallo, ich interessiere mich für ${course.title} (${course.price}). Quelle: ${course.source}`
+                `Merhaba, kurslar ve öğrenme yolları hakkında bilgi almak istiyorum.`
               )}
               className="mt-9 inline-block rounded-full bg-[#17666a] px-7 py-3.5 text-sm font-semibold text-white transition hover:-translate-y-0.5"
-            >
-              Platz & aktuelle Gruppe über WhatsApp anfragen
-            </a>
+            >Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</a>
           </div>
 
           <div className="rounded-[2.8rem] border border-[#58ECF1] bg-white p-7 shadow-[0_30px_80px_rgba(49,23,91,0.08)] sm:p-10">
             <div className="flex items-start justify-between gap-5">
               <div>
-                <div className="text-xs font-bold tracking-[0.16em] text-[#17666a]">
-                  IHR KURS
-                </div>
+                <div className="text-xs font-bold tracking-[0.16em] text-[#17666a]">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</div>
                 <div className="mt-3 text-3xl font-semibold">{course.title}</div>
               </div>
               <div className="rounded-full bg-[#58ECF1] px-4 py-2 text-sm font-bold text-[#122628]">
@@ -89,7 +85,7 @@ export default async function GermanCoursePage({
 
             <div className="mt-5 rounded-[1.7rem] bg-[#31175B] p-6 text-white">
               <div className="text-xs font-bold tracking-[0.15em] text-[#58ECF1]">
-                FÜR WEN?
+                KİMLER İÇİN?
               </div>
               <p className="mt-3 leading-7 text-white/75">{course.forWhom}</p>
             </div>
@@ -99,12 +95,8 @@ export default async function GermanCoursePage({
 
       <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="max-w-3xl">
-          <div className="text-xs font-bold tracking-[0.18em] text-[#17666a]">
-            WAS SIE AUFBAUEN
-          </div>
-          <h2 className="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">
-            Fortschritt, den Sie im Alltag merken.
-          </h2>
+          <div className="text-xs font-bold tracking-[0.18em] text-[#17666a]">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</div>
+          <h2 className="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</h2>
         </div>
 
         <div className="mt-12 grid gap-4 md:grid-cols-2">
@@ -122,17 +114,9 @@ export default async function GermanCoursePage({
       <section className="bg-[#31175B] text-white">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-24 lg:grid-cols-2 lg:px-8">
           <div>
-            <div className="text-xs font-bold tracking-[0.18em] text-[#58ECF1]">
-              WARUM DIESER LERNWEG?
-            </div>
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">
-              Nicht vier einzelne Themen. Ein nächster Schritt nach dem anderen.
-            </h2>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-white/65">
-              Das Ziel ist nicht, möglichst viele Regeln zu sammeln. Sie bauen Wortschatz,
-              Grammatik, Verständnis und aktive Kommunikation so auf, dass der nächste
-              Sprachniveau-Schritt logisch anschließt.
-            </p>
+            <div className="text-xs font-bold tracking-[0.18em] text-[#58ECF1]">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</div>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">SONRAKİ ADIMINIZ</h2>
+            <p className="mt-6 max-w-xl text-lg leading-8 text-white/65">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
           </div>
 
           <div className="space-y-3">
@@ -148,19 +132,13 @@ export default async function GermanCoursePage({
       <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <div>
-            <div className="text-xs font-bold tracking-[0.18em] text-[#17666a]">
-              DER WEG BIS B2
-            </div>
-            <h2 className="mt-4 text-4xl font-semibold tracking-tight">
-              Wo stehen Sie – und was kommt danach?
-            </h2>
+            <div className="text-xs font-bold tracking-[0.18em] text-[#17666a]">Almanca seviyenize uygun yapılandırılmış öğrenme adımı.</div>
+            <h2 className="mt-4 text-4xl font-semibold tracking-tight">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</h2>
           </div>
           <Link
             href="/tr/pakete/deutsch-a1-b2"
             className="text-sm font-semibold text-[#31175B]"
-          >
-            A1–B2 Gesamtlernweg ansehen →
-          </Link>
+          >Almanca seviyenize uygun yapılandırılmış öğrenme adımı.</Link>
         </div>
 
         <div className="mt-10 grid grid-cols-2 gap-4 lg:grid-cols-4">
@@ -176,7 +154,7 @@ export default async function GermanCoursePage({
             >
               <div className="text-4xl font-semibold">{item}</div>
               <div className="mt-8 text-sm font-semibold">
-                {item === course.level ? "Aktueller Kurs" : "Kurs ansehen →"}
+                {item === course.level ? "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı." : "Kursu incele →"}
               </div>
             </Link>
           ))}
@@ -187,24 +165,17 @@ export default async function GermanCoursePage({
         <div className="mx-auto max-w-7xl rounded-[2.8rem] bg-[#D2ECFF]/55 p-8 sm:p-12">
           <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
-              <div className="text-xs font-bold tracking-[0.18em] text-[#17666a]">
-                NOCH UNSICHER?
-              </div>
-              <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">
-                Welches Niveau passt zu Ihnen – und ist ein kompletter A1–B2 Lernweg sinnvoll?
-              </h2>
-              <p className="mt-4 max-w-2xl leading-7 text-black/55">
-                Schreiben Sie uns. Wir helfen Ihnen, den sinnvollsten Einstieg und den
-                nächsten Schritt zu wählen, bevor Sie buchen.
-              </p>
+              <div className="text-xs font-bold tracking-[0.18em] text-[#17666a]">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</div>
+              <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">Almanca seviyenize uygun yapılandırılmış öğrenme adımı.</h2>
+              <p className="mt-4 max-w-2xl leading-7 text-black/55">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
             </div>
             <a
               href={whatsappLink(
-                `Hallo, ich möchte wissen, welcher Deutschkurs zu meinem Niveau passt. Ich interessiere mich aktuell für ${course.title}. Quelle: ${course.source}-BOTTOM`
+                `Merhaba, kurslar ve öğrenme yolları hakkında bilgi almak istiyorum.`
               )}
               className="inline-block rounded-full bg-[#31175B] px-7 py-4 text-sm font-semibold text-white"
             >
-              Über WhatsApp beraten lassen
+              WhatsApp hakkında tavsiye alın
             </a>
           </div>
         </div>

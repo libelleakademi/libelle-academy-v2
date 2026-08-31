@@ -56,7 +56,7 @@ export default async function GermanCoursePage({
 
             <a
               href={whatsappLink(
-                `Hallo, ich interessiere mich für ${course.title} (${course.price}). Quelle: ${course.source}`
+                `Merhaba, kurslar ve öğrenme yolları hakkında bilgi almak istiyorum.`
               )}
               className="mt-9 inline-block rounded-full bg-[#17666a] px-7 py-3.5 text-sm font-semibold text-white transition hover:-translate-y-0.5"
             >
@@ -127,12 +127,8 @@ export default async function GermanCoursePage({
             </div>
 
             <div className="home-orbit-delay rounded-2xl bg-white px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
-              <div className="text-[9px] font-bold tracking-[.13em] text-[#17666a]">
-                BIS B2
-              </div>
-              <div className="mt-1 text-xs font-semibold">
-                Schritt für Schritt weiter
-              </div>
+              <div className="text-[9px] font-bold tracking-[.13em] text-[#17666a]">Almanca seviyenize uygun yapılandırılmış öğrenme adımı.</div>
+              <div className="mt-1 text-xs font-semibold">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</div>
             </div>
           </div>
 
@@ -144,9 +140,9 @@ export default async function GermanCoursePage({
       <EditorialStorySection
         eyebrow={`${course.level} GÜNLÜK YAŞAMDA`}
         title="Bir dil seviyesi sadece gramer konularından ibaret değildir."
-        text="Her seviyede bağımsız olarak anlayabildiğiniz, ifade edebildiğiniz ve günlük yaşamda kullanabildiğiniz Almanca gelişir. Bu nedenle kurs, tek bir sertifika seviyesinden çok daha büyük bir öğrenme yolunun parçasıdır."
+        text="Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı."
         image="/images/a1-b2-life-in-germany.jpg"
-        alt="Leben und Alltag in Deutschland"
+        alt="Almanca seviyenize uygun yapılandırılmış öğrenme adımı."
         chip={`${course.level} · BİR SONRAKİ ADIM`}
         reverse
       />
@@ -182,11 +178,7 @@ export default async function GermanCoursePage({
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">
               Birbirinden kopuk konular değil. Adım adım ilerleyen tek bir yol.
             </h2>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-white/65">
-              Das Ziel ist nicht, möglichst viele Regeln zu sammeln. Sie bauen Wortschatz,
-              Grammatik, Verständnis und aktive Kommunikation so auf, dass der nächste
-              Sprachniveau-Schritt logisch anschließt.
-            </p>
+            <p className="mt-6 max-w-xl text-lg leading-8 text-white/65">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
           </div>
 
           <div className="space-y-3">
@@ -230,7 +222,7 @@ export default async function GermanCoursePage({
             >
               <div className="text-4xl font-semibold">{item}</div>
               <div className="mt-8 text-sm font-semibold">
-                {item === course.level ? "Mevcut kurs" : "Kursu incele →"}
+                {item === course.level ? "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı." : "Kursu incele →"}
               </div>
             </Link>
           ))}
@@ -247,14 +239,11 @@ export default async function GermanCoursePage({
               <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">
                 Hangi seviye size uygun? A1–B2 öğrenme yolu sizin için mantıklı mı?
               </h2>
-              <p className="mt-4 max-w-2xl leading-7 text-black/55">
-                Schreiben Sie uns. Wir helfen Ihnen, den sinnvollsten Einstieg und den
-                nächsten Schritt zu wählen, bevor Sie buchen.
-              </p>
+              <p className="mt-4 max-w-2xl leading-7 text-black/55">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
             </div>
             <a
               href={whatsappLink(
-                `Hallo, ich möchte wissen, welcher Deutschkurs zu meinem Niveau passt. Ich interessiere mich aktuell für ${course.title}. Quelle: ${course.source}-BOTTOM`
+                `Merhaba, kurslar ve öğrenme yolları hakkında bilgi almak istiyorum.`
               )}
               className="inline-block rounded-full bg-[#31175B] px-7 py-4 text-sm font-semibold text-white"
             >

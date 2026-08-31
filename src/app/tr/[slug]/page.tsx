@@ -6,7 +6,7 @@ import { coursePages, getCoursePage } from "@/lib/course-pages";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export function generateStaticParams() {
-  return coursePages.filter((course) => course.slug !== "famed-offline" && course.slug !== "fsp-medizin" && course.slug !== "fsp-zahnmedizin" && course.slug !== "famed" && course.slug !== "simulationen").map((course) => ({ slug: course.slug }));
+  return coursePages.filter((course) => course.slug !== "famed-offline" && course.slug !== "fsp ilacı" && course.slug !== "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know." && course.slug !== "famed" && course.slug !== "simülasyonlar").map((course) => ({ slug: course.slug }));
 }
 
 export async function generateMetadata({
@@ -35,7 +35,7 @@ export default async function CoursePage({
 
   if (!course) notFound();
 
-  const message = `Hallo, ich interessiere mich für ${course.title}. Quelle: ${course.source}`;
+  const message = `Merhaba, kurslar ve öğrenme yolları hakkında bilgi almak istiyorum.`;
 
   return (
     <main className="min-h-screen bg-white text-[#17131c]">
@@ -45,7 +45,7 @@ export default async function CoursePage({
         <div className="mx-auto grid max-w-7xl gap-10 px-5 py-20 lg:grid-cols-[1.1fr_.9fr] lg:px-8 lg:py-24">
           <div>
             <Link href="/tr" className="text-sm font-semibold text-[#31175B]">
-              ← Zurück zur Übersicht
+              ← Genel bakışa geri dön
             </Link>
 
             <div className="mt-10 text-xs font-bold tracking-[0.18em] text-[#31175B]">
@@ -65,14 +65,14 @@ export default async function CoursePage({
                 href={whatsappLink(message)}
                 className="rounded-full bg-[#31175B] px-6 py-3.5 text-sm font-semibold text-white"
               >
-                Über WhatsApp anmelden
+                Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
               </a>
 
               <a
                 href="#programm"
                 className="rounded-full border border-black/10 bg-white px-6 py-3.5 text-sm font-semibold"
               >
-                Programm ansehen
+                Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
               </a>
             </div>
           </div>
@@ -106,7 +106,7 @@ export default async function CoursePage({
               PROGRAMM
             </div>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight">
-              Was Sie erwartet.
+              Ne beklenmeli?
             </h2>
           </div>
 
@@ -147,11 +147,11 @@ export default async function CoursePage({
               </div>
               <a
                 href={whatsappLink(
-                  `Hallo, ich interessiere mich für ${course.specialBundle.title}. Quelle: ${course.source}-BUNDLE`
+                  `Merhaba, kurslar ve öğrenme yolları hakkında bilgi almak istiyorum.`
                 )}
                 className="mt-5 inline-block rounded-full bg-white px-5 py-3 text-sm font-semibold text-[#17131c]"
               >
-                Paket anfragen
+                Paket iste
               </a>
             </div>
           </div>
@@ -162,7 +162,7 @@ export default async function CoursePage({
         <section className="bg-[#31175B] py-20 text-white">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
             <div className="text-xs font-bold tracking-[0.18em] text-[#58ECF1]">
-              EMPFOHLENER LERNWEG
+              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
             </div>
 
             <div className="mt-8 grid gap-4 md:grid-cols-3">
@@ -182,19 +182,19 @@ export default async function CoursePage({
       <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="rounded-[2.5rem] bg-[#D2ECFF]/45 p-9 sm:p-12">
           <h2 className="max-w-3xl text-4xl font-semibold tracking-tight">
-            Passt dieser Kurs zu Ihrem aktuellen Sprachniveau?
+            Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
           </h2>
 
           <p className="mt-5 max-w-2xl text-lg leading-8 text-black/50">
-            Schreiben Sie uns über WhatsApp. Wir helfen Ihnen, den passenden Kurs
-            oder Lernweg auszuwählen.
+            WhatsApp aracılığıyla bize yazın. Doğru kursu bulmanıza yardımcı olacağız
+            veya öğrenme yolunu seçin.
           </p>
 
           <a
             href={whatsappLink(message)}
             className="mt-8 inline-block rounded-full bg-[#31175B] px-6 py-3 text-sm font-semibold text-white"
           >
-            Persönlich beraten lassen
+            Kişisel tavsiye alın
           </a>
         </div>
       </section>

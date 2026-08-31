@@ -36,11 +36,38 @@ export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  const navItems = pathname.startsWith("/tr")
+  const isTurkish = pathname.startsWith("/tr");
+  const isEnglish = pathname.startsWith("/en");
+
+  const navItems = isTurkish
     ? navTR
-    : pathname.startsWith("/en")
+    : isEnglish
     ? navEN
     : navDE;
+
+  const homeHref = isTurkish
+    ? "/tr"
+    : isEnglish
+    ? "/en"
+    : "/de";
+
+  const headerMessage = isTurkish
+    ? "Merhaba, Libelle Academy kursları hakkında bilgi almak istiyorum. Kaynak: WEBSITE-HEADER"
+    : isEnglish
+    ? "Hello, I would like information about Libelle Academy courses. Source: WEBSITE-HEADER"
+    : "Hallo, ich interessiere mich für die Kurse der Libelle Akademie. Quelle: WEBSITE-HEADER";
+
+  const menuLabel = menuOpen
+    ? isTurkish
+      ? "Menüyü kapat"
+      : isEnglish
+      ? "Close navigation"
+      : "Navigation schließen"
+    : isTurkish
+    ? "Menüyü aç"
+    : isEnglish
+    ? "Open navigation"
+    : "Navigation öffnen";
 
   const isActive = (href: string) =>
     pathname === href || pathname.startsWith(`${href}/`);
@@ -50,9 +77,9 @@ export default function SiteHeader() {
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="flex min-h-[72px] items-center justify-between gap-4">
           <Link
-            href="/de"
+            href={homeHref}
             className="flex shrink-0 items-center"
-            aria-label="Libelle Academy Startseite"
+            aria-label="Libelle Academy"
             onClick={() => setMenuOpen(false)}
           >
             <img
@@ -130,9 +157,7 @@ export default function SiteHeader() {
             </div>
 
             <a
-              href={whatsappLink(
-                "Hallo, ich interessiere mich für die Kurse der Libelle Akademie. Quelle: WEBSITE-HEADER"
-              )}
+              href={whatsappLink(headerMessage)}
               target="_blank"
               rel="noreferrer"
               className="rounded-full bg-[#31175B] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#4B238B]"
@@ -144,9 +169,7 @@ export default function SiteHeader() {
           {/* MOBILE / TABLET ACTIONS */}
           <div className="flex items-center gap-2 lg:hidden">
             <a
-              href={whatsappLink(
-                "Hallo, ich interessiere mich für die Kurse der Libelle Akademie. Quelle: WEBSITE-HEADER"
-              )}
+              href={whatsappLink(headerMessage)}
               target="_blank"
               rel="noreferrer"
               className="hidden rounded-full bg-[#31175B] px-4 py-2.5 text-xs font-semibold text-white sm:inline-flex"
@@ -156,11 +179,7 @@ export default function SiteHeader() {
 
             <button
               type="button"
-              aria-label={
-                menuOpen
-                  ? "Navigation schließen"
-                  : "Navigation öffnen"
-              }
+              aria-label={menuLabel}
               aria-expanded={menuOpen}
               onClick={() => setMenuOpen((open) => !open)}
               className="flex h-11 w-11 items-center justify-center rounded-full border border-black/10 bg-white"
@@ -223,7 +242,11 @@ export default function SiteHeader() {
 
               <a
                 href={whatsappLink(
-                  "Hallo, ich interessiere mich für die Kurse der Libelle Akademie. Quelle: WEBSITE-MOBILE-MENU"
+                  isTurkish
+                    ? "Merhaba, Libelle Academy kursları hakkında bilgi almak istiyorum. Kaynak: WEBSITE-MOBILE-MENU"
+                    : isEnglish
+                    ? "Hello, I would like information about Libelle Academy courses. Source: WEBSITE-MOBILE-MENU"
+                    : "Hallo, ich interessiere mich für die Kurse der Libelle Akademie. Quelle: WEBSITE-MOBILE-MENU"
                 )}
                 target="_blank"
                 rel="noreferrer"

@@ -5,40 +5,40 @@ import EditorialStorySection from "@/components/EditorialStorySection";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
-  title: "Prüfungsvorbereitung Medizin | Libelle Academy",
+  title: "Tıp sınavına hazırlık | Libelle Academy",
   description:
-    "FSP, FaMed, Diş Hekimliği, Simülasyonlar und flexible medizinische Prüfungsvorbereitung bei Libelle Academy.",
+    "FSP, FaMed, Diş Hekimliği, Simülasyonlar ve esnek tıbbi sınav hazırlığı Libelle Academy'te.",
 };
 
 const consultationMessage =
-  "Hallo, ich möchte mich auf eine medizinische Prüfung vorbereiten und bin noch unsicher, welcher Kurs oder Lernweg zu mir passt. Bitte beraten Sie mich. Quelle: PRUEFUNGSVORBEREITUNG-HUB";
+  "Merhaba, tıbbi bir sınava hazırlanmak istiyorum ancak hangi kursun veya öğrenme yolunun benim için uygun olduğundan hâlâ emin değilim. Lütfen bana tavsiyede bulunun. Kaynak: PRUEFUNGSVORBEREITUNG-HUB";
 
 const mainCourses = [
   {
-    label: "FSP MEDIZIN",
-    title: "FSP Medizin Intensivkurs",
-    text: "Medizinische Fachsprache, Anamnese, Dokumentation, Patientenvorstellung und realistische Prüfungssimulationen.",
+    label: "FSP TIP",
+    title: "FSP Yoğun ipucu kursu",
+    text: "Tıbbi terminoloji, anamnez, dokümantasyon, hasta sunumu ve gerçekçi simülasyonları.",
     href: "/tr/fsp-medizin",
     meta: "8 hafta · 950 €",
   },
   {
     label: "FAMED",
-    title: "FaMed Intensivkurs",
-    text: "Strukturierte Vorbereitung auf medizinische Kommunikation und die Anforderungen des FaMed-Prüfungsformats.",
+    title: "FaMed Yoğun Kursu",
+    text: "Tıbbi iletişim için yapılandırılmış hazırlık ve FaMed sınav formatının gereksinimleri.",
     href: "/tr/famed",
     meta: "6 hafta · 600 €",
   },
   {
-    label: "ZAHNMEDIZIN",
+    label: "DİŞ HEKİMLİĞİ",
     title: "FSP & FaMed Diş Hekimliği",
-    text: "Prüfungsvorbereitung speziell für Zahnärztinnen und Zahnärzte mit intensiven Simülasyonlar und individuellem Feedback.",
+    text: "Yoğun simülasyon ve bireysel geri bildirim ile özellikle diş hekimleri için sınav hazırlığı.",
     href: "/tr/fsp-zahnmedizin",
     meta: "8 hafta · 950 €",
   },
   {
-    label: "PRÜFUNGSTRAINING",
-    title: "Prüfungssimulationen",
-    text: "Wenn Sie bereits vorbereitet sind und Ihre Leistung vor der echten Prüfung realistisch testen möchten.",
+    label: "SINAV PRATİĞİ",
+    title: "Sınav simülasyonları",
+    text: "Zaten hazırlandıysanız ve gerçek sınavdan önce performansınızı gerçekçi bir şekilde test etmek istiyorsanız.",
     href: "/tr/simulationen",
     meta: "75 €'dan başlayan fiyatlarla",
   },
@@ -48,22 +48,22 @@ const decisions = [
   {
     number: "01",
     title: "Hangi sınava hazırlanıyorsunuz?",
-    text: "FSP, FaMed oder Diş Hekimliği bestimmen, welcher Vorbereitungsschwerpunkt für Sie sinnvoll ist.",
+    text: "FSP, FaMed veya Diş Hekimliği sizin için hangi hazırlık odağının anlamlı olduğunu belirler.",
   },
   {
     number: "02",
     title: "Medikal Almancanız ne kadar güçlü?",
-    text: "Wenn die sprachliche Grundlage noch nicht stabil genug ist, kann ein vorbereitender medizinischer Sprachschritt sinnvoll sein.",
+    text: "Dilsel temel henüz yeterince sağlam değilse, tıbbi dil hazırlığı aşaması yararlı olabilir.",
   },
   {
     number: "03",
     title: "Sınav tarihiniz ne kadar yakın?",
-    text: "Je näher die Prüfung kommt, desto wichtiger werden gezieltes Formattraining und realistische Simülasyonlar.",
+    text: "Sınav yaklaştıkça hedeflenen formattaki eğitim ve gerçekçi simülasyonlar da daha önemli hale geliyor.",
   },
   {
     number: "04",
     title: "Canlı derse mi, esnekliğe mi ihtiyacınız var?",
-    text: "Neben Intensivkursen gibt es auch flexible Selbstlern- und Kombinationsmöglichkeiten.",
+    text: "Yoğun kursların yanı sıra esnek kendi kendine öğrenme ve kombinasyon seçenekleri de mevcuttur.",
   },
 ];
 
@@ -85,9 +85,9 @@ export default function PruefungsvorbereitungPage() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-black/60">
-              FSP, FaMed, Diş Hekimliği oder gezielte Simülasyonlar: Ihre
-              Vorbereitung sollte zu Ihrer Prüfung, Ihrem aktuellen
-              Sprachniveau und Ihrem Zeitplan passen.
+              FSP, FaMed, Diş Hekimliği veya hedeflenen simülasyonlar: sizinki
+              Hazırlık şu anki sınavınız için olmalıdır
+              dil seviyeniz ve programınız.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -113,7 +113,7 @@ export default function PruefungsvorbereitungPage() {
 
             <div className="home-orbit absolute right-10 -top-10 z-20 hidden rounded-2xl bg-[#58ECF1] px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.18)] lg:block">
               <div className="text-[10px] font-bold tracking-[.14em]">
-                FSP · FAMED · ZAHN
+                Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
               </div>
               <div className="mt-1 text-sm font-semibold">
                 Sınavınıza uygun hazırlanın
@@ -141,10 +141,10 @@ export default function PruefungsvorbereitungPage() {
 
               <div className="mt-7 space-y-3">
                 {[
-                  ["FSP Medizin", "Fachsprache + Kommunikation"],
-                  ["FaMed", "FaMed-spezifische Vorbereitung"],
+                  ["FSP Tıp", "Teknik dil + iletişim"],
+                  ["FaMed", "FaMed'e özel hazırlık"],
                   ["Diş Hekimliği", "FSP & FaMed Diş Hekimliği"],
-                  ["Simülasyonlar", "Prüfung realistisch testen"],
+                  ["Simülasyonlar", "Sınavı gerçekçi bir şekilde test edin"],
                 ].map(([title, text]) => (
                   <div
                     key={title}
@@ -161,8 +161,8 @@ export default function PruefungsvorbereitungPage() {
                   HÂLÂ EMİN DEĞİL MİSİNİZ?
                 </div>
                 <p className="mt-2 leading-7 text-white/70">
-                  Sie müssen die Entscheidung nicht allein treffen. Wir helfen
-                  Ihnen, den sinnvollsten Einstieg zu bestimmen.
+                  Kararı tek başına vermek zorunda değilsin. yardım ediyoruz
+                  Başlamak için en mantıklı yolu siz belirleyeceksiniz.
                 </p>
               </div>
             </div>
@@ -171,7 +171,7 @@ export default function PruefungsvorbereitungPage() {
           <div className="mt-4 grid grid-cols-2 gap-3 lg:hidden">
             <div className="home-orbit rounded-2xl bg-[#58ECF1] px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
               <div className="text-[9px] font-bold tracking-[.13em]">
-                FSP · FAMED · ZAHN
+                Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
               </div>
               <div className="mt-1 text-xs font-semibold">
                 Sınavınıza uygun hazırlanın
@@ -196,10 +196,10 @@ export default function PruefungsvorbereitungPage() {
       <EditorialStorySection
         eyebrow="SINAVA YAKIN HAZIRLIK"
         title="Sınav kaç sayfa okuduğunuzu ölçmez."
-        text="Sie prüft, ob medizinische Kommunikation unter realistischen Bedingungen funktioniert. Deshalb sollte Vorbereitung Sprache, Struktur, Anwendung und Feedback miteinander verbinden."
+        text="Tıbbi iletişimin gerçekçi koşullar altında çalışıp çalışmadığını test eder. Bu nedenle hazırlık, dil, yapı, uygulama ve geri bildirimi birleştirmelidir."
         image="/images/fsp-doctor-patient-consultation.jpg"
-        alt="Medizinisches Patientengespräch"
-        chip="SPRACHE · STRUKTUR · ANWENDUNG"
+        alt="Tıbbi hasta görüşmesi"
+        chip="DİL · YAPI · UYGULAMA"
         reverse
       />
 
@@ -215,8 +215,8 @@ export default function PruefungsvorbereitungPage() {
           </h2>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">
-            Jeder Weg hat einen anderen Schwerpunkt. Deshalb beginnt gute
-            Prüfungsvorbereitung mit der richtigen Entscheidung.
+            Her yolun farklı bir odak noktası vardır. Bu yüzden iyi şeyler başlar
+            Doğru kararla sınava hazırlık.
           </p>
         </div>
 
@@ -307,12 +307,12 @@ export default function PruefungsvorbereitungPage() {
             </h3>
 
             <p className="mt-5 text-lg leading-8 text-black/55">
-              Wenn Sie Ihre FaMed-Vorbereitung flexibel in Ihrem eigenen Tempo
-              aufbauen und bei Bedarf mit Live-Simülasyonlar kombinieren möchten.
+              FaMed hazırlığınızın kendi temponuzda esnek olmasını istiyorsanız
+              oluşturun ve gerekirse canlı simülasyonla birleştirin.
             </p>
 
             <div className="mt-8 text-sm font-semibold text-[#31175B]">
-              FaMed Offline ansehen →
+              FaMed Offline'ı incele →
             </div>
           </Link>
 
@@ -321,21 +321,21 @@ export default function PruefungsvorbereitungPage() {
             className="rounded-[2.4rem] bg-[#D2ECFF]/60 p-9 sm:p-10"
           >
             <div className="text-xs font-bold tracking-[.17em] text-[#17666a]">
-              NOCH VOR DER SINAV HAZIRLIĞI?
+              SINAV HAZIRLIĞI'NDAN ÖNCE?
             </div>
 
             <h3 className="mt-5 text-3xl font-semibold">
-              Medizinischer Sprachweg
+              Tıbbi dil yolu
             </h3>
 
             <p className="mt-5 text-lg leading-8 text-black/55">
-              Wenn Sie zunächst medizinische Sprachkompetenz stärken und
-              anschließend gezielt in FSP, FaMed oder Simülasyonlar wechseln
-              möchten.
+              Öncelikle tıbbi dil becerilerinizi güçlendirirseniz ve
+              daha sonra özellikle FSP, FaMed veya Simülasyonlar'a geçin
+              isterim.
             </p>
 
             <div className="mt-8 text-sm font-semibold text-[#31175B]">
-              Medizinischen Sprachweg ansehen →
+              Tıbbi dil yolunu görüntüleyin →
             </div>
           </Link>
         </div>
@@ -350,7 +350,7 @@ export default function PruefungsvorbereitungPage() {
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              Wo stehen Sie gerade?
+              Şu anda neredesin?
             </h2>
           </div>
 
@@ -358,10 +358,10 @@ export default function PruefungsvorbereitungPage() {
             <div className="rounded-[2rem] bg-white p-8">
               <div className="text-xs font-bold text-[#17666a]">01</div>
               <h3 className="mt-5 text-2xl font-semibold">
-                Sprache noch unsicher
+                Dil hala belirsiz
               </h3>
               <p className="mt-4 leading-7 text-black/55">
-                Medizinische Sprachkompetenz zuerst gezielt stärken.
+                İlk olarak, özellikle tıbbi dil becerilerini güçlendirin.
               </p>
               <Link
                 href="/tr/pakete/medizinischer-sprachweg"
@@ -374,33 +374,33 @@ export default function PruefungsvorbereitungPage() {
             <div className="rounded-[2rem] bg-white p-8">
               <div className="text-xs font-bold text-[#17666a]">02</div>
               <h3 className="mt-5 text-2xl font-semibold">
-                Prüfung gezielt vorbereiten
+                Sınava özel hazırlanın
               </h3>
               <p className="mt-4 leading-7 text-black/55">
-                Direkt mit FSP, FaMed oder Diş Hekimliği beginnen.
+                FaMed sınavına yönelik yapılandırılmış hazırlık.
               </p>
               <a
                 href="#wege"
                 className="mt-7 inline-block text-sm font-semibold text-[#31175B]"
               >
-                Kurse vergleichen →
+                Kursları karşılaştır →
               </a>
             </div>
 
             <div className="rounded-[2rem] bg-white p-8">
               <div className="text-xs font-bold text-[#17666a]">03</div>
               <h3 className="mt-5 text-2xl font-semibold">
-                Fast prüfungsbereit
+                Sınava neredeyse hazırız
               </h3>
               <p className="mt-4 leading-7 text-black/55">
-                Realistisch simulieren, Feedback erhalten und letzte
-                Unsicherheiten erkennen.
+                Gerçekçi bir şekilde simüle edin, geri bildirim alın ve son
+                Belirsizliklerin farkına varın.
               </p>
               <Link
                 href="/tr/simulationen"
                 className="mt-7 inline-block text-sm font-semibold text-[#31175B]"
               >
-                Simülasyonlar ansehen →
+                Gerçekçi sınav simülasyonu ve hedefli geri bildirim.
               </Link>
             </div>
           </div>
@@ -416,12 +416,12 @@ export default function PruefungsvorbereitungPage() {
             </div>
 
             <h2 className="mt-4 max-w-3xl text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              Sagen Sie uns Prüfung, Niveau und Zeitplan.
+              Bize sınav, seviye ve program hakkında bilgi verin.
             </h2>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/55">
-              Wir helfen Ihnen, daraus einen sinnvollen nächsten Schritt
-              zusammenzustellen.
+              Bir sonraki mantıklı adımı atmanıza yardımcı olacağız
+              bir araya getirmek.
             </p>
           </div>
 
@@ -431,7 +431,7 @@ export default function PruefungsvorbereitungPage() {
             rel="noreferrer"
             className="rounded-full bg-white px-8 py-4 text-center text-sm font-semibold text-[#31175B]"
           >
-            Über WhatsApp beraten lassen
+            WhatsApp hakkında tavsiye alın
           </a>
         </div>
       </section>

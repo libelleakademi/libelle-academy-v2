@@ -23,7 +23,7 @@ export const germanCourses = {
       "Net sonraki adım: A2 veya A1–B2 öğrenme yolu",
     ],
     nextLevel: "A2",
-    source: "DEUTSCH-A1",
+    source: "Almanca seviyenize uygun yapılandırılmış öğrenme adımı.",
   },
   a2: {
     level: "A2",
@@ -43,13 +43,13 @@ export const germanCourses = {
       "B1 için dil temelini güçlendirmek",
     ],
     included: [
-      "8 hafta strukturierter Aufbau auf A1",
+      "A1 üzerinde 8 haftalık yapılandırılmış yapı",
       "Daha fazla aktif iletişim ve cümle kurma güveni",
       "Grameri gerçek durumlarla bağlantılı öğrenme",
       "Net sonraki adım: B1 veya A1–B2 öğrenme yolu",
     ],
     nextLevel: "B1",
-    source: "DEUTSCH-A2",
+    source: "Almanca seviyenize uygun yapılandırılmış öğrenme adımı.",
   },
   b1: {
     level: "B1",
@@ -69,13 +69,13 @@ export const germanCourses = {
       "B2 için sağlam bir dil temeli oluşturmak",
     ],
     included: [
-      "12 hafta für nachhaltigere Sprachroutine",
+      "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
       "Bağlantılı konuşmaya daha fazla odaklanma",
       "Gramer, kelime ve ifadeyi bütünsel geliştirme",
       "Doğrudan B2'ye devam imkânı",
     ],
     nextLevel: "B2",
-    source: "DEUTSCH-B1",
+    source: "Almanca seviyenize uygun yapılandırılmış öğrenme adımı.",
   },
   b2: {
     level: "B2",
@@ -95,13 +95,13 @@ export const germanCourses = {
       "Medikal Almanca ve sonraki uzmanlaşmalar için güçlü temel oluşturmak",
     ],
     included: [
-      "12 hafta fokussierter B2-Aufbau",
+      "12 haftalık odaklı B2 yapısı",
       "Sadece kural tekrarı yerine ifade güveni",
       "Daha ileri iletişime pratik odaklı geçiş",
       "Libelle medikal programlarına devam imkânı",
     ],
     nextLevel: "Medikal Almanca",
-    source: "DEUTSCH-B2",
+    source: "Almanca seviyenize uygun yapılandırılmış öğrenme adımı.",
   },
 } as const;
 

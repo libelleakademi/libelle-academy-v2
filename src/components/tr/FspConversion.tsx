@@ -11,7 +11,7 @@ const situations = [
     label: "DİL TEMELİ",
     question: "Almancam FSP için henüz yeterince güvenli hissettirmiyor.",
     title: "Yalnızca sınav formatına çok erken odaklanmayın.",
-    text: "Wenn Sie im medizinischen Gespräch noch stark nach Wörtern oder Strukturen suchen müssen, kann zuerst die sprachliche Grundlage entscheidend sein. Prüfungsstrategien helfen wenig, wenn die Kommunikation selbst noch zu viel mentale Energie kostet.",
+    text: "Tıbbi bir konuşmada hâlâ kelimeleri veya yapıları aramanız gerekiyorsa, öncelikle dilsel temel çok önemli olabilir. Eğer iletişim çok fazla zihinsel enerji gerektiriyorsa, inceleme stratejilerinin pek faydası olmaz.",
     next: "Dil seviyesini değerlendir → eksikleri belirle → FSP'ye hedefli hazırlan",
   },
   {
@@ -20,8 +20,8 @@ const situations = [
     label: "UYGULAMA",
     question: "Teoriyi biliyorum ama konuşma sırasında kilitleniyorum.",
     title: "Bilginizi konuşma baskısı altında da kullanabilmelisiniz.",
-    text: "Viele Unsicherheiten zeigen sich erst, wenn gleichzeitig zugehört, strukturiert, formuliert und medizinisch reagiert werden muss. Genau deshalb sollte Vorbereitung nicht beim Lesen und Auswendiglernen enden.",
-    next: "Strukturen festigen → aktiv sprechen → Anamnese, Dokumentation und Vorstellung verbinden",
+    text: "Pek çok güvensizlik ancak aynı anda dinlemeniz, yapılandırmanız, formüle etmeniz ve tıbbi olarak yanıt vermeniz gerektiğinde ortaya çıkar. İşte tam da bu yüzden hazırlık okumak ve ezberlemekle bitmemeli.",
+    next: "Yapıları birleştirin → aktif konuşun → anamnez, dokümantasyon ve sunumu birleştirin",
   },
   {
     id: "exam",
@@ -29,7 +29,7 @@ const situations = [
     label: "SINAVA YAKINLIK",
     question: "Sınavım yaklaşıyor ve hazır olup olmadığımdan emin değilim.",
     title: "Artık önemli olan yalnızca ne bildiğiniz değil.",
-    text: "Kurz vor der Prüfung wird wichtiger, wie zuverlässig Sie Ihr Wissen in einer realistischen Situation abrufen können. Simulationen machen sichtbar, wo bereits Sicherheit besteht und was noch gezielt nachgeschärft werden sollte.",
+    text: "Sınava kısa bir süre kala, gerçekçi bir durumda bilginize ne kadar güvenilir bir şekilde ulaşabileceğiniz daha da önemli hale geliyor. Simülasyonlar, güvenliğin nerede mevcut olduğunu ve neyin özel olarak iyileştirilmesi gerektiğini açıkça ortaya koyuyor.",
     next: "Sınav koşullarında uygula → geri bildirim al → kalan eksikleri hedefli geliştir",
   },
 ];
@@ -37,11 +37,11 @@ const situations = [
 const questions = [
   {
     q: "Yoğun kursa başlamadan önce medikal Almancayı çok iyi konuşmam gerekiyor mu?",
-    a: "Der Kurs dient gerade dazu, medizinische Kommunikation systematisch zu trainieren. Entscheidend ist jedoch, dass Ihr allgemeines Deutschniveau eine sinnvolle Mitarbeit ermöglicht. Wenn Sie unsicher sind, können Sie uns Ihren aktuellen Stand vorab schildern.",
+    a: "Dersin amacı sistematik olarak tıbbi iletişimi öğretmektir. Ancak önemli olan, genel Almanca seviyenizin anlamlı bir katılımı mümkün kılmasıdır. Emin değilseniz, mevcut durumunuzu önceden bize bildirebilirsiniz.",
   },
   {
     q: "Daha önce FSP kursu aldım. Başka bir kursun faydası olur mu?",
-    a: "Das hängt weniger von der Anzahl Ihrer bisherigen Kurse ab als davon, was heute noch unsicher ist. Wenn Sie Inhalte bereits kennen, aber Anamnese, Dokumentation oder Patientenvorstellung unter Gesprächsdruck noch nicht zuverlässig funktionieren, kann gezieltes Anwendungstraining weiterhin sinnvoll sein.",
+    a: "Bu, şu ana kadar aldığınız ders sayısına değil, bugün hala belirsiz olan şeylere bağlıdır. İçeriği zaten biliyorsanız ancak anamnez, dokümantasyon veya hasta sunumları konuşma baskısı altında henüz güvenilir bir şekilde çalışmıyorsa, hedefe yönelik uygulama eğitimi yine de faydalı olabilir.",
   },
   {
     q: "Simülasyonda kötü performans gösterirsem ne olur?",
@@ -164,7 +164,7 @@ export default function FspConversion() {
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <a
                     href={whatsappLink(
-                      `Hallo, ich bereite mich auf die FSP Medizin vor. Meine aktuelle Situation: ${current.question} Bitte helfen Sie mir einzuschätzen, welcher nächste Schritt sinnvoll ist. Quelle: FSP-DECISION`
+                      `Merhaba FSP Tıp sınavına hazırlanıyorum. Şu anki durumum: ${current.question} Lütfen bir sonraki adımın hangisinin anlamlı olduğunu değerlendirmeme yardım edin. Kaynak: FSP-DECISION`
                     )}
                     target="_blank"
                     rel="noreferrer"

@@ -6,20 +6,20 @@ import { whatsappLink } from "@/lib/whatsapp";
 export const metadata: Metadata = {
   title: "Eğitmenler | Libelle Academy",
   description:
-    "Lernen Sie die Tutorinnen und Tutoren der medizinischen Sprach- und Prüfungsvorbereitung bei Libelle Academy kennen.",
+    "Libelle Academy'nin medikal Almanca ve sınav hazırlığı eğitmenlerini tanıyın.",
 };
 
 const consultationMessage =
-  "Hallo, ich interessiere mich für einen medizinischen Kurs bei Libelle Academy und möchte wissen, welcher Kurs zu meiner Prüfung passt. Quelle: EĞİTMENLER-SEITE";
+  "Merhaba, Libelle Academy'nin medikal kurslarıyla ilgileniyorum. Sınavıma hangi kursun uygun olduğunu öğrenmek istiyorum. Kaynak: EĞİTMENLER-SEITE";
 
 const tutors = [
   {
     initials: "FM",
     name: "Firdevs Murad",
-    area: "FSP MEDIZIN",
-    title: "FSP Medizin Eğitmeni",
-    text: "İstanbul Erkek Lisesi'nden mezun olduktan sonra Firdevs Murad tıp eğitimine Charité Berlin'de devam etti. Eğitimi sırasında nörobilim alanında doktora çalışmasına başladı ve Charité'deki öğrenciler ve doktorlar için oluşturulan “Türkisch für Mediziner” kursunun kurucu ekibinde yer aldı.",
-    course: "FSP Medizin Intensivkurs",
+    area: "FSP TIP",
+    title: "FSP Tıp Eğitmeni",
+    text: "İstanbul Erkek Lisesi'nden mezun olduktan sonra Firdevs Murad tıp eğitimine Charité Berlin'de devam etti. Eğitim sırasında nörobilim alanında doktora çalışmaları başladı ve Charité'deki dokümantasyon ve doktorlar için “Doktorlar için Türkçe” dersinin kurucu ekibinde yer aldı.",
+    course: "FSP Yoğun ipucu kursu",
     href: "/tr/fsp-medizin",
   },
   {
@@ -28,7 +28,7 @@ const tutors = [
     area: "FAMED",
     title: "FaMed Eğitmeni",
     text: "Alkış Şensoy, İstanbul Erkek Lisesi'nden mezun olduktan sonra Charité Berlin'de tıp eğitimine başladı. 2021–2023 yılları arasında Charité öğrenme merkezinde ortopedi eğitimi verdi ve Libelle'de FaMed hazırlığını yürütmektedir.",
-    course: "FaMed Intensivkurs",
+    course: "FaMed Yoğun Kursu",
     href: "/tr/famed",
   },
 ];
@@ -37,22 +37,22 @@ const principles = [
   {
     number: "01",
     title: "Pratik yapın",
-    text: "Medizinische Sprache wird nicht nur erklärt, sondern in konkreten Kommunikations- und Prüfungssituationen angewendet.",
+    text: "Medikal dil yalnızca anlatılmaz; gerçek iletişim ve sınav durumlarında aktif olarak uygulanır.",
   },
   {
     number: "02",
     title: "Aktif iletişim kurun",
-    text: "Anamnese, Patientengespräch, Dokumentation oder Patientenvorstellung werden durch aktive Anwendung trainiert.",
+    text: "Anamnez, hasta görüşmesi, dokümantasyon ve hasta sunumu aktif uygulamalarla çalışılır.",
   },
   {
     number: "03",
     title: "Hedefli geri bildirim alın",
-    text: "Rückmeldung hilft dabei, sprachliche Unsicherheiten und prüfungsrelevante Schwachstellen konkreter zu erkennen.",
+    text: "Geri bildirim, dilsel eksikleri ve sınav açısından önemli zayıf noktaları daha net görmenizi sağlar.",
   },
   {
     number: "04",
     title: "Yapılandırılmış hazırlanın",
-    text: "Die Vorbereitung folgt klaren Kursinhalten und verbindet Sprachtraining mit dem jeweiligen Prüfungsweg.",
+    text: "Hazırlık, net ders programını dil eğitimi ve ilgili sınav yoluyla birleştirir.",
   },
 ];
 
@@ -74,9 +74,7 @@ export default function TutorenPage() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-black/60">
-              Unsere Tutorinnen und Tutoren begleiten die medizinische Sprach-
-              und Prüfungsvorbereitung mit einem klaren Fokus auf aktive
-              Kommunikation, Anwendung und Prüfungstraining.
+              Eğitmenlerimiz medikal dil ve sınav hazırlığında aktif iletişim, uygulama ve sınav pratiğine odaklanan yapılandırılmış bir öğrenme süreci sunar.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -100,7 +98,7 @@ export default function TutorenPage() {
 
             <div className="home-orbit absolute right-10 -top-10 z-20 hidden rounded-2xl bg-[#58ECF1] px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.18)] lg:block">
               <div className="text-[10px] font-bold tracking-[.14em]">
-                MEDICAL GERMAN
+                MEDİKAL ALMANCA
               </div>
               <div className="mt-1 text-sm font-semibold">
                 Medikal dili aktif kullanın
@@ -109,7 +107,7 @@ export default function TutorenPage() {
 
             <div className="home-orbit-delay absolute bottom-[-46px] left-10 z-20 hidden rounded-2xl bg-white px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.16)] lg:block">
               <div className="text-[10px] font-bold tracking-[.14em] text-[#17666a]">
-                PRÜFUNGSNAH
+                SINAVA YAKIN
               </div>
               <div className="mt-1 text-sm font-semibold">
                 Pratik + Geri Bildirim + Uygulama
@@ -119,7 +117,7 @@ export default function TutorenPage() {
             <div className="rounded-[2.8rem] bg-[#17131c] p-6 shadow-[0_30px_90px_rgba(49,23,91,.16)]">
               <div className="rounded-[2.1rem] bg-[#f3eff7] p-7 sm:p-9">
               <div className="text-xs font-bold tracking-[.17em] text-[#31175B]">
-                MEDICAL GERMAN
+                MEDİKAL ALMANCA
               </div>
 
               <div className="mt-3 text-3xl font-semibold">
@@ -128,10 +126,10 @@ export default function TutorenPage() {
 
               <div className="mt-7 space-y-3">
                 {[
-                  "Medizinische Fachsprache",
-                  "Patientenkommunikation",
-                  "Prüfungsorientiertes Training",
-                  "Feedback & Anwendung",
+                  "Medikal mesleki dil",
+                  "Hasta iletişimi",
+                  "Sınav odaklı çalışma",
+                  "Geri bildirim ve uygulama",
                 ].map((item) => (
                   <div
                     key={item}
@@ -148,8 +146,7 @@ export default function TutorenPage() {
                 </div>
 
                 <p className="mt-2 leading-7 text-white/70">
-                  Medizinische Kommunikation strukturiert lernen und aktiv
-                  unter prüfungsnahen Bedingungen anwenden.
+                  Medikal iletişimi yapılandırılmış şekilde öğrenin ve gerçek sınava yakın koşullarda aktif olarak uygulayın.
                 </p>
               </div>
             </div>
@@ -158,7 +155,7 @@ export default function TutorenPage() {
           <div className="mt-4 grid grid-cols-2 gap-3 lg:hidden">
             <div className="home-orbit rounded-2xl bg-[#58ECF1] px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
               <div className="text-[9px] font-bold tracking-[.13em]">
-                MEDICAL GERMAN
+                MEDİKAL ALMANCA
               </div>
               <div className="mt-1 text-xs font-semibold">
                 Medikal dili aktif kullanın
@@ -167,7 +164,7 @@ export default function TutorenPage() {
 
             <div className="home-orbit-delay rounded-2xl bg-white px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
               <div className="text-[9px] font-bold tracking-[.13em] text-[#17666a]">
-                PRÜFUNGSNAH
+                SINAVA YAKIN
               </div>
               <div className="mt-1 text-xs font-semibold">
                 Pratik + Geri Bildirim + Uygulama
@@ -191,8 +188,7 @@ export default function TutorenPage() {
           </h2>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">
-            Die Tutorenzuordnung orientiert sich an den jeweiligen
-            medizinischen Kurs- und Prüfungsschwerpunkten.
+            Eğitmen seçimi, ilgili medikal kursun ve sınavın odak noktalarına göre yapılır.
           </p>
         </div>
 
@@ -230,7 +226,7 @@ export default function TutorenPage() {
                     href={tutor.href}
                     className="mt-8 inline-flex w-fit rounded-full bg-[#31175B] px-6 py-3 text-sm font-semibold text-white"
                   >
-                    {tutor.course} ansehen
+                    {tutor.course} incele
                   </Link>
                 </div>
               </div>
@@ -284,13 +280,11 @@ export default function TutorenPage() {
           </div>
 
           <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-            Der passende Tutor gehört zum passenden Prüfungsweg.
+            Doğru sınav yolu, doğru eğitmen desteğiyle daha etkili hale gelir.
           </h2>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">
-            Entscheidend ist nicht nur, wer unterrichtet, sondern welche
-            medizinische Prüfung Sie vorbereiten und welche Trainingsform Sie
-            aktuell benötigen.
+            Önemli olan yalnızca kimin ders verdiği değil; hangi medikal sınava hazırlandığınız ve şu anda hangi çalışma biçimine ihtiyaç duyduğunuzdur.
           </p>
         </div>
 
@@ -300,16 +294,15 @@ export default function TutorenPage() {
             className="rounded-[2rem] bg-[#f7f9fb] p-8 transition hover:-translate-y-1"
           >
             <div className="text-xs font-bold tracking-[.15em] text-[#17666a]">
-              FSP MEDIZIN
+              FSP TIP
             </div>
 
             <h3 className="mt-5 text-2xl font-semibold">
-              FSP Medizin Intensivkurs
+              FSP Yoğun ipucu kursu
             </h3>
 
             <p className="mt-4 leading-7 text-black/50">
-              Medizinische Fachsprache, Anamnese, Dokumentation und
-              Patientenvorstellung.
+              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
             </p>
 
             <div className="mt-8 text-sm font-semibold text-[#31175B]">
@@ -326,12 +319,11 @@ export default function TutorenPage() {
             </div>
 
             <h3 className="mt-5 text-2xl font-semibold">
-              FaMed Intensivkurs
+              FaMed Yoğun Kursu
             </h3>
 
             <p className="mt-4 leading-7 text-black/50">
-              Medizinische Kommunikation, Patientenaufklärung,
-              Dokumentation und Prüfungssimulationen.
+              Medikal iletişim, hasta bilgilendirmesi, dokümantasyon ve sınav simülasyonları.
             </p>
 
             <div className="mt-8 text-sm font-semibold text-[#31175B]">
@@ -344,16 +336,16 @@ export default function TutorenPage() {
             className="rounded-[2rem] bg-[#D2ECFF]/60 p-8 transition hover:-translate-y-1"
           >
             <div className="text-xs font-bold tracking-[.15em] text-[#17666a]">
-              ZAHNMEDIZIN
+              DİŞ HEKİMLİĞİ
             </div>
 
             <h3 className="mt-5 text-2xl font-semibold">
-              FSP & FaMed Zahnmedizin
+              FSP & FaMed Diş Hekimliği
             </h3>
 
             <p className="mt-4 leading-7 text-black/50">
-              Medizinische Fachsprache und Prüfungsvorbereitung speziell für
-              Zahnärztinnen und Zahnärzte.
+              Medikal mesleki dil ve sınavlara özel olarak hazırlık
+              Diş hekimleri.
             </p>
 
             <div className="mt-8 text-sm font-semibold text-[#31175B]">
@@ -368,34 +360,32 @@ export default function TutorenPage() {
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-24 lg:grid-cols-[1fr_1fr] lg:px-8">
           <div>
             <div className="text-xs font-bold tracking-[.18em] text-[#31175B]">
-              VOM UNTERRICHT ZUR PRÜFUNG
+              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              Lernen wird besonders wertvoll, wenn Sie es unter
-              Prüfungsbedingungen testen.
+              Öğrenmek, bunu altta yaptığınızda özellikle değerli hale gelir
+              Sınav koşullarında test edin.
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-black/55">
-              Prüfungssimulationen helfen dabei, das Gelernte praktisch
-              anzuwenden und gezieltes Feedback für die weitere Vorbereitung
-              zu erhalten.
+              Sınav simülasyonları öğrendiklerinizi uygulamanıza ve sonraki hazırlığınız için hedefli geri bildirim almanıza yardımcı olur.
             </p>
 
             <Link
               href="/tr/simulationen"
               className="mt-8 inline-block rounded-full bg-[#31175B] px-7 py-3.5 text-sm font-semibold text-white"
             >
-              Simulationen ansehen
+              Simülasyonları incele
             </Link>
           </div>
 
           <div className="rounded-[2.5rem] bg-white p-8 sm:p-10">
             <div className="space-y-4">
               {[
-                ["01", "Prüfungssituation erleben"],
-                ["02", "Kommunikation anwenden"],
-                ["03", "Feedback erhalten"],
+                ["01", "Sınav durumunu yaşayın"],
+                ["02", "İletişimi uygula"],
+                ["03", "Geri bildirim alın"],
                 ["04", "Gezielter weitertrainieren"],
               ].map(([number, title]) => (
                 <div
@@ -419,16 +409,16 @@ export default function TutorenPage() {
         <div className="mx-auto grid max-w-7xl gap-8 rounded-[2.8rem] bg-[#17131c] p-9 text-white sm:p-14 lg:grid-cols-[1fr_auto] lg:items-center">
           <div>
             <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
-              IHR NÄCHSTER SCHRITT
+              SONRAKİ ADIMINIZ
             </div>
 
             <h2 className="mt-4 max-w-3xl text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              Welche Prüfung bereiten Sie gerade vor?
+              Şu anda hangi sınava hazırlanıyorsunuz?
             </h2>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/55">
-              Schreiben Sie uns kurz Ihr Prüfungsziel und Ihren aktuellen
-              Stand. Wir helfen Ihnen beim passenden Kurs.
+              Sınav hedefiniz ve mevcut hedefiniz hakkında bize kısaca yazın
+              Dur. Doğru kursu bulmanıza yardımcı olacağız.
             </p>
           </div>
 
@@ -438,7 +428,7 @@ export default function TutorenPage() {
             rel="noreferrer"
             className="rounded-full bg-white px-8 py-4 text-center text-sm font-semibold text-[#31175B]"
           >
-            Über WhatsApp beraten lassen
+            Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
           </a>
         </div>
       </section>

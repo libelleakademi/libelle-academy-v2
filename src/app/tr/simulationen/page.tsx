@@ -8,35 +8,35 @@ import { whatsappLink } from "@/lib/whatsapp";
 export const metadata: Metadata = {
   title: "Sınav Simülasyonları | Libelle Academy",
   description:
-    "Realistische Sınav Simülasyonuen mit individuellem Feedback für eine gezielte FSP- und FaMed-Vorbereitung.",
+    "FSP ve FaMed hazırlığı için kişisel geri bildirim içeren gerçekçi sınav simülasyonları.",
 };
 
 const mainMessage =
-  "Hallo, ich interessiere mich für eine Sınav Simülasyonu bei Libelle Academy. Bitte senden Sie mir Informationen zu freien Terminen und den verfügbaren Optionen. Quelle: SIMULATIONEN-LANDING";
+  "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.";
 
 const consultationMessage =
-  "Hallo, ich möchte wissen, welche Sınav Simülasyonu zu meiner aktuellen Vorbereitung passt. Quelle: SIMULATIONEN-BERATUNG";
+  "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.";
 
 const outcomes = [
   {
     number: "01",
     title: "Sınav ortamını gerçekçi şekilde deneyimleyin",
-    text: "Trainieren Sie nicht nur einzelne Aufgaben, sondern eine zusammenhängende Prüfungssituation.",
+    text: "Yalnızca tek tek görevleri değil, bütünlüklü bir sınav durumunu çalışın.",
   },
   {
     number: "02",
     title: "Eksiklerinizi net şekilde görün",
-    text: "Sie sehen, an welchen Stellen Kommunikation, Struktur oder sprachliche Sicherheit noch verbessert werden können.",
+    text: "İletişim, yapı ve dil güvenliğinizde hangi noktaların geliştirilmesi gerektiğini görün.",
   },
   {
     number: "03",
-    title: "Kişisel geri bildirim erhalten",
-    text: "Nach der Simulation erhalten Sie gezielte Rückmeldung zu Ihrer Leistung und zu den nächsten Trainingsschritten.",
+    title: "Kişisel geri bildirim alın",
+    text: "Simülasyon sonrasında performansınız ve sonraki çalışma adımlarınız hakkında hedefli geri bildirim alın.",
   },
   {
     number: "04",
     title: "Hedefli şekilde çalışmaya devam edin",
-    text: "Statt allgemein weiterzulernen, können Sie sich anschließend auf die Bereiche konzentrieren, die noch Sicherheit brauchen.",
+    text: "Genel çalışmaya devam etmek yerine hâlâ geliştirilmesi gereken alanlara odaklanın.",
   },
 ];
 
@@ -44,47 +44,47 @@ const process = [
   {
     number: "01",
     eyebrow: "SİMÜLE ET",
-    title: "Prüfungssituation durchführen",
-    text: "Sie bearbeiten eine realistische prüfungsnahe Situation und wenden Ihre medizinische Kommunikation praktisch an.",
+    title: "Sınav durumunu uygulayın",
+    text: "Gerçek sınava yakın bir durum üzerinde çalışın ve medikal iletişim becerilerinizi uygulayın.",
   },
   {
     number: "02",
-    eyebrow: "ANALYSIEREN",
-    title: "Leistung gemeinsam auswerten",
-    text: "Kommunikation, Struktur, Verständlichkeit und sprachliche Sicherheit werden gezielt betrachtet.",
+    eyebrow: "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+    title: "Performansı birlikte değerlendirin",
+    text: "İletişim, yapı, anlaşılabilirlik ve dil güvenliği hedefli şekilde değerlendirilir.",
   },
   {
     number: "03",
-    eyebrow: "VERBESSERN",
-    title: "Nächste Trainingsschritte festlegen",
-    text: "Aus dem Feedback entsteht ein konkreter Fokus für Ihre weitere Prüfungsvorbereitung.",
+    eyebrow: "GELİŞTİR",
+    title: "Sonraki çalışma adımlarını belirleyin",
+    text: "Geri bildirim sayesinde sonraki sınav hazırlığınız için net bir çalışma odağı belirlenir.",
   },
 ];
 
 const faqs = [
   [
-    "Kann ich eine einzelne Simulation buchen?",
-    "Ja. Sınav Simülasyonuen können einzeln gebucht werden.",
+    "Tek bir simülasyon satın alabilir miyim?",
+    "Evet. Sınav simülasyonları tek tek satın alınabilir.",
   ],
   [
-    "Gibt es auch mehrere Simülasyonlar als Paket?",
-    "Ja. Neben einzelnen Simülasyonlar sind auch Paketoptionen verfügbar. Die aktuellen Möglichkeiten erfahren Sie über WhatsApp.",
+    "Birden fazla simülasyon içeren paket var mı?",
+    "Evet. Tekli simülasyonların yanında paket seçenekleri de bulunmaktadır. Güncel seçenekleri WhatsApp üzerinden öğrenebilirsiniz.",
   ],
   [
-    "Was kostet eine Simulation?",
-    "Die aktuell hinterlegten Simülasyonlar beginnen 75 €'dan başlayan fiyatlarla.",
+    "Bir simülasyonun fiyatı nedir?",
+    "Güncel simülasyon fiyatları 75 €'dan başlamaktadır.",
   ],
   [
-    "Bekomme ich nach der Simulation Feedback?",
-    "Ja. Kişisel geri bildirim ist ein zentraler Bestandteil der Simulation.",
+    "Simülasyon sonrasında geri bildirim alıyor muyum?",
+    "Evet. Kişisel geri bildirim simülasyonun temel bir parçasıdır.",
   ],
   [
-    "Wann ist eine Simulation sinnvoll?",
-    "Besonders sinnvoll ist sie, wenn Sie Ihr aktuelles Prüfungsniveau realistisch testen und konkrete Schwachstellen vor dem Prüfungstermin erkennen möchten.",
+    "Simülasyon ne zaman faydalıdır?",
+    "Mevcut sınav seviyenizi gerçekçi şekilde test etmek ve sınavdan önce eksiklerinizi görmek istiyorsanız özellikle faydalıdır.",
   ],
   [
-    "Wie erfahre ich freie Termine?",
-    "Schreiben Sie uns über WhatsApp. Wir senden Ihnen die aktuell verfügbaren Termine und Optionen.",
+    "Uygun tarihleri nasıl öğrenebilirim?",
+    "Bize WhatsApp üzerinden yazın. Size güncel uygun tarihleri ve seçenekleri iletelim.",
   ],
 ];
 
@@ -163,7 +163,7 @@ export default function SimülasyonlarPage() {
 
             <div className="home-orbit-delay absolute bottom-[-48px] left-10 z-20 hidden rounded-2xl bg-white px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.16)] lg:block">
               <div className="text-[10px] font-bold tracking-[.14em] text-[#17666a]">
-                FEEDBACK
+                GERİ BİLDİRİM
               </div>
               <div className="mt-1 text-sm font-semibold">
                 Bir sonraki odağı netleştirin
@@ -250,7 +250,7 @@ export default function SimülasyonlarPage() {
 
             <div className="home-orbit-delay rounded-2xl bg-white px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
               <div className="text-[9px] font-bold tracking-[.13em] text-[#17666a]">
-                FEEDBACK
+                GERİ BİLDİRİM
               </div>
               <div className="mt-1 text-xs font-semibold">
                 Bir sonraki odağı netleştirin
@@ -266,7 +266,7 @@ export default function SimülasyonlarPage() {
       <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="max-w-4xl">
           <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-            WARUM SİMÜLE ET?
+            NEDEN SİMÜLASYON?
           </div>
 
           <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
@@ -274,9 +274,7 @@ export default function SimülasyonlarPage() {
           </h2>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">
-            Eine Simulation macht sichtbar, wie sicher Sie medizinische
-            Kommunikation tatsächlich unter prüfungsnahen Bedingungen
-            anwenden können.
+            Bir simülasyon, medikal iletişiminizi gerçek sınava yakın koşullarda ne kadar güvenli kullanabildiğinizi gösterir.
           </p>
         </div>
 
@@ -307,7 +305,7 @@ export default function SimülasyonlarPage() {
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-24 lg:grid-cols-[.9fr_1.1fr] lg:px-8">
           <div>
             <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
-              SINAVA YAKINE VORBEREITUNG
+              SINAVA YAKIN HAZIRLIK
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
@@ -315,29 +313,27 @@ export default function SimülasyonlarPage() {
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/60">
-              Erst in einer zusammenhängenden Simulation sehen Sie, wie
-              Sprache, Struktur, medizinische Kommunikation und Reaktion
-              zusammenspielen.
+              Ancak bütünlüklü bir simülasyonda dil, yapı, medikal iletişim ve tepki verme becerilerinin birlikte nasıl çalıştığını görebilirsiniz.
             </p>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2">
             {[
               [
-                "Realistische Situation",
-                "Nicht nur einzelne Aufgaben, sondern eine prüfungsnahe Gesamtsituation.",
+                "Gerçekçi sınav durumu",
+                "Tek tek görevler değil, gerçek sınava yakın bütünlüklü bir durum.",
               ],
               [
-                "Individuelle Rückmeldung",
-                "Sie erfahren konkret, was bereits funktioniert und was noch unsicher ist.",
+                "Kişisel geri bildirim",
+                "Hangi alanların iyi çalıştığını ve hangi noktalarda hâlâ eksik olduğunuzu net şekilde görün.",
               ],
               [
-                "Gezielter Fokus",
-                "Ihre weitere Vorbereitung kann auf die tatsächlich relevanten Schwachstellen ausgerichtet werden.",
+                "Hedefli çalışma odağı",
+                "Sonraki hazırlığınızı gerçekten geliştirilmesi gereken alanlara yönlendirebilirsiniz.",
               ],
               [
-                "Wiederholbar",
-                "Einzelne Simülasyonlar oder mehrere Trainings können je nach Bedarf kombiniert werden.",
+                "Tekrarlanabilir",
+                "İhtiyacınıza göre tekli veya birden fazla simülasyonu bir araya getirebilirsiniz.",
               ],
             ].map(([title, text]) => (
               <div
@@ -359,10 +355,10 @@ export default function SimülasyonlarPage() {
       <EditorialStorySection
         eyebrow="TESTTEN SONRAKİ ADIMA"
         title="İyi bir simülasyon son cümleyle bitmez."
-        text="Entscheidend ist, was danach sichtbar wird: Wo verlieren Sie Struktur? Welche Formulierungen fehlen unter Druck? Und was sollten Sie vor der echten Prüfung gezielt verbessern?"
+        text="Önemli olan sonrasında neyin görünür hale geldiğidir: Yapıyı nerede kaybedersiniz? Baskı altında hangi formülasyonlar eksik? Ve gerçek testten önce özellikle neyi geliştirmelisiniz?"
         image="/images/medical-path-doctor-explanation.jpg"
-        alt="Medizinische Notizen und Feedback"
-        chip="SİMÜLE ET → ANALYSIEREN → VERBESSERN"
+        alt="Medikal notlar ve geri bildirim"
+        chip="SİMÜLE ET → ANALİZ ET → GELİŞTİR"
         reverse
         dark
       />
@@ -374,11 +370,11 @@ export default function SimülasyonlarPage() {
       >
         <div className="max-w-4xl">
           <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-            SO LÄUFT ES AB
+            SÜREÇ NASIL İLERLİYOR?
           </div>
 
           <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-            Simulieren. Analysieren. Hedefli şekilde çalışmaya devam edin.
+            Benzetmek. Analiz edin. Hedefli şekilde çalışmaya devam edin.
           </h2>
         </div>
 
@@ -419,29 +415,29 @@ export default function SimülasyonlarPage() {
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">
-              Wenn die Prüfung näher kommt.
+              Sınav yaklaştığında.
             </h2>
 
             <div className="mt-7 space-y-4 text-black/60">
-              <p>✓ Wenn Sie Ihren aktuellen Stand realistisch testen möchten</p>
-              <p>✓ Wenn Sie trotz Lernen noch Unsicherheiten spüren</p>
-              <p>✓ Wenn Sie gezielter statt einfach mehr lernen möchten</p>
-              <p>✓ Wenn Sie Prüfungskommunikation praktisch trainieren möchten</p>
+              <p>✓ Mevcut seviyenizi gerçekçi şekilde test etmek istiyorsanız</p>
+              <p>✓ Çalışmanıza rağmen hâlâ eksikler hissediyorsanız</p>
+              <p>✓ Daha fazla değil, daha hedefli çalışmak istiyorsanız</p>
+              <p>✓ Sınav iletişimini pratik olarak çalışmak istiyorsanız</p>
             </div>
           </div>
 
           <div className="rounded-[2.5rem] bg-white p-9 sm:p-11">
             <div className="text-xs font-bold tracking-[.18em] text-[#31175B]">
-              NOCH UNSICHER?
+              HALA UNSICHER MI?
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">
-              Welche Simulation passt zu Ihrer Vorbereitung?
+              Hazırlığınıza hangi simülasyon uygun?
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-black/55">
-              Schreiben Sie uns kurz, auf welche Prüfung Sie sich vorbereiten
-              und wo Sie aktuell stehen. Wir helfen Ihnen bei der Auswahl.
+              Hangi sınava hazırlandığınız hakkında bize kısaca yazın
+              ve şu anda nerede durduğunuz. Seçmenize yardımcı olacağız.
             </p>
 
             <a
@@ -450,7 +446,7 @@ export default function SimülasyonlarPage() {
               rel="noreferrer"
               className="mt-8 inline-block rounded-full bg-[#31175B] px-7 py-3.5 text-sm font-semibold text-white"
             >
-              Persönlich beraten lassen
+              Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
             </a>
           </div>
         </div>
@@ -463,16 +459,16 @@ export default function SimülasyonlarPage() {
         <div className="mx-auto grid max-w-7xl gap-8 rounded-[2.8rem] bg-[#17131c] p-8 text-white sm:p-12 md:grid-cols-[1fr_auto] md:items-center">
           <div>
             <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
-              IHR NÄCHSTER SCHRITT
+              SONRAKİ ADIMINIZ
             </div>
 
             <h2 className="mt-5 max-w-3xl text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              Finden Sie vor der echten Prüfung heraus, was noch fehlt.
+              Gerçek sınavdan önce hangi noktaların eksik olduğunu görün.
             </h2>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/55">
-              Fragen Sie nach dem nächsten freien Simulationstermin und den
-              aktuell verfügbaren Buchungsoptionen.
+              Bir sonraki ücretsiz simülasyon tarihi ve saatini sorun
+              şu anda mevcut rezervasyon seçenekleri.
             </p>
           </div>
 
@@ -482,7 +478,7 @@ export default function SimülasyonlarPage() {
             rel="noreferrer"
             className="rounded-full bg-white px-7 py-4 text-center text-sm font-semibold text-[#31175B]"
           >
-            Simulation anfragen
+            Simülasyon hakkında bilgi al
           </a>
         </div>
       </section>

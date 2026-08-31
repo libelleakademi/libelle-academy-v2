@@ -6,56 +6,56 @@ import HomeConversion from "@/components/tr/HomeConversion";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
-  title: "Libelle Academy | Deutsch & medizinische Prüfungsvorbereitung",
+  title: "Libelle Academy | Almanca & Medikal Sınav Hazırlığı",
   description:
-    "Deutsch A1–B2, FSP, FaMed, Zahnmedizin und realistische Sınav simülasyonları.",
+    "Almanca A1–B2, FSP, FaMed, diş hekimliği ve gerçekçi sınav simülasyonları.",
 };
 
 const problems = [
   {
     number: "01",
-    title: "Viel lernen. Trotzdem keine klare Richtung.",
-    text: "Mehr Material hilft nicht automatisch, wenn unklar bleibt, was Sie als Nächstes wirklich trainieren müssen.",
+    title: "Çok çalışmak ama yine de net bir yön bulamamak.",
+    text: "Daha fazla materyal, bir sonraki adımda gerçekten neyi çalışmanız gerektiği net değilse tek başına yeterli olmaz.",
   },
   {
     number: "02",
-    title: "Im Kopf funktioniert es. Im Gespräch nicht immer.",
-    text: "Sprache muss abrufbar sein, während Sie zuhören, reagieren, strukturieren und gleichzeitig fachlich korrekt bleiben.",
+    title: "Teoride biliyorsunuz. Konuşurken her zaman aynı şekilde olmuyor.",
+    text: "Dinlerken, cevap verirken ve düşüncelerinizi yapılandırırken dili aynı anda doğru şekilde kullanabilmeniz gerekir.",
   },
   {
     number: "03",
-    title: "Je näher die Prüfung kommt, desto größer wird die Unsicherheit.",
-    text: "Kurz vor der Prüfung zählt nicht nur Wissen. Entscheidend ist, ob Sie es unter realistischen Bedingungen anwenden können.",
+    title: "Sınav yaklaştıkça belirsizlik artabilir.",
+    text: "Sınav öncesinde yalnızca bilgi değil, bu bilgiyi gerçekçi koşullarda kullanabilmek önemlidir.",
   },
 ];
 
 const medical = [
   {
-    label: "FSP MEDIZIN",
-    title: "FSP Medizin",
-    text: "Medizinische Kommunikation, Anamnese, Dokumentation und Patientenvorstellung gezielt trainieren.",
-    info: "8 Wochen · 950 €",
+    label: "FSP TIP",
+    title: "FSP Tıp",
+    text: "Medikal iletişim, anamnez, dokümantasyon ve hasta sunumunu hedefli şekilde çalışın.",
+    info: "8 hafta · 950 €",
     href: "/tr/fsp-medizin",
   },
   {
     label: "FAMED",
     title: "FaMed",
-    text: "Medizinische Kommunikation auf das FaMed-Prüfungsformat ausrichten und praktisch anwenden.",
-    info: "6 Wochen · 600 €",
+    text: "Medikal iletişiminizi FaMed sınav formatına göre geliştirin ve aktif olarak uygulayın.",
+    info: "6 hafta · 600 €",
     href: "/tr/famed",
   },
   {
-    label: "ZAHNMEDIZIN",
-    title: "FSP & FaMed Zahnmedizin",
-    text: "Prüfungsorientierte Vorbereitung speziell für Zahnärztinnen und Zahnärzte.",
-    info: "8 Wochen · 950 €",
+    label: "DİŞ HEKİMLİĞİ",
+    title: "FSP & FaMed Diş Hekimliği",
+    text: "Diş hekimlerine özel sınav odaklı hazırlık.",
+    info: "8 hafta · 950 €",
     href: "/tr/fsp-zahnmedizin",
   },
   {
-    label: "REALITÄTSCHECK",
+    label: "GERÇEKLİK KONTROL",
     title: "Sınav simülasyonları",
-    text: "Unter realistischen Bedingungen testen, individuelles Feedback erhalten und gezielt nachschärfen.",
-    info: "ab 75 €",
+    text: "Gerçekçi koşullarda kendinizi test edin, kişisel geri bildirim alın ve eksiklerinizi hedefli geliştirin.",
+    info: "75 €'dan başlayan fiyatlarla",
     href: "/tr/simulationen",
   },
 ];
@@ -81,7 +81,7 @@ export default function GermanHomePage() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-black/55">
-              İster A1’den başlayın, ister B2’ye ulaşmak ya da medikal bir sınavı geçmek isteyin: yalnızca daha fazla materyale değil, net bir öğrenme yoluna ve gerçek uygulamaya ihtiyacınız var.
+              A1 tabandadır, B2 tıbbi tedavi için de mevcuttur, bu yüzden önemlidir: malzemenin mevcut olması ve tıbbi bilgilerin de mevcut olması gerekir.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -94,7 +94,7 @@ export default function GermanHomePage() {
 
               <a
                 href={whatsappLink(
-                  "Hallo, ich möchte herausfinden, welcher Lernweg zu meiner Situation passt. Quelle: HOME-HERO"
+                  "Merhaba, mevcut durumuma hangi öğrenme yolunun uygun olduğunu öğrenmek istiyorum. Kaynak: HOME-HERO"
                 )}
                 className="rounded-full border border-black/10 bg-white px-7 py-3.5 text-center text-sm font-semibold"
               >
@@ -143,7 +143,7 @@ export default function GermanHomePage() {
                   {[
                     ["01", "Almancayı geliştirin", "A1 → B2"],
                     ["02", "Medikal alanda uzmanlaşın", "FSP · FaMed"],
-                    ["03", "Gerçekçi şekilde test edin", "Simulationen"],
+                    ["03", "Gerçekçi şekilde test edin", "Simülasyonlar"],
                   ].map(([number, title, meta], index) => (
                     <div
                       key={number}
@@ -221,29 +221,27 @@ export default function GermanHomePage() {
 
               <div className="p-8 sm:p-10 lg:p-14">
                 <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
-                  WARUM LIBELLE
+                  NEDEN LIBELLE?
                 </div>
 
                 <h2 className="mt-5 max-w-3xl text-3xl font-semibold leading-[1.08] tracking-[-.04em] sm:text-4xl lg:text-5xl">
-                  Ein Lernweg.
+                  Tek bir öğrenme yolu.
                   <span className="block text-white/55">
-                    Von allgemeinem Deutsch bis zur medizinischen Prüfung.
+                    Genel Almancadan medikal sınava kadar.
                   </span>
                 </h2>
 
                 <p className="mt-7 max-w-2xl text-lg leading-8 text-white/55">
-                  Libelle Academy verbindet Deutschunterricht, medizinische
-                  Fachsprache und realistische Prüfungsvorbereitung in einem
-                  strukturierten Lernweg.
+                  Libelle Academy; genel Almanca, medikal mesleki dil ve gerçekçi sınav hazırlığını yapılandırılmış tek bir öğrenme yolunda birleştirir.
                 </p>
 
                 <div className="mt-8 flex flex-wrap gap-2">
                   {[
-                    "Deutsch A1–B2",
-                    "FSP Medizin",
+                    "Almanca A1–B2",
+                    "FSP Tıp",
                     "FaMed",
-                    "Zahnmedizin",
-                    "Simulationen",
+                    "Diş Hekimliği",
+                    "Simülasyonlar",
                   ].map((item) => (
                     <span
                       key={item}
@@ -257,16 +255,15 @@ export default function GermanHomePage() {
 
               <div className="m-5 rounded-[2.2rem] bg-[#f3eff7] p-8 text-[#17131c] sm:m-7 sm:p-10 lg:m-8">
                 <div className="inline-flex items-center gap-2 rounded-full bg-[#58ECF1]/35 px-4 py-2 text-[10px] font-bold tracking-[.15em] text-[#17666a]">
-                  EXTERNE EINORDNUNG
+                  DIŞ KAYNAKTA LİSTELENME
                 </div>
 
                 <h3 className="mt-6 text-2xl font-semibold leading-tight sm:text-3xl">
-                  Bei FaMed als Sprachschule gelistet.
+                  FaMed’in dil okulları listesinde yer alıyoruz.
                 </h3>
 
                 <p className="mt-5 leading-7 text-black/55">
-                  FaMed führt Libelle Academy in seiner offiziellen Übersicht
-                  der Sprachschulen für die Vorbereitung auf das Prüfungsformat.
+                  Libelle Academy, FaMed’in sınav formatına hazırlık sunan dil okulları listesinde yer almaktadır.
                 </p>
 
                 <a
@@ -275,13 +272,12 @@ export default function GermanHomePage() {
                   rel="noreferrer"
                   className="mt-7 inline-flex items-center gap-2 rounded-full bg-[#31175B] px-6 py-3 text-sm font-semibold text-white"
                 >
-                  Eintrag bei FaMed ansehen
+                  FaMed listesini görüntüle
                   <span aria-hidden="true">↗</span>
                 </a>
 
                 <p className="mt-5 text-xs leading-5 text-black/35">
-                  FaMed beschreibt für gelistete Sprachschulen definierte
-                  Qualitätskriterien für Vorbereitungskurse.
+                  FaMed, listelenen dil okulları için hazırlık kurslarına yönelik belirli kalite kriterleri tanımlamaktadır.
                 </p>
               </div>
 
@@ -293,10 +289,10 @@ export default function GermanHomePage() {
       <section className="border-y border-black/5">
         <div className="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-5 py-7 text-center md:grid-cols-4 lg:px-8">
           {[
-            ["Live", "Canlı ve kişisel eğitim"],
-            ["Digital", "Pelexa & materyaller"],
-            ["Klein", "Küçük gruplar"],
-            ["Realistisch", "Sınav simülasyonları"],
+            ["Canlı", "Canlı ve kişisel eğitim"],
+            ["Dijital", "Pelexa & materyaller"],
+            ["Küçük Grup", "Küçük gruplar"],
+            ["Gerçekçi", "Sınav simülasyonları"],
           ].map(([title, text]) => (
             <div key={title}>
               <div className="font-semibold text-[#31175B]">{title}</div>
@@ -314,7 +310,7 @@ export default function GermanHomePage() {
             <div className="absolute left-0 top-0 h-[82%] w-[78%] overflow-hidden rounded-[2.8rem] shadow-[0_35px_90px_rgba(49,23,91,.12)]">
               <Image
                 src="/images/home-germany-future.jpg"
-                alt="Alltag und Leben in Deutschland"
+                alt="Almanya’da günlük yaşam"
                 fill
                 sizes="(max-width: 1024px) 78vw, 520px"
                 className="object-cover"
@@ -324,7 +320,7 @@ export default function GermanHomePage() {
             <div className="absolute bottom-0 right-0 h-[46%] w-[54%] overflow-hidden rounded-[2.2rem] border-[8px] border-white shadow-[0_28px_70px_rgba(49,23,91,.18)]">
               <Image
                 src="/images/home-general-german-learning.jpg"
-                alt="Deutsch online lernen"
+                alt="Çevrimiçi Almanca öğrenin"
                 fill
                 sizes="(max-width: 1024px) 54vw, 360px"
                 className="object-cover"
@@ -336,7 +332,7 @@ export default function GermanHomePage() {
                 A1 → B2
               </div>
               <div className="mt-1 max-w-[170px] text-sm font-semibold leading-5">
-                Vom ersten Satz zur selbstständigen Kommunikation
+                İlk cümleden bağımsız iletişime
               </div>
             </div>
           </div>
@@ -423,7 +419,7 @@ export default function GermanHomePage() {
         </div>
       </section>
 
-      <div id="lernweg">
+      <div id="öğrenme yolu">
         <HomeConversion />
       </div>
 
@@ -437,19 +433,18 @@ export default function GermanHomePage() {
 
             <div>
               <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-                ERFAHRUNGEN AUS DER VORBEREITUNG
+                ÖĞRENCİ DENEYİMLERİ
               </div>
 
               <h2 className="mt-5 text-4xl font-semibold leading-[1.06] tracking-[-.045em] sm:text-5xl">
-                Nicht nur der Lernweg zählt.
+                Yalnızca öğrenme yolu önemli değildir.
                 <span className="block text-[#31175B]">
-                  Sondern wie er sich in der Praxis anfühlt.
+                  Asıl önemli olan bu yolun uygulamada nasıl ilerlediğidir.
                 </span>
               </h2>
 
               <p className="mt-6 max-w-lg text-lg leading-8 text-black/50">
-                Zwei Stimmen aus bereits öffentlich geteilten
-                Erfahrungsberichten von Libelle Academy.
+                Libelle Academy hakkında daha önce herkese açık olarak paylaşılmış iki öğrenci deneyimi.
               </p>
             </div>
 
@@ -461,8 +456,7 @@ export default function GermanHomePage() {
                 </div>
 
                 <blockquote className="mt-3 text-xl font-medium leading-8 sm:text-2xl">
-                  Sehr effektiver und lehrreicher Kurs. Ich empfehle ihn
-                  besonders Kollegen, die in Deutschland arbeiten möchten.
+                  Çok etkili ve öğretici bir kurstu. Özellikle Almanya'da çalışmak isteyen meslektaşlarıma tavsiye ediyorum.
                 </blockquote>
 
                 <div className="mt-7 flex flex-wrap items-end justify-between gap-4 border-t border-black/5 pt-6">
@@ -471,12 +465,12 @@ export default function GermanHomePage() {
                       Dr. Hayriye Erpak
                     </div>
                     <div className="mt-1 text-sm text-black/40">
-                      Zahnärztin · Hamburg
+                      Diş Hekimi · Hamburg · Almancadan çeviri
                     </div>
                   </div>
 
                   <div className="rounded-full bg-[#f3eff7] px-4 py-2 text-xs font-semibold text-[#31175B]">
-                    FSP Zahnmedizin
+                    FSP Diş Hekimliği
                   </div>
                 </div>
               </article>
@@ -487,8 +481,7 @@ export default function GermanHomePage() {
                 </div>
 
                 <blockquote className="mt-3 text-xl font-medium leading-8 sm:text-2xl">
-                  Vor allem möchte ich mich bei Ezgi bedanken für die sehr
-                  effiziente und produktive Gestaltung dieses Kurses.
+                  Özellikle bu kursu son derece verimli ve üretken şekilde yapılandırdığı için Ezgi'ye teşekkür etmek istiyorum.
                 </blockquote>
 
                 <div className="mt-7 flex flex-wrap items-end justify-between gap-4 border-t border-white/10 pt-6">
@@ -497,12 +490,12 @@ export default function GermanHomePage() {
                       Doz. Dr. Özge Özdal Zincir
                     </div>
                     <div className="mt-1 text-sm text-white/40">
-                      Fachärztin für Innere Medizin · Berlin
+                      İç Hastalıkları Uzmanı · Berlin · Almancadan çeviri
                     </div>
                   </div>
 
                   <div className="rounded-full bg-white/10 px-4 py-2 text-xs font-semibold text-[#58ECF1]">
-                    FSP Medizin
+                    FSP Tıp
                   </div>
                 </div>
               </article>
@@ -517,16 +510,15 @@ export default function GermanHomePage() {
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
           <div className="max-w-4xl">
             <div className="text-xs font-bold tracking-[.18em] text-[#31175B]">
-              MEDIZINISCHE PRÜFUNGSVORBEREITUNG
+              MEDİKAL SINAV HAZIRLIĞI
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.04em] sm:text-5xl">
-              Nicht jede Prüfung braucht dieselbe Vorbereitung.
+              Her sınav aynı hazırlık sürecini gerektirmez.
             </h2>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">
-              Entscheidend sind Ihr Prüfungsformat, Ihr aktueller Sprachstand
-              und der Punkt, an dem Sie sich heute befinden.
+              Önemli olan sınav formatınız, mevcut dil seviyeniz ve bugün hazırlığın hangi aşamasında olduğunuzdur.
             </p>
           </div>
 
@@ -534,7 +526,7 @@ export default function GermanHomePage() {
             <div className="relative min-h-[340px] lg:min-h-[430px]">
               <Image
                 src="/images/home-medical-german-learning.jpg"
-                alt="Medizinisches Deutsch digital lernen"
+                alt="Medikal Almancayı dijital olarak öğrenme"
                 fill
                 sizes="(max-width: 1024px) 100vw, 55vw"
                 className="object-cover"
@@ -544,24 +536,22 @@ export default function GermanHomePage() {
             <div className="flex items-center p-8 text-white sm:p-10 lg:p-12">
               <div>
                 <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
-                  MEDICAL GERMAN
+                  MEDİKAL ALMANCA
                 </div>
 
                 <h3 className="mt-4 text-3xl font-semibold tracking-[-.035em] sm:text-4xl">
-                  Medizinisches Wissen muss auch sprachlich abrufbar sein.
+                  Medikal bilginizi Almanca olarak da aktif kullanabilmelisiniz.
                 </h3>
 
                 <p className="mt-5 max-w-xl text-lg leading-8 text-white/60">
-                  Fachsprache, Patientengespräch und Prüfungssituation werden
-                  dort relevant, wo allgemeines Deutsch allein nicht mehr
-                  ausreicht.
+                  Genel Almancanın tek başına yeterli olmadığı noktada mesleki dil, hasta görüşmesi ve sınav iletişimi önem kazanır.
                 </p>
 
                 <Link
                   href="/tr/pruefungsvorbereitung"
                   className="mt-7 inline-block rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#31175B]"
                 >
-                  Medizinische Lernwege ansehen
+                  Medikal öğrenme yollarını incele
                 </Link>
               </div>
             </div>
@@ -595,7 +585,7 @@ export default function GermanHomePage() {
                 </div>
 
                 <div className="mt-8 text-sm font-semibold text-[#31175B]">
-                  Passenden Weg ansehen →
+                  Uygun hazırlık yolunu incele →
                 </div>
               </Link>
             ))}
@@ -612,20 +602,18 @@ export default function GermanHomePage() {
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.04em] sm:text-5xl">
-              Lernen sollte nicht enden, wenn der Live-Unterricht endet.
+              Öğrenme canlı ders bittiğinde sona ermemeli.
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-black/55">
-              Pelexa ergänzt ausgewählte Kurse mit Aufzeichnungen,
-              Lernmaterialien und digitalen Inhalten. So können Sie zwischen
-              den Terminen wiederholen und vertiefen.
+              Pelexa, seçili kursları ders kayıtları, öğrenme materyalleri ve dijital içeriklerle destekler. Böylece dersler arasında tekrar yapabilir ve konuları pekiştirebilirsiniz.
             </p>
 
             <Link
               href="/tr/ueber-libelle"
               className="mt-8 inline-block rounded-full border border-black/10 px-6 py-3.5 text-sm font-semibold"
             >
-              Das Libelle-Lernmodell ansehen
+              Libelle öğrenme modelini incele
             </Link>
           </div>
 
@@ -637,7 +625,7 @@ export default function GermanHomePage() {
                     PELEXA
                   </div>
                   <div className="mt-2 text-xl font-semibold">
-                    Mein Lernbereich
+                    Öğrenme alanım
                   </div>
                 </div>
 
@@ -648,9 +636,9 @@ export default function GermanHomePage() {
 
               <div className="mt-7 space-y-3">
                 {[
-                  ["Kursaufzeichnungen", "Wiederholen"],
-                  ["Lernmaterialien", "Vertiefen"],
-                  ["Prüfungsinhalte", "Anwenden"],
+                  ["Ders kayıtları", "Tekrar et"],
+                  ["Öğrenme materyalleri", "Pekiştir"],
+                  ["Sınav içerikleri", "Uygula"],
                 ].map(([title, action], index) => (
                   <div key={title} className="rounded-2xl bg-white p-5">
                     <div className="flex justify-between gap-4">
@@ -686,37 +674,35 @@ export default function GermanHomePage() {
         <div className="mx-auto grid max-w-7xl gap-12 px-5 lg:grid-cols-[.75fr_1.25fr] lg:px-8">
           <div>
             <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-              DEUTSCH A1–B2
+              ALMANCA A1–B2
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.04em] sm:text-5xl">
-              Nicht vier einzelne Kurse. Ein Sprachweg.
+              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-black/55">
-              Wenn B2 Ihr Ziel ist, sollten die einzelnen Stufen aufeinander
-              aufbauen – statt sich wie vier getrennte Entscheidungen
-              anzufühlen.
+              Hedefiniz B2 ise seviyeler birbirinin üzerine inşa edilmelidir; dört ayrı karar gibi hissettirmemelidir.
             </p>
 
             <Link
               href="/tr/pakete/deutsch-a1-b2"
               className="mt-8 inline-block rounded-full bg-[#31175B] px-6 py-3.5 text-sm font-semibold text-white"
             >
-              A1–B2 Lernweg ansehen
+              A1–B2 öğrenme yolunu incele
             </Link>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             {[
-              ["A1", "8 Wochen", "165 €"],
-              ["A2", "8 Wochen", "165 €"],
-              ["B1", "12 Wochen", "250 €"],
-              ["B2", "12 Wochen", "399 €"],
+              ["A1", "8 hafta", "165 €"],
+              ["A2", "8 hafta", "165 €"],
+              ["B1", "12 hafta", "250 €"],
+              ["B2", "12 hafta", "399 €"],
             ].map(([level, duration, price]) => (
               <Link
                 key={level}
-                href={`/de/deutsch/${level.toLowerCase()}`}
+                href={`/tr/deutsch/${level.toLowerCase()}`}
                 className="rounded-[2rem] border border-[#58ECF1]/50 bg-white p-6 sm:p-7"
               >
                 <div className="text-4xl font-semibold text-[#31175B] sm:text-5xl">
@@ -730,7 +716,7 @@ export default function GermanHomePage() {
                 <div className="mt-1 font-semibold">{price}</div>
 
                 <div className="mt-6 text-sm font-semibold text-[#17666a]">
-                  Niveau ansehen →
+                  Seviyeyi incele →
                 </div>
               </Link>
             ))}
@@ -743,29 +729,28 @@ export default function GermanHomePage() {
         <div className="grid gap-12 lg:grid-cols-[.75fr_1.25fr]">
           <div>
             <div className="text-xs font-bold tracking-[.18em] text-[#31175B]">
-              MEDIZINISCHE TUTOREN
+              MEDİKAL EĞİTMENLER
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.04em] sm:text-5xl">
-              Medizinische Sprache braucht medizinischen Kontext.
+              Medikal dil, medikal bağlam içinde öğrenilmelidir.
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-black/55">
-              Lernen Sie innerhalb der medizinischen Programme mit Tutorinnen
-              und Tutoren, die die jeweilige Prüfungsvorbereitung begleiten.
+              Medikal programlarda, ilgili sınav hazırlığını yürüten eğitmenlerle birlikte çalışın.
             </p>
 
             <Link
               href="/tr/tutoren"
               className="mt-8 inline-block rounded-full border border-black/10 px-6 py-3.5 text-sm font-semibold"
             >
-              Tutoren kennenlernen
+              Eğitmenleri tanıyın
             </Link>
           </div>
 
           <div className="grid gap-5 sm:grid-cols-2">
             {[
-              ["FM", "Firdevs Murad", "FSP Medizin"],
+              ["FM", "Firdevs Murad", "FSP Tıp"],
               ["AŞ", "Alkış Şensoy", "FaMed"],
             ].map(([initials, name, role]) => (
               <Link
@@ -783,7 +768,7 @@ export default function GermanHomePage() {
                 </div>
 
                 <div className="mt-8 text-sm font-semibold text-black/40">
-                  Profil ansehen →
+                  Profili incele →
                 </div>
               </Link>
             ))}
@@ -796,26 +781,24 @@ export default function GermanHomePage() {
         <div className="mx-auto max-w-7xl rounded-[3rem] bg-[#31175B] p-9 text-white sm:p-14">
           <div className="max-w-4xl">
             <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
-              DER ERSTE SCHRITT IST KLEIN
+              İLK ADIM KÜÇÜK
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.04em] sm:text-5xl">
-              Sie müssen heute noch keinen Kurs auswählen.
+              Bugün hemen bir dersi seçmek zorunda değilsiniz.
             </h2>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-white/60">
-              Schreiben Sie uns einfach Ihr aktuelles Niveau, Ihr Ziel und –
-              falls relevant – Ihre Prüfung. Zuerst klären wir, welcher
-              nächste Schritt überhaupt sinnvoll ist.
+              Bize mevcut seviyenizi, hedefinizi ve varsa hazırlandığınız sınavı yazın. Önce sizin için hangi sonraki adımın gerçekten mantıklı olduğunu birlikte belirleyelim.
             </p>
 
             <a
               href={whatsappLink(
-                "Hallo, ich möchte meinen nächsten Lernschritt herausfinden. Mein Niveau ist: ___. Mein Ziel / meine Prüfung ist: ___. Quelle: HOME-FINAL"
+                "Merhaba, bir sonraki öğrenme adımımı belirlemek istiyorum. Seviyem: ___. Hedefim / sınavım: ___. Kaynak: HOME-FINAL"
               )}
               className="mt-8 inline-block rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-[#31175B]"
             >
-              Meine Situation kurz schildern
+              Durumumu kısaca paylaş
             </a>
           </div>
         </div>

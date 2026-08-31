@@ -8,19 +8,19 @@ import { whatsappLink } from "@/lib/whatsapp";
 export const metadata: Metadata = {
   title: "FSP & FaMed Diş Hekimliği Yoğun Kursu | Libelle Academy",
   description:
-    "8 hafta intensive Vorbereitung auf zahnmedizinische Fachsprache, Hasta görüşmesi, Dokumentation, Hasta sunumu und prüfungsorientiertes Training.",
+    "8 haftalık yoğun program: diş hekimliği mesleki dili, hasta görüşmesi, dokümantasyon, hasta sunumu ve sınav odaklı çalışma.",
 };
 
 const mainMessage =
-  "Hallo, ich interessiere mich für den FSP & FaMed Diş Hekimliği Intensivkurs für 950 €. Bitte senden Sie mir Informationen zur nächsten Gruppe und zu freien Plätzen. Quelle: FSP-FAMED-ZAHNMEDIZIN-LANDING";
+  "Merhaba, 950 €'luk FSP & FaMed Diş Hekimliği Yoğun Kursu ile ilgileniyorum. Yeni grup ve kontenjan hakkında bilgi alabilir miyim? Kaynak: FSP-FAMED-DİŞ HEKİMLİĞİ-LANDING";
 
 const consultationMessage =
-  "Hallo, ich interessiere mich für die Diş Hekimliği-Vorbereitung und möchte wissen, ob der Intensivkurs zu meinem aktuellen Stand passt. Quelle: ZAHNMEDIZIN-BERATUNG";
+  "Merhaba, Diş Hekimliği sınav hazırlığıyla ilgileniyorum. Yoğun kursun mevcut seviyeme uygun olup olmadığını öğrenmek istiyorum. Kaynak: DİŞ HEKİMLİĞİ-BERATUNG";
 
 const outcomes = [
   {
     number: "01",
-    title: "Diş Hekimliğiische Fachsprache sicherer einsetzen",
+    title: "Diş hekimliği mesleki dilini daha güvenli kullanın",
     text: "Sınavla ilgili diş hekimliği terimlerini ve ifadelerini konuşmalarda aktif olarak kullanın.",
   },
   {
@@ -31,20 +31,20 @@ const outcomes = [
   {
     number: "03",
     title: "Dokümantasyonu hedefli çalışın",
-    text: "Informationen aus dem Gespräch geordnet erfassen und für die schriftliche Dokumentation aufbereiten.",
+    text: "Görüşmedeki bilgileri düzenli şekilde kaydedin ve yazılı dokümantasyona aktarın.",
   },
   {
     number: "04",
     title: "Hasta sunumunu etkili şekilde yapılandırın",
-    text: "Fälle strukturiert präsentieren und medizinische Zusammenhänge sprachlich sicherer vermitteln.",
+    text: "Vakaları yapılandırılmış biçimde sunun ve medikal bilgileri dil açısından daha güvenli aktarın.",
   },
 ];
 
 const program = [
-  "Diş Hekimliğiische Fachsprache",
+  "Diş hekimliği mesleki dili",
   "Hasta görüşmesi",
-  "Anamnese",
-  "Dokumentation",
+  "Anamnez",
+  "Dokümantasyon",
   "Hasta sunumu",
   "Sınav hazırlığı",
 ];
@@ -53,43 +53,43 @@ const steps = [
   {
     number: "01",
     eyebrow: "GELİŞTİR",
-    title: "Sprache und Struktur festigen",
-    text: "Diş Hekimliğiische Fachsprache und typische Prüfungssituationen werden systematisch aufgebaut.",
+    title: "Dil ve yapıyı güçlendirin",
+    text: "Diş hekimliği meslek dili ve tipik sınav durumları sistematik olarak yapılandırılmıştır.",
   },
   {
     number: "02",
     eyebrow: "UYGULA",
-    title: "Kommunikation praktisch trainieren",
-    text: "Hasta görüşmesi, Anamnese, Dokumentation und Vorstellung werden miteinander verbunden.",
+    title: "İletişimi pratik olarak çalışın",
+    text: "Hasta görüşmesi, anamnez, dokümantasyon ve hasta sunumu birlikte çalışılır.",
   },
   {
     number: "03",
     eyebrow: "SİMÜLE ET",
-    title: "Unter Prüfungsbedingungen testen",
-    text: "Simülasyonlar und Feedback helfen Ihnen, Sprache, Struktur und Sicherheit gezielt weiterzuentwickeln.",
+    title: "Sınav koşullarında test edin",
+    text: "Simülasyonlar ve geri bildirim, dilinizi, yapınızı ve iletişim güvenliğinizi hedefli şekilde geliştirmenize yardımcı olur.",
   },
 ];
 
 const faqs = [
   {
-    q: "Wie lange dauert der Diş Hekimliği Intensivkurs?",
-    a: "Der aktuell hinterlegte Kursumfang beträgt 8 hafta.",
+    q: "Diş Hekimliği Yoğun Kursu ne kadar sürüyor?",
+    a: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
   },
   {
-    q: "Was kostet der Kurs?",
-    a: "Der aktuell hinterlegte Preis beträgt 950 €.",
+    q: "Kursun fiyatı nedir?",
+    a: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
   },
   {
-    q: "Für welche Prüfungen ist der Kurs gedacht?",
-    a: "Der Kurs ist auf die sprachliche und prüfungsorientierte Vorbereitung für Zahnärztinnen und Zahnärzte ausgerichtet und verbindet FSP- und FaMed-relevante Kommunikationsbereiche.",
+    q: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    a: "Ders, hekimlerin dil ve sınav odaklı hazırlığı için tasarlanmış ve FSP ile FaMed açısından önemli iletişim işlemlerini birlikte çalıştırır.",
   },
   {
-    q: "Sind Simülasyonlar enthalten?",
-    a: "Ja. Simülasyonlar und individuelles Feedback sind Bestandteil der Vorbereitung.",
+    q: "Simülasyonlar dahil mi?",
+    a: "Evet. Simülasyonlar ve kişisel geri bildirim hazırlığın bir parçasıdır.",
   },
   {
-    q: "Wie erfahre ich die nächste Gruppe und freie Plätze?",
-    a: "Schreiben Sie uns über WhatsApp. Wir senden Ihnen die aktuellen Informationen zur nächsten verfügbaren Gruppe.",
+    q: "Yeni grup ve boş kontenjanları nasıl öğrenebilirim?",
+    a: "Bize WhatsApp üzerinden yazın. Bir sonraki grup ve mevcut kontenjan bilgilerini size iletelim.",
   },
 ];
 
@@ -109,11 +109,11 @@ export default function FspZahnmedizinPage() {
             </Link>
 
             <div className="mt-10 text-xs font-bold tracking-[.18em] text-[#17666a]">
-              FSP & FAMED ZAHNMEDIZIN · YOĞUN KURS
+              FSP sınavına yönelik yapılandırılmış hazırlık.
             </div>
 
             <h1 className="mt-5 max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-.045em] sm:text-6xl lg:text-7xl">
-              Diş Hekimliğiisch kommunizieren. Prüfungsorientiert trainieren.
+              Diş hekimliği Almancasını aktif kullanın. Sınava hedefli hazırlanın.
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-black/60">
@@ -124,7 +124,7 @@ export default function FspZahnmedizinPage() {
               {[
                 "8 hafta",
                 "950 €",
-                "Simülasyonlar + Feedback",
+                "Simülasyonlar + Geri bildirim",
               ].map((item) => (
                 <span
                   key={item}
@@ -161,7 +161,7 @@ export default function FspZahnmedizinPage() {
                 FSP + FAMED
               </div>
               <div className="mt-1 text-sm font-semibold">
-                Diş Hekimliğiisch vorbereitet
+                Diş hekimliğine özel hazırlık
               </div>
             </div>
 
@@ -179,7 +179,7 @@ export default function FspZahnmedizinPage() {
               <div className="flex items-start justify-between gap-5">
                 <div>
                   <div className="text-xs font-bold tracking-[.16em] text-[#31175B]">
-                    IHR YOĞUN KURS
+                    YOĞUN KURSUNUZ
                   </div>
                   <div className="mt-2 text-3xl font-semibold">
                     Diş Hekimliği
@@ -209,9 +209,9 @@ export default function FspZahnmedizinPage() {
 
               <div className="mt-4 space-y-3">
                 {[
-                  "Diş Hekimliğiische Fachsprache",
+                  "Diş hekimliği mesleki dili",
                   "Sınav odaklı hazırlık",
-                  "Simülasyonlar und Feedback",
+                  "Simülasyonlar ve geri bildirim",
                 ].map((item) => (
                   <div
                     key={item}
@@ -227,9 +227,7 @@ export default function FspZahnmedizinPage() {
                   HEDEF
                 </div>
                 <p className="mt-2 leading-7 text-white/75">
-                  Diş Hekimliğiische Kommunikation strukturiert trainieren und
-                  das Gelernte anschließend in prüfungsnahen Situationen
-                  anwenden.
+                  Diş hekimliği iletişimini yapılandırılmış şekilde çalışın ve öğrendiklerinizi gerçek sınava yakın durumlarda uygulayın.
                 </p>
               </div>
             </div>
@@ -241,7 +239,7 @@ export default function FspZahnmedizinPage() {
                 FSP + FAMED
               </div>
               <div className="mt-1 text-xs font-semibold">
-                Diş Hekimliğiisch vorbereitet
+                Diş hekimliğine özel hazırlık
               </div>
             </div>
 
@@ -263,28 +261,26 @@ export default function FspZahnmedizinPage() {
       <EditorialStorySection
         eyebrow="DİŞ HEKİMLİĞİ İLETİŞİMİ"
         title="Mesleki dil, hasta anlayabildiğinde gerçek değerini kazanır."
-        text="Anamnese, Aufklärung, Dokumentation und Vorstellung verbinden zahnmedizinisches Fachwissen mit klarer deutscher Kommunikation – genau dort, wo Prüfung und Berufsalltag zusammenkommen."
+        text="Anamnez, bilgi, dokümantasyon ve sunum, diş hekimliği uzmanlığını net Almanca iletişimi ile birleştirir - tam da muayene ve günlük profesyonel yaşamın bir araya geldiği yer."
         image="/images/zahnmedizin-dentist-patient.jpg"
-        alt="Zahnärztliche Beratung mit Patientin"
+        alt="Diş hekimi ve hasta görüşmesi"
         secondaryImage="/images/zahnmedizin-patient-conversation.jpg"
-        secondaryAlt="Diş Hekimliğiisches Hasta görüşmesi"
-        chip="FSP + FAMED ZAHNMEDIZIN"
+        secondaryAlt="Diş hekimliği hasta görüşmesi"
+        chip="FSP + FAMED DİŞ HEKİMLİĞİ"
       />
 
-      <section id="kurs" className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+      <section id="Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı." className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="max-w-4xl">
           <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
             NELERİ ÇALIŞACAKSINIZ?
           </div>
 
           <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-            Nicht nur Fachbegriffe kennen. Diş Hekimliğiisch kommunizieren.
+            Yalnızca mesleki terimleri bilmeyin. Diş hekimliği Almancasını aktif kullanın.
           </h2>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">
-            Die Vorbereitung verbindet Fachsprache mit den kommunikativen
-            Aufgaben, die in FSP- und FaMed-relevanten Prüfungssituationen
-            zusammenkommen.
+            Hazırlık programı, mesleki dili FSP ve FaMed sınavlarında karşılaşabileceğiniz iletişim görevleriyle birleştirir.
           </p>
         </div>
 
@@ -310,16 +306,15 @@ export default function FspZahnmedizinPage() {
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-24 lg:grid-cols-[.78fr_1.22fr] lg:px-8">
           <div>
             <div className="text-xs font-bold tracking-[.18em] text-[#31175B]">
-              KURS İÇERİĞİ
+              DERS İÇERİĞİ
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              Die zentralen Bereiche Ihrer Diş Hekimliği-Vorbereitung.
+              Diş hekimliği sınav hazırlığınızın temel alanları.
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-black/55">
-              Vom Hasta görüşmesi bis zur Dokumentation und strukturierten
-              Hasta sunumu greifen die einzelnen Bereiche ineinander.
+              Hasta görüşmesinden dokümantasyona ve yapılandırılmış hasta sunumuna kadar tüm alanlar birbiriyle bağlantılı şekilde çalışılır.
             </p>
           </div>
 
@@ -343,11 +338,11 @@ export default function FspZahnmedizinPage() {
       <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="max-w-4xl">
           <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-            VOM LERNEN ZUR PRÜFUNG
+            ÖĞRENMEDEN SINAVA
           </div>
 
           <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-            Erst aufbauen. Dann anwenden. Schließlich simulieren.
+            Önce geliştirin. Sonra uygulayın. Ardından simüle edin.
           </h2>
         </div>
 
@@ -382,37 +377,35 @@ export default function FspZahnmedizinPage() {
           <div className="grid gap-12 lg:grid-cols-[.9fr_1.1fr]">
             <div>
               <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
-                INTENSIVE VORBEREITUNG
+                YOĞUN HAZIRLIK
               </div>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-                Theorie allein reicht für eine Kommunikationsprüfung nicht.
+                İletişim odaklı bir sınav için yalnızca teori yeterli değildir.
               </h2>
 
               <p className="mt-6 max-w-xl text-lg leading-8 text-white/60">
-                Deshalb verbindet der Intensivkurs Fachsprache,
-                kommunikatives Training, Prüfungssituationen und Feedback in
-                einem zusammenhängenden Vorbereitungsweg.
+                Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
               </p>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
               {[
                 [
-                  "8 hafta Intensivvorbereitung",
-                  "Ein klarer Zeitraum für den strukturierten Aufbau Ihrer Prüfungskommunikation.",
+                  "8 haftalık yoğun hazırlık",
+                  "Sınav iletişiminizi yapılandırılmış şekilde geliştirmek için net bir çalışma süreci.",
                 ],
                 [
-                  "Diş Hekimliğiische Fachsprache",
-                  "Prüfungsrelevante Sprache wird aktiv in typischen Situationen angewendet.",
+                  "Diş hekimliği mesleki dili",
+                  "Sınavda gerekli olan dil, tipik durumlarda aktif şekilde uygulanır.",
                 ],
                 [
                   "Sınav odaklı hazırlık",
-                  "Die Vorbereitung richtet sich gezielt auf typische kommunikative Anforderungen aus.",
+                  "Hazırlık, sınavdaki tipik iletişim gerekliliklerine hedefli şekilde odaklanır.",
                 ],
                 [
-                  "Simülasyonlar und Feedback",
-                  "Das Gelernte wird praktisch getestet und gezielt weiterentwickelt.",
+                  "Simülasyonlar ve geri bildirim",
+                  "Öğrendikleriniz uygulamada test edilir ve hedefli şekilde geliştirilir.",
                 ],
               ].map(([title, text]) => (
                 <div
@@ -432,32 +425,29 @@ export default function FspZahnmedizinPage() {
         <div className="mx-auto grid max-w-7xl gap-6 px-5 py-24 lg:grid-cols-2 lg:px-8">
           <div className="rounded-[2.2rem] bg-white p-8 sm:p-10">
             <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-              FÜR WEN?
+              KİMLER İÇİN?
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">
-              Für Zahnärztinnen und Zahnärzte auf dem Weg zur Prüfung.
+              Diş hekimliği sınavına hazırlananlar için.
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-black/55">
-              Für Teilnehmende, die zahnmedizinische Fachsprache,
-              Hasta görüşmesie und prüfungsrelevante Kommunikation
-              strukturiert trainieren möchten.
+              Diş hekimliği mesleki dilini, hasta görüşmesini ve sınavda gerekli iletişim becerilerini yapılandırılmış şekilde geliştirmek isteyen katılımcılar için.
             </p>
           </div>
 
           <div className="rounded-[2.2rem] bg-[#D2ECFF]/60 p-8 sm:p-10">
             <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-              UNSICHER?
+              EMİN DEĞİL MİSİNİZ?
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">
-              Prüfen Sie zuerst, ob der Kurs zu Ihrem Stand passt.
+              Önce kursun mevcut seviyenize uygun olup olmadığını belirleyin.
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-black/55">
-              Schreiben Sie uns kurz, wo Sie aktuell in Ihrer Vorbereitung
-              stehen. Wir helfen Ihnen bei der Auswahl.
+              Hazırlığınızın hangi aşamasında olduğunuzu bize kısaca yazın. Size uygun seçeneği belirlemenize yardımcı olalım.
             </p>
 
             <a
@@ -466,7 +456,7 @@ export default function FspZahnmedizinPage() {
               rel="noreferrer"
               className="mt-8 inline-block rounded-full bg-[#31175B] px-7 py-3.5 text-sm font-semibold text-white"
             >
-              Persönlich beraten lassen
+              Ücretsiz yönlendirme alın
             </a>
           </div>
         </div>
@@ -475,10 +465,10 @@ export default function FspZahnmedizinPage() {
       <section className="mx-auto max-w-4xl px-5 py-24 lg:px-8">
         <div className="text-center">
           <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-            HÄUFIGE FRAGEN
+            SIK SORULAN SORULAR
           </div>
           <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-            Vor der Anmeldung wissen, was Sie erwartet.
+            Kayıt öncesinde sizi nelerin beklediğini bilin.
           </h2>
         </div>
 
@@ -496,16 +486,15 @@ export default function FspZahnmedizinPage() {
         <div className="mx-auto grid max-w-7xl gap-8 rounded-[2.6rem] bg-[#17131c] p-8 text-white md:grid-cols-[1fr_auto] md:items-center sm:p-12">
           <div>
             <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
-              IHR NÄCHSTER SCHRITT
+              SONRAKİ ADIMINIZ
             </div>
 
             <h2 className="mt-5 max-w-4xl text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              Bereiten Sie sich strukturiert auf Ihre Diş Hekimliği-Prüfung vor.
+              Diş hekimliği sınavınıza yapılandırılmış şekilde hazırlanın.
             </h2>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/55">
-              Fragen Sie über WhatsApp nach der nächsten Gruppe, freien
-              Plätzen und den aktuellen Kursinformationen.
+              Yeni grup, mevcut kontojan ve güncel dersi WhatsApp üzerinden öğrenin.
             </p>
           </div>
 
@@ -515,7 +504,7 @@ export default function FspZahnmedizinPage() {
             rel="noreferrer"
             className="rounded-full bg-white px-7 py-4 text-center text-sm font-semibold text-[#31175B]"
           >
-            Diş Hekimliği anfragen
+            Diş Hekimliği kursu hakkında bilgi al
           </a>
         </div>
       </section>

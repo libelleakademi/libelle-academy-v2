@@ -5,17 +5,17 @@ import EditorialStorySection from "@/components/EditorialStorySection";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
-  title: "FaMed Offline Kursu | Libelle Academy",
+  title: "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
   description:
-    "FaMed flexibel vorbereiten: strukturierte Module, Dokümantasyonlar ve alıştırmalar. FaMed Offline Kurs für 200 € oder inklusive 5 Sınav simülasyonları für 575 €.",
+    "FaMed'e esnek şekilde hazırlanın: yapılandırılmış modüller, dokümantasyonlar ve alıştırmalar. FaMed Offline Kursuuuuuuu 200 €, 5 sınav simülasyonu dahil paket 575 €.",
 };
 
 const modules = [
   "FaMed sınavı",
-  "Anamnese",
+  "Anamnez",
   "Hasta bilgilendirmesi",
   "Hasta sunumu",
-  "Dokumentation",
+  "Dokümantasyon",
   "Medikal gramer",
   "Sınav simülasyonları",
   "Zihinsel sınav hazırlığı",
@@ -29,10 +29,10 @@ const benefits = [
 ];
 
 const courseMessage =
-  "Hallo, ich interessiere mich für den FaMed Offline Kurs für 200 €. Quelle: LANDING-FAMED-OFFLINE";
+  "Merhaba, 200 €'luk FaMed Offline Kursuuuuuuu ile ilgileniyorum. Kaynak: LANDING-FAMED-OFFLINE";
 
 const bundleMessage =
-  "Hallo, ich interessiere mich für FaMed Offline + 5 Simülasyonlar für 575 €. Quelle: LANDING-FAMED-OFFLINE-BUNDLE";
+  "Merhaba, 575 €'luk FaMed Offline + 5 sınav simülasyonu paketi ile ilgileniyorum. Kaynak: LANDING-FAMED-OFFLINE-BUNDLE";
 
 export default function FamedOfflinePage() {
   return (
@@ -55,7 +55,7 @@ export default function FamedOfflinePage() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-black/55">
-              Ein strukturierter Offline-Kurs mit digitalen Modulen, Dokümantasyonlar ve alıştırmalar für eine flexible FaMed-Vorbereitung.
+              FaMed sınavına yönelik yapılandırılmış hazırlık.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-2">
@@ -76,7 +76,7 @@ export default function FamedOfflinePage() {
                 rel="noreferrer"
                 className="rounded-full bg-[#31175B] px-6 py-3.5 text-center text-sm font-semibold text-white transition hover:bg-[#4B238B]"
               >
-                200 € FaMed Offline kursunu sor
+                200 € FaMed Çevrimdışı kursunu sor
               </a>
               <a
                 href="#pakete"
@@ -103,7 +103,7 @@ export default function FamedOfflinePage() {
                 OFFLINE + LIVE
               </div>
               <div className="mt-1 text-sm font-semibold">
-                Mit Simülasyonlar kombinierbar
+                Simülasyonlarla birleştirilebilir
               </div>
             </div>
 
@@ -136,7 +136,7 @@ export default function FamedOfflinePage() {
               </div>
 
               <div className="mt-4 rounded-2xl border border-[#31175B]/10 bg-white/55 px-5 py-4 text-sm text-black/45">
-                + weitere Inhalte, Dokümantasyonlar ve alıştırmalar
+                + diğer içerikler, dokümantasyonlar ve alıştırmalar
               </div>
             </div>
           </div>
@@ -147,7 +147,7 @@ export default function FamedOfflinePage() {
                 ESNEK
               </div>
               <div className="mt-1 text-xs font-semibold">
-                Eigenes Lerntempo
+                Kendi hızınızda
               </div>
             </div>
 
@@ -156,7 +156,7 @@ export default function FamedOfflinePage() {
                 OFFLINE + LIVE
               </div>
               <div className="mt-1 text-xs font-semibold">
-                Simülasyonlar ergänzen
+                Simülasyonlarla destekleyin
               </div>
             </div>
           </div>
@@ -167,12 +167,12 @@ export default function FamedOfflinePage() {
 
       {/* PHOTO-STORY-FAMED-OFFLINE */}
       <EditorialStorySection
-        eyebrow="ESNEK VORBEREITEN"
+        eyebrow="ESNEK HAZIRLIK"
         title="Kendi başınıza öğrenin, ardından öğrendiklerinizi pratikte test edin."
-        text="Der FaMed Offline Kurs ermöglicht eine flexible Vorbereitung mit digitalen Inhalten, Dokümantasyonlar ve alıştırmalar. Wer die Anwendung zusätzlich unter Prüfungsbedingungen trainieren möchte, kann den Lernweg mit Live-Simülasyonlar ergänzen."
+        text="FaMed çevrimdışı kursu, dijital içerik, belgeleme ve alıştırmalar ile esnek hazırlıklara olanak tanır. Uygulamayı sınav koşullarında ek olarak eğitmek isterseniz canlı simülasyonlarla öğrenme yolunu destekleyebilirsiniz."
         image="/images/home-medical-german-learning.jpg"
-        alt="Medizinisches Lernen mit digitalen Materialien"
-        chip="OFFLINE LERNEN · LIVE UYGULA"
+        alt="Dijital materyallerle medikal öğrenme"
+        chip="Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı."
         reverse
       />
 
@@ -180,13 +180,13 @@ export default function FamedOfflinePage() {
         <div className="grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
           <div>
             <div className="text-xs font-bold tracking-[0.18em] text-[#31175B]">
-              KURS İÇERİĞİ
+              DERS İÇERİĞİ
             </div>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
               FaMed hazırlığında adım adım ilerleyin.
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-8 text-black/50">
-              Die Module verbinden prüfungsrelevante Themen mit Dokümantasyonlar ve alıştırmalar, die Sie flexibel bearbeiten können.
+              Modüller, sınavla ilgili konuları kendi hızınızda çalışabileceğiniz dokümantasyonlar ve alıştırmalarla birleştirir.
             </p>
           </div>
 
@@ -213,7 +213,7 @@ export default function FamedOfflinePage() {
               İKİ SEÇENEK
             </div>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-              Esnek lernen oder mit Live-Simülasyonlar kombinieren.
+              Esnek öğrenin veya canlı simülasyonlarla birleştirin.
             </h2>
           </div>
 
@@ -224,13 +224,13 @@ export default function FamedOfflinePage() {
               </div>
               <div className="mt-7 text-5xl font-semibold">200 €</div>
               <p className="mt-5 max-w-xl leading-7 text-white/60">
-                Der komplette Offline-Kurs mit Esnekn, Dokümantasyonlar ve alıştırmalar.
+                Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
               </p>
               <ul className="mt-8 space-y-3 text-sm text-white/75">
-                <li>✓ Esnek</li>
-                <li>✓ Dokumentationen</li>
-                <li>✓ Übungen</li>
-                <li>✓ Flexible Selbstlernphase</li>
+                <li>✓ Yapılandırılmış modüller</li>
+                <li>✓ Dokümantasyonen</li>
+                <li>✓ Alıştırmalar</li>
+                <li>✓ Esnek bireysel çalışma</li>
               </ul>
               <a
                 href={whatsappLink(courseMessage)}
@@ -251,11 +251,11 @@ export default function FamedOfflinePage() {
               </div>
               <div className="mt-7 text-5xl font-semibold">575 €</div>
               <p className="mt-5 max-w-xl leading-7 text-black/55">
-                FaMed Offline plus fünf Sınav simülasyonları für die anschließende Live-Prüfungspraxis.
+                FaMed Offline Kursuuuu + sınav pratiği için 5 canlı simülasyon.
               </p>
               <ul className="mt-8 space-y-3 text-sm text-black/65">
-                <li>✓ FaMed Offline Kurs</li>
-                <li>✓ 5 Live-Simülasyonlar</li>
+                <li>✓ FaMed Offline Kursuuuuu</li>
+                <li>✓ 5 canlı simülasyon</li>
                 <li>✓ Sınav durumlarını çalışın</li>
                 <li>✓ Kişisel geri bildirim</li>
               </ul>
@@ -285,9 +285,9 @@ export default function FamedOfflinePage() {
 
           <div className="space-y-4">
             {[
-              ["01", "Esnek vorbereiten", "Bearbeiten Sie die Offline-Inhalte in Ihrem eigenen Tempo."],
-              ["02", "Hedefli çalışın", "Nutzen Sie Dokümantasyonlar ve alıştırmalar zur Vertiefung."],
-              ["03", "Canlı test edin", "Trainieren Sie anschließend in realistischen Sınav simülasyonları."],
+              ["01", "Esnek hazırlanın", "Offline içerikleri kendi hızınızda çalışın."],
+              ["02", "Hedefli çalışın", "Dokümantasyonlar ve alıştırmalarla konuları pekiştirin."],
+              ["03", "Canlı test edin", "Ardından gerçekçi sınav simülasyonlarında pratik yapın."],
             ].map(([number, title, text]) => (
               <div key={number} className="rounded-[1.8rem] bg-[#f7f5f9] p-6">
                 <div className="text-xs font-bold text-[#31175B]">{number}</div>
@@ -303,23 +303,23 @@ export default function FamedOfflinePage() {
         <div className="mx-auto max-w-7xl rounded-[2.5rem] bg-[#17131c] p-9 text-white sm:p-14">
           <div className="max-w-3xl">
             <div className="text-xs font-bold tracking-[0.18em] text-[#58ECF1]">
-              KURS HAKKINDA SORUNUZ MU VAR?
+              VAR'DA HAKKINDA SORUNUZ NEREDE?
             </div>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
               Hangi seçenek hazırlığınıza daha uygun?
             </h2>
             <p className="mt-5 text-lg leading-8 text-white/55">
-              Schreiben Sie uns über WhatsApp. Wir helfen Ihnen bei der Auswahl zwischen dem Offline-Kurs und dem Paket mit Simülasyonlar.
+              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
             </p>
             <a
               href={whatsappLink(
-                "Hallo, ich habe eine Frage zum FaMed Offline Kurs. Quelle: LANDING-FAMED-OFFLINE-BERATUNG"
+                "Merhaba, FaMed Offline Kursuuuuuuu hakkında bir sorum var. Kaynak: LANDING-FAMED-OFFLINE-BERATUNG"
               )}
               target="_blank"
               rel="noreferrer"
               className="mt-8 inline-block rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-[#17131c]"
             >
-              Über WhatsApp beraten lassen
+              Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.
             </a>
           </div>
         </div>

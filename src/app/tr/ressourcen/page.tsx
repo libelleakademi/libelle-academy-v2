@@ -7,29 +7,29 @@ import { whatsappLink } from "@/lib/whatsapp";
 export const metadata: Metadata = {
   title: "Kaynaklar | Libelle Academy",
   description:
-    "Lernmaterialien, Prüfungstipps, digitale Inhalte und weitere Ressourcen für Deutsch A1–B2 sowie medizinische Prüfungsvorbereitung.",
+    "Almanca A1–B2 ve medikal sınav hazırlığı için öğrenme materyalleri, sınav ipuçları, dijital içerikler ve ek kaynaklar.",
 };
 
 const consultationMessage =
-  "Hallo, ich suche Lernmaterialien oder Ressourcen bei Libelle Academy und möchte wissen, was zu meinem aktuellen Ziel passt. Quelle: KAYNAKLAR-SEITE";
+  "Merhaba, Libelle Academy'de öğrenme materyalleri veya kaynaklar arıyorum. Hedefime hangi içeriklerin uygun olduğunu öğrenmek istiyorum. Kaynak: KAYNAKLAR-SEITE";
 
 const resourceGroups = [
   {
     label: "GENEL ALMANCA",
-    title: "Deutsch A1–B2",
-    text: "Grammatik, Wortschatz und Lernhilfen für den allgemeinen Deutschweg vom Einstieg bis B2.",
+    title: "Almanca A1–B2",
+    text: "Başlangıç seviyesinden B2'ye kadar genel Almanca için gramer, kelime bilgisi ve öğrenme destekleri.",
     href: "/tr/pakete/deutsch-a1-b2",
   },
   {
-    label: "MEDICAL GERMAN",
+    label: "MEDİKAL ALMANCA",
     title: "FSP & FaMed",
-    text: "Lerninhalte und Prüfungstipps rund um medizinische Fachsprache, Kommunikation und Prüfungsvorbereitung.",
+    text: "Medikal mesleki dil, iletişim ve sınav hazırlığına yönelik öğrenme içerikleri ve sınav ipuçları.",
     href: "/tr/pruefungsvorbereitung",
   },
   {
-    label: "PRÜFUNGSTRAINING",
-    title: "Simulationen",
-    text: "Prüfungsnahe Anwendung, Feedback und gezieltes Training vor dem echten Prüfungstermin.",
+    label: "SINAV PRATİĞİ",
+    title: "Simülasyonlar",
+    text: "Gerçek sınavdan önce sınava yakın uygulamalar, geri bildirim ve hedefli çalışma.",
     href: "/tr/simulationen",
   },
 ];
@@ -38,22 +38,22 @@ const digitalFeatures = [
   {
     number: "01",
     title: "Ders kayıtları",
-    text: "Kursinhalte können je nach Kurs über den digitalen Lernbereich erneut angesehen werden.",
+    text: "Kursa bağlı olarak ders içeriklerine dijital öğrenme alanından tekrar erişilebilir.",
   },
   {
     number: "02",
     title: "Dijital materyaller",
-    text: "Zusätzliche Inhalte ergänzen den Canlı dersler und helfen bei der Vertiefung.",
+    text: "Ek dijital içerikler canlı dersleri destekler ve konuları pekiştirmenize yardımcı olur.",
   },
   {
     number: "03",
     title: "Bağımsız öğrenme",
-    text: "Zwischen den Unterrichtsterminen können Inhalte eigenständig wiederholt und trainiert werden.",
+    text: "Dersler arasında içerikleri kendi başınıza tekrar edebilir ve çalışabilirsiniz.",
   },
   {
     number: "04",
     title: "Sınav odaklı içerikler",
-    text: "Im medizinischen Bereich werden digitale Materialien mit der jeweiligen Prüfungsvorbereitung verbunden.",
+    text: "Medikal alandaki dijital materyaller, ilgili sınav hazırlığıyla bağlantılı şekilde sunulur.",
   },
 ];
 
@@ -75,9 +75,7 @@ export default function RessourcenPage() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-black/60">
-              Dijital öğrenme materyalleri, Prüfungstipps und ergänzende Inhalte
-              helfen dabei, Unterricht zu vertiefen und kontinuierlich
-              weiterzulernen.
+              Dijital öğrenme materyalleri, sınav ipuçları ve ek içerikler dersleri pekiştirmenize ve düzenli şekilde öğrenmeye devam etmenize yardımcı olur.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -126,12 +124,12 @@ export default function RessourcenPage() {
               </div>
 
               <div className="mt-3 text-3xl font-semibold">
-                Canlı dersler ergänzen. Inhalte wiederholen. Weiterlernen.
+                Canlı dersleri destekleyin. Tekrar edin. Öğrenmeye devam edin.
               </div>
 
               <div className="mt-7 space-y-3">
                 {[
-                  "Pelexa Lernbereich",
+                  "Pelexa öğrenme alanı",
                   "Ders kayıtları",
                   "Dijital öğrenme materyalleri",
                   "Sınav odaklı içerikler",
@@ -151,8 +149,7 @@ export default function RessourcenPage() {
                 </div>
 
                 <p className="mt-2 leading-7 text-white/70">
-                  Lernen nicht auf einzelne Unterrichtstermine begrenzen,
-                  sondern Inhalte regelmäßig vertiefen und anwenden.
+                  Öğrenmeyi yalnızca canlı derslerle sınırlamayın; içerikleri düzenli olarak tekrar edin, pekiştirin ve uygulayın.
                 </p>
               </div>
             </div>
@@ -185,11 +182,11 @@ export default function RessourcenPage() {
       {/* PHOTO-STORY-RESOURCES */}
       <EditorialStorySection
         eyebrow="DERSLER ARASINDA ÖĞRENME"
-        title="Fortschritt entsteht nicht nur während des Canlı derslers."
-        text="Dijital materyaller, Wiederholung und selbstständige Vertiefung helfen dabei, Inhalte zwischen den Kursterminen verfügbar zu halten und gezielt weiterzuarbeiten."
+        title="İlerleme yalnızca canlı ders sırasında gerçekleşmez."
+        text="Dijital materyaller, tekrar ve bireysel çalışmalar; dersler arasında içeriklere erişmeye ve hedefli şekilde ilerlemeye devam etmenizi sağlar."
         image="/images/resources-digital-study.jpg"
-        alt="Digitales Lernen mit Laptop und Lernmaterialien"
-        chip="PELEXA · MATERIALIEN · WIEDERHOLEN"
+        alt="Dizüstü bilgisayar ve öğrenme materyalleriyle dijital çalışma"
+        chip="PELEXA · MATERYALLER · TEKRAR"
       />
 
       {/* RESOURCE TYPES */}
@@ -204,9 +201,7 @@ export default function RessourcenPage() {
           </h2>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">
-            Allgemeines Deutsch und medizinische Prüfungsvorbereitung haben
-            unterschiedliche Schwerpunkte. Deshalb führen wir Sie direkt zu
-            den passenden Lernbereichen.
+            Genel Almanca ile medikal sınav hazırlığının odak noktaları farklıdır. Bu nedenle sizi doğrudan hedefinize uygun öğrenme alanına yönlendiriyoruz.
           </p>
         </div>
 
@@ -246,8 +241,7 @@ export default function RessourcenPage() {
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-white/60">
-              Der digitale Lernbereich ergänzt ausgewählte Kurse mit
-              Ders kayıtları, Materialien und weiteren Lerninhalten.
+              Dijital öğrenme alanı, seçili kursları ders kayıtları, materyaller ve ek öğrenme içerikleriyle destekler.
             </p>
           </div>
 
@@ -283,8 +277,7 @@ export default function RessourcenPage() {
             </h2>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-black/55">
-              Auf @almancahedefim finden Sie Lerninhalte, Grammatik,
-              Prüfungstipps und Einblicke in Libelle Academy.
+              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
             </p>
           </div>
 
@@ -303,7 +296,7 @@ export default function RessourcenPage() {
       <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="max-w-4xl">
           <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-            WO MÖCHTEN SIE ÖĞRENMEYE DEVAM?
+            NEREDE ÖĞRENMEYE DEVAM ETMEK İSTİYORSUNUZ?
           </div>
 
           <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
@@ -325,8 +318,7 @@ export default function RessourcenPage() {
             </h3>
 
             <p className="mt-5 text-lg leading-8 text-black/55">
-              Alle Kursangebote von A1 bis B2 sowie medizinische
-              Spezialisierungen auf einer Seite.
+              Almanca seviyenize uygun yapılandırılmış öğrenme adımı.
             </p>
 
             <div className="mt-8 text-sm font-semibold text-[#31175B]">
@@ -343,12 +335,11 @@ export default function RessourcenPage() {
             </div>
 
             <h3 className="mt-5 text-3xl font-semibold">
-              FSP, FaMed oder Zahnmedizin?
+              FSP, FaMed veya Diş Hekimliği?
             </h3>
 
             <p className="mt-5 text-lg leading-8 text-white/60">
-              Finden Sie den passenden medizinischen Prüfungsweg und die
-              entsprechende Vorbereitung.
+              Size uygun medikal sınav yolunu ve ilgili hazırlık programını bulun.
             </p>
 
             <div className="mt-8 text-sm font-semibold text-[#58ECF1]">
@@ -363,17 +354,15 @@ export default function RessourcenPage() {
         <div className="mx-auto grid max-w-7xl gap-8 rounded-[2.8rem] bg-[#17131c] p-9 text-white sm:p-14 lg:grid-cols-[1fr_auto] lg:items-center">
           <div>
             <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
-              SIE SUCHEN ETWAS BESTIMMTES?
+              BELİRLİ BİR İÇERİK Mİ ARIYORSUNUZ?
             </div>
 
             <h2 className="mt-4 max-w-3xl text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              Sagen Sie uns, was Sie gerade lernen.
+              Şu anda ne çalıştığınızı bize söyleyin.
             </h2>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/55">
-              Schreiben Sie uns kurz Ihr Sprachniveau oder Ihre geplante
-              Prüfung. Wir helfen Ihnen, die passenden Inhalte oder Kurse zu
-              finden.
+              Dil seviyenizi veya hazırlandığınız sınavı bize kısaca yazın. Size uygun içerikleri veya kursları bulmanıza yardımcı olalım.
             </p>
           </div>
 
@@ -383,7 +372,7 @@ export default function RessourcenPage() {
             rel="noreferrer"
             className="rounded-full bg-white px-8 py-4 text-center text-sm font-semibold text-[#31175B]"
           >
-            Über WhatsApp fragen
+            WhatsApp'tan sor
           </a>
         </div>
       </section>

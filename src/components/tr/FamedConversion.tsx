@@ -11,7 +11,7 @@ const situations = [
     label: "DİL TEMELİ",
     question: "Almancam FaMed için henüz yeterince güvenli hissettirmiyor.",
     title: "FaMed hazırlığı yalnızca sınav formatını öğrenmekten ibaret değildir.",
-    text: "Wenn medizinische Kommunikation noch viel Konzentration kostet, sollten sprachliche Strukturen zuerst sicherer werden. Die FaMed verlangt nicht nur Wissen über das Format, sondern aktive Kommunikation im richtigen Moment.",
+    text: "Tıbbi iletişim hala çok fazla konsantrasyon gerektiriyorsa öncelikle dilsel yapıların daha güvenli hale gelmesi gerekir. FaMed yalnızca format bilgisini değil, aynı zamanda doğru anda aktif iletişimi de gerektirir.",
     next: "Dil seviyesini değerlendir → eksikleri belirle → FaMed'e hedefli hazırlan",
   },
   {
@@ -20,8 +20,8 @@ const situations = [
     label: "UYGULAMA",
     question: "Teoriyi biliyorum ama konuşma sırasında kilitleniyorum.",
     title: "Bilginizi konuşma baskısı altında da kullanabilmelisiniz.",
-    text: "Viele Unsicherheiten zeigen sich erst, wenn gleichzeitig zugehört, strukturiert, formuliert und medizinisch reagiert werden muss. Genau deshalb sollte Vorbereitung nicht beim Lesen und Auswendiglernen enden.",
-    next: "Strukturen festigen → aktiv sprechen → Anamnese, Patientenaufklärung, Dokumentation und Vorstellung verbinden",
+    text: "Pek çok güvensizlik ancak aynı anda dinlemeniz, yapılandırmanız, formüle etmeniz ve tıbbi olarak yanıt vermeniz gerektiğinde ortaya çıkar. İşte tam da bu yüzden hazırlık okumak ve ezberlemekle bitmemeli.",
+    next: "Yapıları birleştirin → aktif konuşun → anamnez, hasta eğitimi, dokümantasyon ve sunumu birleştirin",
   },
   {
     id: "exam",
@@ -29,7 +29,7 @@ const situations = [
     label: "SINAVA YAKINLIK",
     question: "Sınavım yaklaşıyor ve hazır olup olmadığımdan emin değilim.",
     title: "Artık önemli olan yalnızca ne bildiğiniz değil.",
-    text: "Kurz vor der Prüfung wird wichtiger, wie zuverlässig Sie Ihr Wissen in einer realistischen Situation abrufen können. Simulationen machen sichtbar, wo bereits Sicherheit besteht und was noch gezielt nachgeschärft werden sollte.",
+    text: "Sınava kısa bir süre kala, gerçekçi bir durumda bilginize ne kadar güvenilir bir şekilde ulaşabileceğiniz daha da önemli hale geliyor. Simülasyonlar, güvenliğin nerede mevcut olduğunu ve neyin özel olarak iyileştirilmesi gerektiğini açıkça ortaya koyuyor.",
     next: "Sınav koşullarında uygula → geri bildirim al → kalan eksikleri hedefli geliştir",
   },
 ];
@@ -37,11 +37,11 @@ const situations = [
 const questions = [
   {
     q: "Yoğun kursa başlamadan önce medikal Almancayı çok iyi konuşmam gerekiyor mu?",
-    a: "Der Kurs dient gerade dazu, medizinische Kommunikation systematisch zu trainieren. Entscheidend ist jedoch, dass Ihr allgemeines Deutschniveau eine sinnvolle Mitarbeit ermöglicht. Wenn Sie unsicher sind, können Sie uns Ihren aktuellen Stand vorab schildern.",
+    a: "Dersin amacı sistematik olarak tıbbi iletişimi öğretmektir. Ancak önemli olan, genel Almanca seviyenizin anlamlı bir katılımı mümkün kılmasıdır. Emin değilseniz, mevcut durumunuzu önceden bize bildirebilirsiniz.",
   },
   {
     q: "Daha önce FaMed kursu aldım. Başka bir kursun faydası olur mu?",
-    a: "Das hängt weniger von der Anzahl Ihrer bisherigen Kurse ab als davon, was heute noch unsicher ist. Wenn Sie Inhalte bereits kennen, aber Anamnese, Dokumentation oder Patientenvorstellung unter Gesprächsdruck noch nicht zuverlässig funktionieren, kann gezieltes Anwendungstraining weiterhin sinnvoll sein.",
+    a: "Bu, şu ana kadar aldığınız ders sayısına değil, bugün hala belirsiz olan şeylere bağlıdır. İçeriği zaten biliyorsanız ancak anamnez, dokümantasyon veya hasta sunumları konuşma baskısı altında henüz güvenilir bir şekilde çalışmıyorsa, hedefe yönelik uygulama eğitimi yine de faydalı olabilir.",
   },
   {
     q: "Simülasyonda kötü performans gösterirsem ne olur?",
@@ -164,7 +164,7 @@ export default function FamedConversion() {
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <a
                     href={whatsappLink(
-                      `Hallo, ich bereite mich auf die FaMed vor. Meine aktuelle Situation: ${current.question} Bitte helfen Sie mir einzuschätzen, welcher nächste Schritt sinnvoll ist. Quelle: FAMED-DECISION`
+                      `Merhaba, FaMed'e hazırlanıyorum. Şu anki durumum: ${current.question} Lütfen bir sonraki adımın hangisinin anlamlı olduğunu değerlendirmeme yardım edin. Kaynak: FAMED-DECISION`
                     )}
                     target="_blank"
                     rel="noreferrer"

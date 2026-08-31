@@ -32,9 +32,7 @@ export default async function BundlePage({
           <Link
             href="/tr"
             className={`text-sm font-semibold ${general ? "text-[#17666a]" : "text-[#58ECF1]"}`}
-          >
-            ← Zurück zur Libelle Akademie
-          </Link>
+          >Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</Link>
 
           <div className={`mt-12 text-xs font-bold tracking-[0.18em] ${general ? "text-[#17666a]" : "text-[#58ECF1]"}`}>
             {bundle.eyebrow}
@@ -55,9 +53,7 @@ export default async function BundlePage({
       </section>
 
       <section className="mx-auto max-w-5xl px-5 py-24 lg:px-8">
-        <div className="text-xs font-bold tracking-[0.18em] text-[#31175B]">
-          IHR LERNWEG
-        </div>
+        <div className="text-xs font-bold tracking-[0.18em] text-[#31175B]">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</div>
 
         <div className="mt-10 space-y-4">
           {bundle.steps.map((step, index) => (
@@ -75,12 +71,10 @@ export default async function BundlePage({
 
         <a
           href={whatsappLink(
-            `Hallo, ich interessiere mich für das Paket ${bundle.title}. Quelle: ${bundle.source}`
+            `Merhaba, kurslar ve öğrenme yolları hakkında bilgi almak istiyorum.`
           )}
           className="mt-10 inline-block rounded-full bg-[#31175B] px-7 py-3.5 text-sm font-semibold text-white"
-        >
-          Paket über WhatsApp anfragen
-        </a>
+        >Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</a>
       </section>
     </main>
   );

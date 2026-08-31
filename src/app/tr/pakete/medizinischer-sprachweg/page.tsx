@@ -5,78 +5,78 @@ import EditorialStorySection from "@/components/EditorialStorySection";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
-  title: "Medizinischer Sprachweg | Libelle Academy",
+  title: "Medikal Dil Yolu | Libelle Academy",
   description:
-    "Ein kombinierbarer Lernweg von der medizinischen Sprachentwicklung über FSP oder FaMed bis zur realistischen Prüfungssimulation.",
+    "Medikal dil gelişiminden FSP veya FaMed hazırlığına ve gerçekçi sınav simülasyonlarına uzanan esnek bir öğrenme yolu.",
 };
 
 const mainMessage =
-  "Hallo, ich interessiere mich für den Medizinischen Sprachweg. Ich möchte wissen, welcher Einstieg und welche Kombination zu meinem aktuellen Stand passt. Quelle: BUNDLE-MEDICAL-PATH";
+  "Merhaba, Medikal Dil Yolu ile ilgileniyorum. Mevcut seviyeme hangi başlangıç noktasının ve hangi hazırlık kombinasyonunun uygun olduğunu öğrenmek istiyorum. Kaynak: BUNDLE-MEDICAL-PATH";
 
 const path = [
   {
     number: "01",
     eyebrow: "DİLİ GÜÇLENDİR",
-    title: "Exzellenz / Feinschliff",
-    text: "Stärken Sie zunächst Ihre medizinische Sprachkompetenz, wenn Sie vor der eigentlichen Prüfungsvorbereitung noch mehr sprachliche Sicherheit aufbauen möchten.",
+    title: "İleri Seviye / İnce Ayar",
+    text: "Sınav hazırlığına geçmeden önce medikal Almancanızı daha güvenli hale getirmeniz gerekiyorsa ilk olarak bu alana odaklanın.",
   },
   {
     number: "02",
     eyebrow: "SINAVA HAZIRLAN",
-    title: "FSP oder FaMed",
-    text: "Trainieren Sie anschließend gezielt die medizinische Kommunikation und die Anforderungen Ihrer jeweiligen Prüfung.",
+    title: "FSP veya FaMed",
+    text: "Ardından medikal iletişimi ve hazırlandığınız sınavın gerekliliklerini hedefli şekilde çalışın.",
   },
   {
     number: "03",
     eyebrow: "GERÇEKÇİ TEST ET",
     title: "Simülasyonlar",
-    text: "Wenden Sie das Gelernte anschließend unter realistischen Prüfungsbedingungen an und erhalten Sie Feedback zu Ihrer Leistung.",
+    text: "Öğrendiklerinizi gerçekçi sınav koşullarında uygulayın ve performansınız hakkında geri bildirim alın.",
   },
 ];
 
 const reasons = [
   {
     number: "01",
-    title: "Rastgele bir kurs seçmeyin",
-    text: "Der Einstieg orientiert sich daran, wo Sie sprachlich und in Ihrer Prüfungsvorbereitung aktuell stehen.",
+    title: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    text: "Başlangıç noktanız, mevcut dil seviyenize ve sınav hazırlığınızın hangi aşamasında olduğunuza göre belirlenir.",
   },
   {
     number: "02",
     title: "Net bir sonraki adım",
-    text: "Sie sehen, wie Sprachentwicklung, Prüfungsvorbereitung und Simulation sinnvoll aufeinander aufbauen können.",
+    text: "Dil gelişimi, sınav hazırlığı ve simülasyonların birbirini nasıl tamamladığını net şekilde görün.",
   },
   {
     number: "03",
     title: "Doğru sınav yolunu seçin",
-    text: "Der Prüfungsweg wird nicht pauschal festgelegt. Entscheidend ist, auf welches Format Sie sich tatsächlich vorbereiten.",
+    text: "Sınav yolu herkese aynı şekilde belirlenmez. Önemli olan gerçekten hangi sınav formatına hazırlandığınızdır.",
   },
   {
     number: "04",
     title: "Yalnızca ihtiyacınız olanı alın",
-    text: "Der Lernweg ist kombinierbar. Mit passenden Vorkenntnissen können Sie direkt in einen späteren Schritt einsteigen.",
+    text: "Öğrenme yolu esnektir. Yeterli altyapınız varsa doğrudan daha ileri bir aşamadan başlayabilirsiniz.",
   },
 ];
 
 const faqs = [
   [
-    "Muss ich mit Exzellenz / Feinschliff beginnen?",
-    "Nein. Der Medizinische Sprachweg ist kombinierbar. Wenn Ihre sprachliche Grundlage bereits passend ist, können Sie direkt mit der geeigneten Prüfungsvorbereitung starten.",
+    "İleri Seviye / İnce Ayar ile başlamak zorunda mıyım?",
+    "Hayır. Medikal Dil Yolu esnektir. Dil altyapınız yeterliyse doğrudan size uygun sınav hazırlığına başlayabilirsiniz.",
   ],
   [
-    "Woher weiß ich, ob FSP oder FaMed zu mir gehört?",
-    "Das richtet sich nach Ihrer vorgesehenen Prüfung. Schreiben Sie uns kurz, auf welche Prüfung Sie sich vorbereiten, und wir zeigen Ihnen den passenden Weg.",
+    "FaMed sınavına yönelik yapılandırılmış hazırlık.",
+    "Bu, gireceğiniz sınava bağlıdır. Hangi sınava hazırlandığınızı bize yazın; size uygun yolu gösterelim.",
   ],
   [
-    "Kann ich auch direkt Simülasyonlar buchen?",
-    "Ja. Prüfungssimulationen sind auch als eigener Vorbereitungsschritt verfügbar, wenn Sie bereits ausreichend vorbereitet sind und gezielt Prüfungssituationen trainieren möchten.",
+    "Doğrudan simülasyon satın alabilir miyim?",
+    "Evet. Hazırlığınız yeterliyse ve özellikle sınav durumlarını çalışmak istiyorsanız simülasyonları ayrı bir hazırlık adımı olarak da kullanabilirsiniz.",
   ],
   [
-    "Gibt es einen festen Gesamtpreis für den Lernweg?",
-    "Die benötigte Kombination hängt von Ihrem aktuellen Stand und Ihrem Ziel ab. Die aktuell verfügbaren Paketkonditionen erhalten Sie persönlich über WhatsApp.",
+    "Öğrenme yolunun sabit bir toplam fiyatı var mı?",
+    "İhtiyacınız olan kombinasyon mevcut seviyenize ve hedefinize bağlıdır. Güncel paket seçeneklerini WhatsApp üzerinden öğrenebilirsiniz.",
   ],
   [
-    "Welcher Einstieg ist für mich sinnvoll?",
-    "Senden Sie uns Ihr aktuelles Sprachniveau, Ihre geplante Prüfung und – wenn bekannt – Ihren Prüfungstermin. Wir helfen Ihnen, den sinnvollsten Einstieg auszuwählen.",
+    "Benim için hangi başlangıç noktası uygun?",
+    "Mevcut dil seviyenizi, hazırlandığınız sınavı ve biliyorsanız sınav tarihinizi bize gönderin. En uygun başlangıç noktasını birlikte belirleyelim.",
   ],
 ];
 
@@ -93,7 +93,7 @@ export default function MedizinischerSprachwegPage() {
               href="/tr/pruefungsvorbereitung"
               className="text-sm font-semibold text-[#17666a]"
             >
-              ← Prüfungsvorbereitung
+              ← Sınav Hazırlığı
             </Link>
 
             <div className="mt-10 text-xs font-bold tracking-[.18em] text-[#17666a]">
@@ -105,16 +105,13 @@ export default function MedizinischerSprachwegPage() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-black/60">
-              Ein kombinierbarer Lernweg für medizinische Fachkräfte: erst die
-              sprachliche Grundlage stärken, anschließend gezielt FSP oder
-              FaMed vorbereiten und das Gelernte schließlich in realistischen
-              Prüfungssituationen anwenden.
+              Medikal profesyoneller için esnek bir öğrenme yolu: önce dil altyapınızı güçlendirin, ardından FSP veya FaMed'e hedefli şekilde hazırlanın ve son olarak öğrendiklerinizi gerçekçi sınav durumlarında uygulayın.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-3">
               {[
-                "Exzellenz / Feinschliff",
-                "FSP oder FaMed",
+                "İleri Seviye / İnce Ayar",
+                "FSP veya FaMed",
                 "Simülasyonlar",
               ].map((item) => (
                 <span
@@ -153,12 +150,12 @@ export default function MedizinischerSprachwegPage() {
                     LIBELLE ÖĞRENME YOLU
                   </div>
                   <div className="mt-2 text-3xl font-semibold">
-                    Medizinischer Sprachweg
+                    Medikal Dil Yolu
                   </div>
                 </div>
 
                 <span className="rounded-full bg-[#58ECF1] px-4 py-2 text-xs font-bold">
-                  FLEXIBEL
+                  ESNEK
                 </span>
               </div>
 
@@ -181,9 +178,7 @@ export default function MedizinischerSprachwegPage() {
                   BAŞLANGIÇ NOKTANIZ
                 </div>
                 <p className="mt-2 leading-7 text-white/75">
-                  Sie müssen nicht automatisch bei Schritt 1 beginnen. Der
-                  passende Einstieg richtet sich nach Ihrem aktuellen Stand
-                  und Ihrer Prüfung.
+                  Mutlaka 1. adımdan başlamak zorunda değilsiniz. Doğru başlangıç noktası mevcut seviyenize ve hazırlandığınız sınava göre belirlenir.
                 </p>
               </div>
             </div>
@@ -195,29 +190,26 @@ export default function MedizinischerSprachwegPage() {
       <EditorialStorySection
         eyebrow="MESLEKİ BİLGİDEN İLETİŞİME"
         title="Medikal Almanca, mesleki bilginizi anlaşılır iletişimle birleştirir."
-        text="Je nach aktuellem Stand kann zuerst die medizinische Sprachkompetenz gestärkt, anschließend gezielt auf FSP oder FaMed vorbereitet und schließlich unter realistischen Bedingungen simuliert werden."
+        text="FaMed sınavına yönelik yapılandırılmış hazırlık."
         image="/images/medical-path-doctor-explanation.jpg"
-        alt="Ärztliche Erklärung im medizinischen Gespräch"
-        chip="SPRACHE → PRÜFUNG → SIMULATION"
+        alt="Doktorun medikal görüşme sırasında açıklama yapması"
+        chip="DİL → SINAV → SİMÜLASYON"
         reverse
       />
 
       {/* PATH */}
-      <section id="lernweg" className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+      <section id="Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı." className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="max-w-4xl">
           <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
             SINAVA GİDEN YOLUNUZ
           </div>
 
           <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-            Erst Sicherheit aufbauen. Dann gezielt vorbereiten. Schließlich
-            simulieren.
+            Önce dil güvenliğini oluşturun. Sonra hedefli hazırlanın. Ardından simüle edin.
           </h2>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">
-            Der Lernweg verbindet mehrere Vorbereitungsschritte zu einer
-            nachvollziehbaren Entwicklung – ohne dass jede Person denselben
-            Ausgangspunkt haben muss.
+            Bu öğrenme yolu farklı hazırlık adımlarını anlaşılır bir süreçte birleştirir. Herkesin aynı noktadan başlaması gerekmez.
           </p>
         </div>
 
@@ -247,7 +239,7 @@ export default function MedizinischerSprachwegPage() {
                     href="/tr/fsp-medizin"
                     className="rounded-full bg-[#31175B] px-5 py-2.5 text-sm font-semibold text-white"
                   >
-                    FSP Medizin
+                    FSP Tıp
                   </Link>
                   <Link
                     href="/tr/famed"
@@ -263,7 +255,7 @@ export default function MedizinischerSprachwegPage() {
                   href="/tr/simulationen"
                   className="mt-7 inline-block text-sm font-semibold text-[#31175B]"
                 >
-                  Simülasyonlar ansehen →
+                  Simülasyonları incele →
                 </Link>
               )}
             </article>
@@ -284,9 +276,7 @@ export default function MedizinischerSprachwegPage() {
             </h2>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-white/60">
-              Nicht jede Person braucht denselben Kurs in derselben Reihenfolge.
-              Deshalb betrachten wir Sprachniveau, Prüfung und aktuellen
-              Vorbereitungsstand gemeinsam.
+              Herkes aynı kurslara aynı sırayla ihtiyaç duymaz. Bu nedenle dil seviyenizi, sınavınızı ve mevcut hazırlık durumunuzu birlikte değerlendiriyoruz.
             </p>
           </div>
 
@@ -312,34 +302,29 @@ export default function MedizinischerSprachwegPage() {
         <div className="grid gap-5 lg:grid-cols-2">
           <div className="rounded-[2.5rem] bg-[#D2ECFF]/60 p-8 sm:p-10">
             <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-              NOCH SPRACHLICH UNSICHER?
+              DİL KONUSUNDA HÂLÂ EMİN DEĞİL MİSİNİZ?
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">
-              Dann muss Ihre Vorbereitung nicht direkt mit einer
-              Prüfungssimulation beginnen.
+              O zaman hazırlığınızın doğrudan bir sınav simülasyonuyla başlaması gerekmez.
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-black/55">
-              Zuerst kann die medizinische Sprachkompetenz gezielt gestärkt
-              werden. Danach lässt sich die eigentliche Prüfungsvorbereitung
-              sinnvoll anschließen.
+              Önce medikal dil becerilerinizi hedefli şekilde güçlendirebilirsiniz. Ardından gerçek sınav hazırlığına geçebilirsiniz.
             </p>
           </div>
 
           <div className="rounded-[2.5rem] bg-[#f7f5f9] p-8 sm:p-10">
             <div className="text-xs font-bold tracking-[.18em] text-[#31175B]">
-              SCHON WEITER?
+              DAHA İLERİ BİR SEVİYEDE MİSİNİZ?
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">
-              Dann steigen Sie dort ein, wo Sie tatsächlich Unterstützung
-              brauchen.
+              O halde doğrudan gerçekten desteğe ihtiyaç duyduğunuz aşamadan başlayın.
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-black/55">
-              Wenn Ihre sprachliche Grundlage bereits passt, kann der nächste
-              Schritt direkt FSP, FaMed oder gezieltes Simulationstraining sein.
+              Dil altyapınız yeterliyse bir sonraki adım doğrudan FSP, FaMed veya hedefli simülasyon çalışması olabilir.
             </p>
 
             <a
@@ -348,7 +333,7 @@ export default function MedizinischerSprachwegPage() {
               rel="noreferrer"
               className="mt-8 inline-block rounded-full bg-[#31175B] px-7 py-3.5 text-sm font-semibold text-white"
             >
-              Einstieg besprechen
+              Başlangıç noktamı belirle
             </a>
           </div>
         </div>
@@ -363,7 +348,7 @@ export default function MedizinischerSprachwegPage() {
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              Welcher Prüfungsschritt kommt für Sie als Nächstes?
+              Sizin için sıradaki sınav hazırlığı adımı hangisi?
             </h2>
           </div>
 
@@ -373,17 +358,16 @@ export default function MedizinischerSprachwegPage() {
               className="rounded-[2rem] bg-white p-8 transition hover:-translate-y-1"
             >
               <div className="text-xs font-bold tracking-[.16em] text-[#17666a]">
-                FSP MEDIZIN
+                FSP TIP
               </div>
               <h3 className="mt-5 text-2xl font-semibold">
-                FSP gezielt vorbereiten
+                FSP'ye hedefli hazırlanın
               </h3>
               <p className="mt-4 leading-7 text-black/55">
-                Fachsprache, Anamnese, Dokumentation, Patientenvorstellung und
-                realistische Prüfungssituationen.
+                Mesleki dil, anamnez, dokümantasyon, hasta sunumu ve gerçekçi sınav durumları.
               </p>
               <div className="mt-7 text-sm font-semibold text-[#31175B]">
-                FSP Medizin ansehen →
+                FSP Tıp'i incele →
               </div>
             </Link>
 
@@ -395,14 +379,13 @@ export default function MedizinischerSprachwegPage() {
                 FAMED
               </div>
               <h3 className="mt-5 text-2xl font-semibold">
-                FaMed gezielt vorbereiten
+                FaMed'e hedefli hazırlanın
               </h3>
               <p className="mt-4 leading-7 text-black/55">
-                Medizinische Kommunikation, Anamnese, Patientenaufklärung,
-                Dokumentation und Patientenvorstellung.
+                Medikal iletişim, anamnez, hasta bilgilendirmesi, dokümantasyon ve hasta sunumu.
               </p>
               <div className="mt-7 text-sm font-semibold text-[#31175B]">
-                FaMed ansehen →
+                FaMed'i incele →
               </div>
             </Link>
 
@@ -411,17 +394,16 @@ export default function MedizinischerSprachwegPage() {
               className="rounded-[2rem] bg-white p-8 transition hover:-translate-y-1"
             >
               <div className="text-xs font-bold tracking-[.16em] text-[#17666a]">
-                SIMULATIONEN
+                SİMÜLASYONLAR
               </div>
               <h3 className="mt-5 text-2xl font-semibold">
-                Prüfungssituationen trainieren
+                Sınav durumlarını çalışın
               </h3>
               <p className="mt-4 leading-7 text-black/55">
-                Das Gelernte unter realistischen Bedingungen anwenden und
-                gezieltes Feedback erhalten.
+                Öğrendiklerinizi gerçekçi koşullarda uygulayın ve hedefli geri bildirim alın.
               </p>
               <div className="mt-7 text-sm font-semibold text-[#31175B]">
-                Simülasyonlar ansehen →
+                Simülasyonları incele →
               </div>
             </Link>
           </div>
@@ -432,11 +414,11 @@ export default function MedizinischerSprachwegPage() {
       <section className="mx-auto max-w-5xl px-5 py-24 lg:px-8">
         <div className="text-center">
           <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-            HÄUFIGE FRAGEN
+            SIK SORULAN SORULAR
           </div>
 
           <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-            Vor der Entscheidung wissen, welcher Weg sinnvoll ist.
+            Karar vermeden önce hangi yolun sizin için uygun olduğunu bilin.
           </h2>
         </div>
 
@@ -459,17 +441,15 @@ export default function MedizinischerSprachwegPage() {
           <div className="grid items-center gap-10 lg:grid-cols-[1fr_auto]">
             <div className="max-w-3xl">
               <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
-                IHR NÄCHSTER SCHRITT
+                SONRAKİ ADIMINIZ
               </div>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-                Sagen Sie uns, wo Sie stehen. Wir helfen Ihnen beim nächsten
-                sinnvollen Schritt.
+                Bize şu anda hangi aşamada olduğunuzu söyleyin. Sizin için uygun sonraki adımı birlikte belirleyelim.
               </h2>
 
               <p className="mt-5 text-lg leading-8 text-white/55">
-                Senden Sie uns Ihr aktuelles Sprachniveau, Ihre geplante
-                Prüfung und – wenn bekannt – Ihren Prüfungstermin.
+                Mevcut dil seviyenizi, hazırlandığınız sınavı ve biliyorsanız sınav tarihinizi bize gönderin.
               </p>
             </div>
 
@@ -479,7 +459,7 @@ export default function MedizinischerSprachwegPage() {
               rel="noreferrer"
               className="rounded-full bg-white px-8 py-4 text-center text-sm font-semibold text-[#31175B]"
             >
-              Lernweg über WhatsApp besprechen
+              Öğrenme yolumu WhatsApp'tan belirle
             </a>
           </div>
         </div>
