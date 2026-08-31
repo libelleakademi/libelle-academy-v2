@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 };
 
 const mainMessage =
-  "Merhaba, 950 €'luk FSP & FaMed Diş Hekimliği Yoğun Kursu ile ilgileniyorum. Yeni grup ve kontenjan hakkında bilgi alabilir miyim? Kaynak: FSP-FAMED-DİŞ HEKİMLİĞİ-LANDING";
+  "Merhaba, 950 €'luk FSP & FaMed Diş Hekimliği Yoğun Kursu ile ilgileniyorum. Yeni grup ve kontenjan hakkında bilgi alabilir miyim? Kaynak: FSP-FAMED-ZAHNMEDIZIN-LANDING";
 
 const consultationMessage =
-  "Merhaba, Diş Hekimliği sınav hazırlığıyla ilgileniyorum. Yoğun kursun mevcut seviyeme uygun olup olmadığını öğrenmek istiyorum. Kaynak: DİŞ HEKİMLİĞİ-BERATUNG";
+  "Merhaba, Diş Hekimliği sınav hazırlığıyla ilgileniyorum. Yoğun kursun mevcut seviyeme uygun olup olmadığını öğrenmek istiyorum. Kaynak: ZAHNMEDIZIN-BERATUNG";
 
 const outcomes = [
   {
@@ -54,7 +54,7 @@ const steps = [
     number: "01",
     eyebrow: "GELİŞTİR",
     title: "Dil ve yapıyı güçlendirin",
-    text: "Diş hekimliği meslek dili ve tipik sınav durumları sistematik olarak yapılandırılmıştır.",
+    text: "Diş hekimliği mesleki dili ve tipik sınav durumları sistematik şekilde geliştirilir.",
   },
   {
     number: "02",
@@ -73,14 +73,14 @@ const steps = [
 const faqs = [
   {
     q: "Diş Hekimliği Yoğun Kursu ne kadar sürüyor?",
-    a: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    a: "Kurs 8 hafta sürer.",
   },
   {
     q: "Kursun fiyatı nedir?",
-    a: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    a: "Kurs ücreti 950 €'dur.",
   },
   {
-    q: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    q: "Kurs hangi sınavlara yönelik?",
     a: "Ders, hekimlerin dil ve sınav odaklı hazırlığı için tasarlanmış ve FSP ile FaMed açısından önemli iletişim işlemlerini birlikte çalıştırır.",
   },
   {
@@ -109,7 +109,7 @@ export default function FspZahnmedizinPage() {
             </Link>
 
             <div className="mt-10 text-xs font-bold tracking-[.18em] text-[#17666a]">
-              FSP sınavına yönelik yapılandırılmış hazırlık.
+              FSP & FAMED DİŞ HEKİMLİĞİ · YOĞUN KURS
             </div>
 
             <h1 className="mt-5 max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-.045em] sm:text-6xl lg:text-7xl">
@@ -261,7 +261,7 @@ export default function FspZahnmedizinPage() {
       <EditorialStorySection
         eyebrow="DİŞ HEKİMLİĞİ İLETİŞİMİ"
         title="Mesleki dil, hasta anlayabildiğinde gerçek değerini kazanır."
-        text="Anamnez, bilgi, dokümantasyon ve sunum, diş hekimliği uzmanlığını net Almanca iletişimi ile birleştirir - tam da muayene ve günlük profesyonel yaşamın bir araya geldiği yer."
+        text="Anamnez, hasta bilgilendirmesi, dokümantasyon ve sunum; diş hekimliği bilgisini açık Almanca iletişimle birleştirir."
         image="/images/zahnmedizin-dentist-patient.jpg"
         alt="Diş hekimi ve hasta görüşmesi"
         secondaryImage="/images/zahnmedizin-patient-conversation.jpg"
@@ -269,7 +269,7 @@ export default function FspZahnmedizinPage() {
         chip="FSP + FAMED DİŞ HEKİMLİĞİ"
       />
 
-      <section id="Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı." className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+      <section id="kurs" className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="max-w-4xl">
           <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
             NELERİ ÇALIŞACAKSINIZ?
@@ -385,7 +385,7 @@ export default function FspZahnmedizinPage() {
               </h2>
 
               <p className="mt-6 max-w-xl text-lg leading-8 text-white/60">
-                Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+                Bu nedenle program, mesleki dili aktif iletişim çalışmaları, sınav odaklı uygulamalar ve simülasyonlarla bir araya getirir.
               </p>
             </div>
 
@@ -494,7 +494,7 @@ export default function FspZahnmedizinPage() {
             </h2>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/55">
-              Yeni grup, mevcut kontojan ve güncel dersi WhatsApp üzerinden öğrenin.
+              Yeni grup, mevcut kontenjan ve güncel kurs bilgilerini WhatsApp üzerinden öğrenin.
             </p>
           </div>
 

@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 };
 
 const mainMessage =
-  "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.";
+  "Merhaba, sınav simülasyonlarıyla ilgileniyorum. Uygun tarihler ve rezervasyon seçenekleri hakkında bilgi alabilir miyim? Kaynak: SIMULATIONEN-LANDING";
 
 const consultationMessage =
-  "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.";
+  "Merhaba, sınav hazırlığım için hangi simülasyon seçeneğinin uygun olduğunu öğrenmek istiyorum. Kaynak: SIMULATIONEN-BERATUNG";
 
 const outcomes = [
   {
@@ -49,7 +49,7 @@ const process = [
   },
   {
     number: "02",
-    eyebrow: "FSP · FAMED · DİŞ HEKİMLİĞİ",
+    eyebrow: "ANALİZ ET",
     title: "Performansı birlikte değerlendirin",
     text: "İletişim, yapı, anlaşılabilirlik ve dil güvenliği hedefli şekilde değerlendirilir.",
   },
@@ -88,7 +88,7 @@ const faqs = [
   ],
 ];
 
-export default function SimülasyonlarPage() {
+export default function SimulationenPage() {
   return (
     <main className="min-h-screen bg-white text-[#17131c]">
       <SiteHeader />
@@ -374,7 +374,7 @@ export default function SimülasyonlarPage() {
           </div>
 
           <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-            Benzetmek. Analiz edin. Hedefli şekilde çalışmaya devam edin.
+            Simüle edin. Analiz edin. Hedefli şekilde ilerleyin.
           </h2>
         </div>
 
@@ -411,7 +411,7 @@ export default function SimülasyonlarPage() {
         <div className="mx-auto grid max-w-7xl gap-6 px-5 py-24 md:grid-cols-2 lg:px-8">
           <div className="rounded-[2.5rem] bg-[#D2ECFF]/55 p-9 sm:p-11">
             <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-              BESONDERS SINNVOLL
+              ÖZELLİKLE FAYDALI
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">
@@ -428,7 +428,7 @@ export default function SimülasyonlarPage() {
 
           <div className="rounded-[2.5rem] bg-white p-9 sm:p-11">
             <div className="text-xs font-bold tracking-[.18em] text-[#31175B]">
-              HALA UNSICHER MI?
+              HÂLÂ EMİN DEĞİL MİSİNİZ?
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">
@@ -436,8 +436,7 @@ export default function SimülasyonlarPage() {
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-black/55">
-              Hangi sınava hazırlandığınız hakkında bize kısaca yazın
-              ve şu anda nerede durduğunuz. Seçmenize yardımcı olacağız.
+              Hangi sınava hazırlandığınızı ve hazırlığınızın hangi aşamasında olduğunuzu bize kısaca yazın. Size uygun seçeneği belirlemenize yardımcı olalım.
             </p>
 
             <a
@@ -467,8 +466,7 @@ export default function SimülasyonlarPage() {
             </h2>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/55">
-              Bir sonraki ücretsiz simülasyon tarihi ve saatini sorun
-              şu anda mevcut rezervasyon seçenekleri.
+              Uygun simülasyon tarihlerini ve güncel rezervasyon seçeneklerini WhatsApp üzerinden öğrenin.
             </p>
           </div>
 

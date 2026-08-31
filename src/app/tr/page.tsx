@@ -52,7 +52,7 @@ const medical = [
     href: "/tr/fsp-zahnmedizin",
   },
   {
-    label: "GERÇEKLİK KONTROL",
+    label: "GERÇEKLİK KONTROLÜ",
     title: "Sınav simülasyonları",
     text: "Gerçekçi koşullarda kendinizi test edin, kişisel geri bildirim alın ve eksiklerinizi hedefli geliştirin.",
     info: "75 €'dan başlayan fiyatlarla",
@@ -60,7 +60,7 @@ const medical = [
   },
 ];
 
-export default function GermanHomePage() {
+export default function TurkishHomePage() {
   return (
     <main className="bg-white text-[#17131c]">
       <SiteHeader />
@@ -81,7 +81,7 @@ export default function GermanHomePage() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-black/55">
-              A1 tabandadır, B2 tıbbi tedavi için de mevcuttur, bu yüzden önemlidir: malzemenin mevcut olması ve tıbbi bilgilerin de mevcut olması gerekir.
+              İster A1 seviyesinden başlayın, ister B2'ye ulaşmak ya da medikal bir sınava hazırlanmak isteyin: yalnızca daha fazla materyale değil, net bir öğrenme yoluna ve gerçek uygulamaya ihtiyacınız var.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -419,7 +419,7 @@ export default function GermanHomePage() {
         </div>
       </section>
 
-      <div id="öğrenme yolu">
+      <div id="lernweg">
         <HomeConversion />
       </div>
 
@@ -678,7 +678,7 @@ export default function GermanHomePage() {
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.04em] sm:text-5xl">
-              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+              A1'den B2'ye kadar her seviyeyi bir sonraki adıma bağlayan net bir öğrenme yolu.
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-black/55">

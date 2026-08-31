@@ -5,9 +5,9 @@ import EditorialStorySection from "@/components/EditorialStorySection";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
-  title: "Tıp sınavına hazırlık | Libelle Academy",
+  title: "Medikal Sınav Hazırlığı | Libelle Academy",
   description:
-    "FSP, FaMed, Diş Hekimliği, Simülasyonlar ve esnek tıbbi sınav hazırlığı Libelle Academy'te.",
+    "FSP, FaMed, Diş Hekimliği ve sınav simülasyonları için yapılandırılmış medikal Almanca sınav hazırlığı.",
 };
 
 const consultationMessage =
@@ -16,8 +16,8 @@ const consultationMessage =
 const mainCourses = [
   {
     label: "FSP TIP",
-    title: "FSP Yoğun ipucu kursu",
-    text: "Tıbbi terminoloji, anamnez, dokümantasyon, hasta sunumu ve gerçekçi simülasyonları.",
+    title: "FSP Tıp Yoğun Kursu",
+    text: "Medikal mesleki dil, anamnez, dokümantasyon, hasta sunumu ve gerçekçi sınav simülasyonları.",
     href: "/tr/fsp-medizin",
     meta: "8 hafta · 950 €",
   },
@@ -85,9 +85,7 @@ export default function PruefungsvorbereitungPage() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-black/60">
-              FSP, FaMed, Diş Hekimliği veya hedeflenen simülasyonlar: sizinki
-              Hazırlık şu anki sınavınız için olmalıdır
-              dil seviyeniz ve programınız.
+              FSP, FaMed, Diş Hekimliği veya sınav simülasyonları: hazırlığınız sınavınıza, mevcut dil seviyenize ve zaman planınıza uygun olmalıdır.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -161,8 +159,7 @@ export default function PruefungsvorbereitungPage() {
                   HÂLÂ EMİN DEĞİL MİSİNİZ?
                 </div>
                 <p className="mt-2 leading-7 text-white/70">
-                  Kararı tek başına vermek zorunda değilsin. yardım ediyoruz
-                  Başlamak için en mantıklı yolu siz belirleyeceksiniz.
+                  Kararı tek başınıza vermek zorunda değilsiniz. Mevcut seviyenize ve sınav hedefinize göre en mantıklı başlangıç noktasını birlikte belirleyelim.
                 </p>
               </div>
             </div>
@@ -215,8 +212,7 @@ export default function PruefungsvorbereitungPage() {
           </h2>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">
-            Her yolun farklı bir odak noktası vardır. Bu yüzden iyi şeyler başlar
-            Doğru kararla sınava hazırlık.
+            Her hazırlık yolunun farklı bir odağı vardır. Doğru seçim, mevcut seviyeniz ve sınav hedefinizle başlar.
           </p>
         </div>
 
@@ -307,8 +303,7 @@ export default function PruefungsvorbereitungPage() {
             </h3>
 
             <p className="mt-5 text-lg leading-8 text-black/55">
-              FaMed hazırlığınızın kendi temponuzda esnek olmasını istiyorsanız
-              oluşturun ve gerekirse canlı simülasyonla birleştirin.
+              FaMed hazırlığınızı kendi temponuzda sürdürmek ve gerektiğinde canlı simülasyonlarla desteklemek istiyorsanız.
             </p>
 
             <div className="mt-8 text-sm font-semibold text-[#31175B]">
@@ -329,13 +324,11 @@ export default function PruefungsvorbereitungPage() {
             </h3>
 
             <p className="mt-5 text-lg leading-8 text-black/55">
-              Öncelikle tıbbi dil becerilerinizi güçlendirirseniz ve
-              daha sonra özellikle FSP, FaMed veya Simülasyonlar'a geçin
-              isterim.
+              Önce medikal Almanca becerilerinizi güçlendirmek, ardından FSP, FaMed veya sınav simülasyonlarına geçmek istiyorsanız.
             </p>
 
             <div className="mt-8 text-sm font-semibold text-[#31175B]">
-              Tıbbi dil yolunu görüntüleyin →
+              Medikal dil yolunu incele →
             </div>
           </Link>
         </div>
@@ -346,11 +339,11 @@ export default function PruefungsvorbereitungPage() {
         <div className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
           <div className="max-w-4xl">
             <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-              SCHNELLE ORIENTIERUNG
+              HIZLI YÖNLENDİRME
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              Şu anda neredesin?
+              Şu anda hangi aşamadasınız?
             </h2>
           </div>
 
@@ -358,10 +351,10 @@ export default function PruefungsvorbereitungPage() {
             <div className="rounded-[2rem] bg-white p-8">
               <div className="text-xs font-bold text-[#17666a]">01</div>
               <h3 className="mt-5 text-2xl font-semibold">
-                Dil hala belirsiz
+                Medikal Almanca temeli henüz yeterince güçlü değil
               </h3>
               <p className="mt-4 leading-7 text-black/55">
-                İlk olarak, özellikle tıbbi dil becerilerini güçlendirin.
+                Önce medikal Almanca becerilerinizi yapılandırılmış şekilde güçlendirin.
               </p>
               <Link
                 href="/tr/pakete/medizinischer-sprachweg"
@@ -377,7 +370,7 @@ export default function PruefungsvorbereitungPage() {
                 Sınava özel hazırlanın
               </h3>
               <p className="mt-4 leading-7 text-black/55">
-                FaMed sınavına yönelik yapılandırılmış hazırlık.
+                Doğrudan sınav formatınıza uygun FSP, FaMed veya Diş Hekimliği hazırlığına geçin.
               </p>
               <a
                 href="#wege"
@@ -390,17 +383,16 @@ export default function PruefungsvorbereitungPage() {
             <div className="rounded-[2rem] bg-white p-8">
               <div className="text-xs font-bold text-[#17666a]">03</div>
               <h3 className="mt-5 text-2xl font-semibold">
-                Sınava neredeyse hazırız
+                Sınava neredeyse hazırsınız
               </h3>
               <p className="mt-4 leading-7 text-black/55">
-                Gerçekçi bir şekilde simüle edin, geri bildirim alın ve son
-                Belirsizliklerin farkına varın.
+                Gerçekçi bir simülasyonla performansınızı test edin, geri bildirim alın ve son eksiklerinizi görün.
               </p>
               <Link
                 href="/tr/simulationen"
                 className="mt-7 inline-block text-sm font-semibold text-[#31175B]"
               >
-                Gerçekçi sınav simülasyonu ve hedefli geri bildirim.
+                Simülasyonları incele →
               </Link>
             </div>
           </div>
@@ -420,8 +412,7 @@ export default function PruefungsvorbereitungPage() {
             </h2>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/55">
-              Bir sonraki mantıklı adımı atmanıza yardımcı olacağız
-              bir araya getirmek.
+              Sınavınıza, mevcut seviyenize ve zaman planınıza göre bir sonraki mantıklı adımı birlikte belirleyelim.
             </p>
           </div>
 
@@ -431,7 +422,7 @@ export default function PruefungsvorbereitungPage() {
             rel="noreferrer"
             className="rounded-full bg-white px-8 py-4 text-center text-sm font-semibold text-[#31175B]"
           >
-            WhatsApp hakkında tavsiye alın
+            WhatsApp'tan yönlendirme al
           </a>
         </div>
       </section>

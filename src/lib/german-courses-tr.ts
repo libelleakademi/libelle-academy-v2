@@ -17,19 +17,19 @@ export const germanCourses = {
       "A2'ye geçiş için sağlam bir temel oluşturmak",
     ],
     included: [
-      "8 hafta strukturierte Progression",
+      "8 haftalık yapılandırılmış ilerleme",
       "Ezber kurallar yerine günlük yaşam odaklı iletişim",
       "Kelime, gramer ve konuşmayı bütünsel şekilde geliştirme",
       "Net sonraki adım: A2 veya A1–B2 öğrenme yolu",
     ],
     nextLevel: "A2",
-    source: "Almanca seviyenize uygun yapılandırılmış öğrenme adımı.",
+    source: "A1 başlangıç seviyesi",
   },
   a2: {
     level: "A2",
     title: "Almanca A2",
     eyebrow: "TEMELDEN DAHA AKICI İLETİŞİME",
-    tagline: "Sadece anlamak değil; giderek daha fazla kendiniz yanıt vermek.",
+    tagline: "Sadece anlamak değil; giderek daha rahat ve bağımsız yanıt vermek.",
     description:
       "A1 temeline sahip, günlük durumlarda daha rahat iletişim kurmak, aktif kelime dağarcığını genişletmek ve daha uzun konuşmalara hazırlanmak isteyenler için.",
     duration: "8 hafta",
@@ -43,13 +43,13 @@ export const germanCourses = {
       "B1 için dil temelini güçlendirmek",
     ],
     included: [
-      "A1 üzerinde 8 haftalık yapılandırılmış yapı",
+      "A1 temelinin üzerine kurulan 8 haftalık yapılandırılmış program",
       "Daha fazla aktif iletişim ve cümle kurma güveni",
       "Grameri gerçek durumlarla bağlantılı öğrenme",
       "Net sonraki adım: B1 veya A1–B2 öğrenme yolu",
     ],
     nextLevel: "B1",
-    source: "Almanca seviyenize uygun yapılandırılmış öğrenme adımı.",
+    source: "A2 devam seviyesi",
   },
   b1: {
     level: "B1",
@@ -69,13 +69,13 @@ export const germanCourses = {
       "B2 için sağlam bir dil temeli oluşturmak",
     ],
     included: [
-      "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+      "12 haftalık yapılandırılmış B1 ilerleme planı",
       "Bağlantılı konuşmaya daha fazla odaklanma",
       "Gramer, kelime ve ifadeyi bütünsel geliştirme",
       "Doğrudan B2'ye devam imkânı",
     ],
     nextLevel: "B2",
-    source: "Almanca seviyenize uygun yapılandırılmış öğrenme adımı.",
+    source: "B1 bağımsız iletişim seviyesi",
   },
   b2: {
     level: "B2",
@@ -101,7 +101,7 @@ export const germanCourses = {
       "Libelle medikal programlarına devam imkânı",
     ],
     nextLevel: "Medikal Almanca",
-    source: "Almanca seviyenize uygun yapılandırılmış öğrenme adımı.",
+    source: "B2 ileri iletişim seviyesi",
   },
 } as const;
 

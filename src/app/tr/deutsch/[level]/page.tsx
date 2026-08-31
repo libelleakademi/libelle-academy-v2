@@ -122,13 +122,13 @@ export default async function GermanCoursePage({
                 {course.level} · BİR SONRAKİ ADIM
               </div>
               <div className="mt-1 text-xs font-semibold">
-                Klare Progression
+                Net ilerleme
               </div>
             </div>
 
             <div className="home-orbit-delay rounded-2xl bg-white px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
-              <div className="text-[9px] font-bold tracking-[.13em] text-[#17666a]">Almanca seviyenize uygun yapılandırılmış öğrenme adımı.</div>
-              <div className="mt-1 text-xs font-semibold">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</div>
+              <div className="text-[9px] font-bold tracking-[.13em] text-[#17666a]">B2'YE KADAR İLERLEYİN</div>
+              <div className="mt-1 text-xs font-semibold">Her seviye bir sonraki adıma hazırlar</div>
             </div>
           </div>
 
@@ -140,9 +140,9 @@ export default async function GermanCoursePage({
       <EditorialStorySection
         eyebrow={`${course.level} GÜNLÜK YAŞAMDA`}
         title="Bir dil seviyesi sadece gramer konularından ibaret değildir."
-        text="Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı."
+        text="Her seviyede öğrendiklerinizi günlük yaşamda daha güvenli kullanın ve bir sonraki seviyeye sağlam bir temel oluşturun."
         image="/images/a1-b2-life-in-germany.jpg"
-        alt="Almanca seviyenize uygun yapılandırılmış öğrenme adımı."
+        alt="Almanca öğrenen yetişkinin günlük yaşamı"
         chip={`${course.level} · BİR SONRAKİ ADIM`}
         reverse
       />
@@ -178,7 +178,7 @@ export default async function GermanCoursePage({
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.035em] sm:text-5xl">
               Birbirinden kopuk konular değil. Adım adım ilerleyen tek bir yol.
             </h2>
-            <p className="mt-6 max-w-xl text-lg leading-8 text-white/65">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
+            <p className="mt-6 max-w-xl text-lg leading-8 text-white/65">Her seviye, önceki bilgilerin üzerine kurulur ve sizi adım adım bir sonraki dil seviyesine hazırlar.</p>
           </div>
 
           <div className="space-y-3">
@@ -213,7 +213,7 @@ export default async function GermanCoursePage({
           {["A1", "A2", "B1", "B2"].map((item) => (
             <Link
               key={item}
-              href={`/de/deutsch/${item.toLowerCase()}`}
+              href={`/tr/deutsch/${item.toLowerCase()}`}
               className={`rounded-[2rem] border p-7 transition hover:-translate-y-1 ${
                 item === course.level
                   ? "border-[#17666a] bg-[#58ECF1]"
@@ -222,7 +222,7 @@ export default async function GermanCoursePage({
             >
               <div className="text-4xl font-semibold">{item}</div>
               <div className="mt-8 text-sm font-semibold">
-                {item === course.level ? "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı." : "Kursu incele →"}
+                {item === course.level ? "Şu an bu seviyedesiniz" : "Kursu incele →"}
               </div>
             </Link>
           ))}
@@ -239,7 +239,7 @@ export default async function GermanCoursePage({
               <h2 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">
                 Hangi seviye size uygun? A1–B2 öğrenme yolu sizin için mantıklı mı?
               </h2>
-              <p className="mt-4 max-w-2xl leading-7 text-black/55">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
+              <p className="mt-4 max-w-2xl leading-7 text-black/55">Mevcut Almanca seviyenizi ve hedefinizi bize yazın. Size uygun başlangıç noktasını birlikte belirleyelim.</p>
             </div>
             <a
               href={whatsappLink(

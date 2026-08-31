@@ -277,7 +277,7 @@ export default function RessourcenPage() {
             </h2>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-black/55">
-              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+              Kısa Almanca ipuçları, sınav odaklı içerikler ve öğrenme önerileri için Instagram hesabımızı da takip edebilirsiniz.
             </p>
           </div>
 
@@ -318,7 +318,7 @@ export default function RessourcenPage() {
             </h3>
 
             <p className="mt-5 text-lg leading-8 text-black/55">
-              Almanca seviyenize uygun yapılandırılmış öğrenme adımı.
+              A1'den B2'ye genel Almanca ve medikal Almanca kurslarını tek bir yerde karşılaştırın.
             </p>
 
             <div className="mt-8 text-sm font-semibold text-[#31175B]">

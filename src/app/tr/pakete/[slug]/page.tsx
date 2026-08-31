@@ -32,7 +32,7 @@ export default async function BundlePage({
           <Link
             href="/tr"
             className={`text-sm font-semibold ${general ? "text-[#17666a]" : "text-[#58ECF1]"}`}
-          >Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</Link>
+          >← Ana sayfa</Link>
 
           <div className={`mt-12 text-xs font-bold tracking-[0.18em] ${general ? "text-[#17666a]" : "text-[#58ECF1]"}`}>
             {bundle.eyebrow}
@@ -53,7 +53,7 @@ export default async function BundlePage({
       </section>
 
       <section className="mx-auto max-w-5xl px-5 py-24 lg:px-8">
-        <div className="text-xs font-bold tracking-[0.18em] text-[#31175B]">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</div>
+        <div className="text-xs font-bold tracking-[0.18em] text-[#31175B]">ÖĞRENME ADIMLARI</div>
 
         <div className="mt-10 space-y-4">
           {bundle.steps.map((step, index) => (
@@ -74,7 +74,7 @@ export default async function BundlePage({
             `Merhaba, kurslar ve öğrenme yolları hakkında bilgi almak istiyorum.`
           )}
           className="mt-10 inline-block rounded-full bg-[#31175B] px-7 py-3.5 text-sm font-semibold text-white"
-        >Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</a>
+        >WhatsApp'tan bilgi al</a>
       </section>
     </main>
   );

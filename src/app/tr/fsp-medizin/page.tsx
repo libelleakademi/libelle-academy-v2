@@ -6,16 +6,16 @@ import FspConversion from "@/components/tr/FspConversion";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
-  title: "FSP sınavına yönelik yapılandırılmış hazırlık.",
+  title: "FSP Tıp Yoğun Kursu | Libelle Academy",
   description:
-    "68 farklı dersin yanı sıra harmanlanmış öğrenme, 6 sınav simülasyonları, küçük gruplar ve dijital öğrenme materyalleri içeren 8 haftalık yoğun FSP ilaç hazırlığı.",
+    "8 haftalık FSP Tıp hazırlığı: 68 ders saati + Blended Learning, 6 sınav simülasyonu, küçük gruplar ve dijital öğrenme materyalleri.",
 };
 
 const mainMessage =
-  "FSP sınavına yönelik yapılandırılmış hazırlık.";
+  "Merhaba, 950 €'luk FSP Tıp Yoğun Kursu ile ilgileniyorum. Yeni grup ve kontenjan hakkında bilgi alabilir miyim? Kaynak: FSP-MEDIZIN-LANDING";
 
 const consultationMessage =
-  "FSP sınavına yönelik yapılandırılmış hazırlık.";
+  "Merhaba, FSP Tıp sınavına hazırlanıyorum. Yoğun kursun mevcut seviyeme uygun olup olmadığını öğrenmek istiyorum. Kaynak: FSP-MEDIZIN-BERATUNG";
 
 const outcomes = [
   {
@@ -41,30 +41,30 @@ const outcomes = [
 ];
 
 const program = [
-  "Tıbbi terminoloji",
-  "Tıbbi geçmiş ve doktor-hasta iletişimi",
+  "Medikal mesleki dil",
+  "Anamnez ve doktor-hasta iletişimi",
   "Dokümantasyon",
   "Hasta sunumu",
-  "sınav simülasyonları",
+  "Sınav simülasyonları",
 ];
 
 const steps = [
   {
     number: "01",
-    eyebrow: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    eyebrow: "GELİŞTİR",
     title: "Dili ve yapıyı geliştirin",
     text: "Tıbbi terminoloji, konuşma yönetimi ve muayeneyle ilgili yapılar sistematik olarak geliştirilmektedir.",
   },
   {
     number: "02",
-    eyebrow: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
-    title: "Özellikle iletişimi eğitin",
+    eyebrow: "GELİŞTİR",
+    title: "İletişimi hedefli çalışın",
     text: "Anamnez, dokümantasyon ve hasta sunumu tek başına öğrenilmez, pratik olarak birbirine bağlanır.",
   },
   {
     number: "03",
-    eyebrow: "SIMULIEREN",
-    title: "Test koşulları altında test edin",
+    eyebrow: "SİMÜLE ET",
+    title: "Sınav koşullarında test edin",
     text: "Altı sınav simülasyonunda öğrendiklerinizi gerçekçi durumlarda uygulayacaksınız.",
   },
 ];
@@ -72,15 +72,15 @@ const steps = [
 const faqs = [
   {
     q: "FSP Tıp yoğun kursu ne kadar sürer?",
-    a: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    a: "Kurs 8 hafta sürer.",
   },
   {
     q: "Dersler ne kadar kapsamlı?",
-    a: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    a: "Kurs 68 ders saati + Blended Learning içerir.",
   },
   {
-    q: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
-    a: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    q: "Sınav simülasyonları kursa dahil mi?",
+    a: "Evet. Kurs kapsamında 6 sınav simülasyonu bulunur.",
   },
   {
     q: "Dijital öğrenme materyalleri var mı?",
@@ -88,7 +88,7 @@ const faqs = [
   },
   {
     q: "Bir sonraki grubu ve uygun yerleri nasıl öğrenebilirim?",
-    a: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    a: "Bize WhatsApp üzerinden yazın. Size yeni grup ve güncel kontenjan bilgilerini iletelim.",
   },
 ];
 
@@ -109,7 +109,7 @@ export default function FspMedizinPage() {
             </Link>
 
             <div className="mt-10 text-xs font-bold tracking-[.18em] text-[#17666a]">
-              FSP İPUCU · YOĞUN KURSU
+              FSP TIP · YOĞUN KURS
             </div>
 
             <h1 className="mt-5 max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-.045em] sm:text-6xl lg:text-7xl">
@@ -124,7 +124,7 @@ export default function FspMedizinPage() {
               {[
                 "8 hafta",
                 "68 ders saati + Blended Learning",
-                "6 sınav simülasyonları",
+                "6 sınav simülasyonu",
               ].map((item) => (
                 <span
                   key={item}
@@ -178,7 +178,7 @@ export default function FspMedizinPage() {
               <div className="flex items-start justify-between gap-5">
                 <div>
                   <div className="text-xs font-bold tracking-[.16em] text-[#31175B]">
-                    Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+                    YOĞUN KURSUNUZ
                   </div>
                   <div className="mt-2 text-3xl font-semibold">
                     FSP Tıp
@@ -226,9 +226,7 @@ export default function FspMedizinPage() {
                   HEDEF
                 </div>
                 <p className="mt-2 leading-7 text-white/75">
-                  Tıbbi iletişimi yapılandırılmış bir şekilde eğitmek ve
-                  Daha sonra gerçekçi sınav durumlarında neler öğrenildi?
-                  uygulayın.
+                  Tıbbi iletişimi yapılandırılmış şekilde çalışın ve öğrendiklerinizi gerçekçi sınav durumlarında uygulayın.
                 </p>
               </div>
             </div>
@@ -259,19 +257,19 @@ export default function FspMedizinPage() {
 
       {/* PHOTO-STORY-FSP */}
       <EditorialStorySection
-        eyebrow="Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı."
+        eyebrow="MEDİKAL İLETİŞİM"
         title="Tıp dili konuşmada somutlaşır."
-        text="FSP'te anamnez, tıbbi yapı ve dilsel tepkinin aynı anda çalışması gerekir. Bu nedenle sadece teknik terimleri bilmek yeterli değildir; bunların konuşma sırasında ulaşılabilir olması gerekir."
+        text="FSP'de anamnez, tıbbi yapı ve dilsel tepkinin aynı anda çalışması gerekir. Bu nedenle sadece teknik terimleri bilmek yeterli değildir; bunların konuşma sırasında ulaşılabilir olması gerekir."
         image="/images/fsp-doctor-patient-consultation.jpg"
         alt="Kadın doktor bir hastayla konuşuyor"
-        chip="Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı."
+        chip="ANAMNEZ · DOKÜMANTASYON · HASTA SUNUMU"
       />
 
       {/* OUTCOMES */}
-      <section id="Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı." className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+      <section id="kurs" className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="max-w-4xl">
           <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-            Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+            NELER ÇALIŞACAKSINIZ
           </div>
 
           <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
@@ -279,7 +277,7 @@ export default function FspMedizinPage() {
           </h2>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">
-            Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+            Hazırlık; medikal mesleki dili, sınavda ihtiyaç duyulan iletişim görevleriyle birlikte geliştirir.
           </p>
         </div>
 
@@ -306,15 +304,15 @@ export default function FspMedizinPage() {
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-24 lg:grid-cols-[.78fr_1.22fr] lg:px-8">
           <div>
             <div className="text-xs font-bold tracking-[.18em] text-[#31175B]">
-              KURSINHALTE
+              KURS İÇERİĞİ
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              FSP sınavına yönelik yapılandırılmış hazırlık.
+              FSP Tıp için yapılandırılmış ve uygulama odaklı hazırlık.
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-black/55">
-              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+              Medikal görüşmeden dokümantasyona ve yapılandırılmış hasta sunumuna kadar tüm alanlar birbirini tamamlar.
             </p>
           </div>
 
@@ -339,11 +337,11 @@ export default function FspMedizinPage() {
       <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="max-w-4xl">
           <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-            Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+            ÖĞRENMEDEN SINAVA
           </div>
 
           <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-            Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+            Önce geliştirin. Sonra uygulayın. Son olarak simüle edin.
           </h2>
         </div>
 
@@ -379,15 +377,15 @@ export default function FspMedizinPage() {
           <div className="grid gap-12 lg:grid-cols-[.9fr_1.1fr]">
             <div>
               <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
-                Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+                YOĞUN HAZIRLIK
               </div>
 
               <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-                Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+                Teori tek başına bir iletişim sınavına hazırlamaz.
               </h2>
 
               <p className="mt-6 max-w-xl text-lg leading-8 text-white/60">
-                Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+                Bu nedenle yoğun kurs; canlı dersleri, dijital öğrenmeyi ve sınav simülasyonlarını tek bir hazırlık yolunda birleştirir.
               </p>
             </div>
 
@@ -395,7 +393,7 @@ export default function FspMedizinPage() {
               {[
                 [
                   "68 ders saati",
-                  "Sınavla ilgili dil alanlarının yoğun ortak gelişimi.",
+                  "Sınav açısından önemli dil alanlarını yoğun ve yapılandırılmış şekilde geliştirin.",
                 ],
                 [
                   "Blended Learning",
@@ -403,7 +401,7 @@ export default function FspMedizinPage() {
                 ],
                 [
                   "Küçük gruplar",
-                  "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+                  "6 SİMÜLASYON",
                 ],
                 [
                   "6 simülasyon",
@@ -428,7 +426,7 @@ export default function FspMedizinPage() {
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <div className="rounded-[2.5rem] bg-[#D2ECFF]/55 p-8 sm:p-10">
             <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+              DİJİTAL ÖĞRENME
             </div>
 
             <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
@@ -436,24 +434,24 @@ export default function FspMedizinPage() {
             </h2>
 
             <p className="mt-5 text-lg leading-8 text-black/55">
-              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+              Pelexa üzerinden kurs hazırlığı ve pekiştirme için dijital öğrenme materyallerine erişebilirsiniz.
             </p>
           </div>
 
           <div className="rounded-[2.5rem] bg-[#17131c] p-6 sm:p-8">
             <div className="rounded-[2rem] bg-[#f3eff7] p-7">
               <div className="text-xs font-bold tracking-[.16em] text-[#31175B]">
-                PELEXA · LIBELLE DIGITAL LEARNING
+                PELEXA · LIBELLE DİJİTAL ÖĞRENME
               </div>
 
               <div className="mt-3 text-3xl font-semibold">
-                Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+                Dijital öğrenme alanınız
               </div>
 
               <div className="mt-7 space-y-3">
                 {[
-                  "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
-                  "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+                  "Dijital öğrenme materyalleri",
+                  "Canlı dersleri destekleyen içerikler",
                   "Hazırlık ve derinleştirme",
                 ].map((item) => (
                   <div
@@ -479,19 +477,17 @@ export default function FspMedizinPage() {
               </div>
 
               <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
-                FSP sınavına yönelik yapılandırılmış hazırlık.
+                FSP sınavına hazırlanan hekimler için.
               </h2>
 
               <p className="mt-5 text-lg leading-8 text-black/55">
-                Tıbbi terminolojiyi kullanan katılımcılar için ve
-                Sınav iletişimini yapılandırılmış bir şekilde eğitin ve
-                Hazırlığı gerçekçi simülasyonlarla birleştirmek istiyorsunuz.
+                Medikal Almanca altyapısını güçlendirmek, sınav iletişimini yapılandırılmış şekilde çalışmak ve hazırlığını gerçekçi simülasyonlarla tamamlamak isteyen hekimler için.
               </p>
             </div>
 
             <div className="rounded-[2.5rem] bg-[#D2ECFF]/55 p-8 sm:p-10">
               <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-                UNSICHER?
+                EMİN DEĞİL MİSİNİZ?
               </div>
 
               <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
@@ -499,7 +495,7 @@ export default function FspMedizinPage() {
               </h2>
 
               <p className="mt-5 text-lg leading-8 text-black/55">
-                Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+                Medikal mesleki dili ve sınav iletişimini yapılandırılmış şekilde çalışmak ve hazırlığını gerçekçi simülasyonlarla birleştirmek isteyen katılımcılar için.
               </p>
 
               <a
@@ -527,11 +523,11 @@ export default function FspMedizinPage() {
               </div>
 
               <h2 className="mt-4 max-w-3xl text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-                FSP sınavına yönelik yapılandırılmış hazırlık.
+                FSP Tıp için yapılandırılmış ve uygulama odaklı hazırlık.
               </h2>
 
               <p className="mt-5 max-w-2xl text-lg leading-8 text-white/55">
-                Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+                Yeni grup, mevcut kontenjan ve güncel kurs bilgilerini WhatsApp üzerinden öğrenin.
               </p>
             </div>
 
@@ -541,7 +537,7 @@ export default function FspMedizinPage() {
               rel="noreferrer"
               className="rounded-full bg-white px-7 py-4 text-center text-sm font-semibold text-[#31175B]"
             >
-              FSP sınavına yönelik yapılandırılmış hazırlık.
+              FSP Tıp için yapılandırılmış ve uygulama odaklı hazırlık.
             </a>
           </div>
         </div>

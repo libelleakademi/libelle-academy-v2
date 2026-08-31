@@ -7,7 +7,7 @@ import { whatsappLink } from "@/lib/whatsapp";
 export const metadata: Metadata = {
   title: "Libelle Academy Hakkında",
   description:
-    "Almanca seviyenize uygun yapılandırılmış öğrenme adımı.",
+    "Libelle Academy; küçük gruplarda canlı dersleri, dijital öğrenme materyallerini, genel Almanca ve medikal sınav hazırlığını bir araya getirir.",
 };
 
 const consultationMessage =
@@ -17,36 +17,36 @@ const principles = [
   {
     number: "01",
     title: "Canlı öğrenme",
-    text: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    text: "Canlı dersler; soru sorma, aktif katılım ve dili doğrudan kullanma imkânı sunar.",
   },
   {
     number: "02",
     title: "Dijital pekiştirme",
-    text: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    text: "Dijital öğrenme materyalleri ve Pelexa, canlı dersler arasındaki öğrenme sürecini destekler.",
   },
   {
     number: "03",
     title: "Küçük gruplarda çalışma",
-    text: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    text: "Küçük gruplar daha fazla aktif iletişim ve daha kişisel yönlendirme için alan sağlar.",
   },
   {
     number: "04",
     title: "Net bir hedefle öğrenme",
-    text: "Almanca seviyenize uygun yapılandırılmış öğrenme adımı.",
+    text: "Genel Almancadan medikal sınav hazırlığına kadar öğrenme, net bir sonraki hedefe göre yapılandırılır.",
   },
 ];
 
 const learningWorlds = [
   {
     label: "GENEL ALMANCA",
-    title: "Almanca seviyenize uygun yapılandırılmış öğrenme adımı.",
-    text: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    title: "A1'den B2'ye Almanca",
+    text: "Günlük yaşam, iş ve bir sonraki dil hedefi için başlangıç seviyesinden ileri iletişime uzanan yapılandırılmış öğrenme yolu.",
     href: "/tr/pakete/deutsch-a1-b2",
   },
   {
     label: "MEDİKAL ALMANCA",
-    title: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
-    text: "FaMed sınavına yönelik yapılandırılmış hazırlık.",
+    title: "Bazı öğrenciler Almancaya temelden başlar; bazıları ise medikal bir dil veya mesleki sınava hazırlanır.",
+    text: "FSP, FaMed, Diş Hekimliği ve gerçekçi sınav simülasyonları medikal Almanca odağımızı oluşturur.",
     href: "/tr/pruefungsvorbereitung",
   },
 ];
@@ -68,7 +68,7 @@ export default function UeberLibellePage() {
               Canlı öğrenin. Dijital olarak pekiştirin. Hedefli ilerleyin.
             </h1>
 
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-black/60">Almanca seviyenize uygun yapılandırılmış öğrenme adımı.</p>
+            <p className="mt-7 max-w-2xl text-lg leading-8 text-black/60">Libelle Academy; küçük gruplarda canlı dersleri, dijital öğrenmeyi ve net öğrenme yollarını genel Almancadan medikal sınav hazırlığına kadar bir araya getirir.</p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <Link
@@ -115,14 +115,14 @@ export default function UeberLibellePage() {
                 LIBELLE ÖĞRENME PRENSİBİ
               </div>
 
-              <div className="mt-3 text-3xl font-semibold">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</div>
+              <div className="mt-3 text-3xl font-semibold">Öğrenme canlı dersle bitmez.</div>
 
               <div className="mt-7 space-y-3">
                 {[
                   "Canlı dersler",
                   "Küçük gruplar",
                   "Dijital öğrenme materyalleri",
-                  "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+                  "Pelexa öğrenme alanı",
                 ].map((item) => (
                   <div
                     key={item}
@@ -138,7 +138,7 @@ export default function UeberLibellePage() {
                   HEDEF
                 </div>
 
-                <p className="mt-2 leading-7 text-white/70">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
+                <p className="mt-2 leading-7 text-white/70">Canlı dersleri, bağımsız çalışmayı ve uygulamayı birleştirerek bir sonraki öğrenme adımını net tutmak.</p>
               </div>
             </div>
           </div>
@@ -171,10 +171,10 @@ export default function UeberLibellePage() {
       <EditorialStorySection
         eyebrow="BİR HEDEFLE ÖĞRENME"
         title="Ders önemlidir. Asıl önemli olan sonrasında neyi kullanabildiğinizdir."
-        text="Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı."
+        text="Libelle; canlı dersleri, dijital pekiştirmeyi ve aktif uygulamayı bir araya getirerek öğrenmeyi tek tek derslerden oluşan bir süreç olmaktan çıkarır."
         image="/images/home-general-german-learning.jpg"
-        alt="Almanca seviyenize uygun yapılandırılmış öğrenme adımı."
-        chip="Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı."
+        alt="Dijital ve bağımsız Almanca öğrenimi"
+        chip="CANLI + DİJİTAL + UYGULAMA"
       />
 
       {/* PRINCIPLES */}
@@ -184,9 +184,9 @@ export default function UeberLibellePage() {
             NASIL ÖĞRENİYORUZ?
           </div>
 
-          <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</h2>
+          <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">Öğrenme, ders ve uygulama birlikte ilerlediğinde daha güçlü olur.</h2>
 
-          <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
+          <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">Bu nedenle Libelle, dili yalnızca teori olarak ele almak yerine farklı öğrenme biçimlerini bir araya getirir.</p>
         </div>
 
         <div className="mt-12 grid gap-5 md:grid-cols-2">
@@ -215,9 +215,9 @@ export default function UeberLibellePage() {
               İKİ ÖĞRENME ALANI
             </div>
 
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">Almanca seviyenize uygun yapılandırılmış öğrenme adımı.</h2>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">Genel Almanca ve medikal uzmanlaşma tek bir öğrenme dünyasında buluşur.</h2>
 
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-white/60">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-white/60">Bazı öğrenciler Almancaya temelden başlar; bazıları ise medikal bir dil veya mesleki sınava hazırlanır.</p>
           </div>
 
           <div className="mt-12 grid gap-5 lg:grid-cols-2">
@@ -258,9 +258,9 @@ export default function UeberLibellePage() {
               Ders, öğrenme sürecinin yalnızca bir parçasıdır.
             </h2>
 
-            <p className="mt-6 max-w-xl text-lg leading-8 text-black/55">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
+            <p className="mt-6 max-w-xl text-lg leading-8 text-black/55">Pelexa üzerinden kurs içerikleri, ders kayıtları ve dijital materyaller canlı dersleri tamamlar.</p>
 
-            <p className="mt-5 max-w-xl leading-7 text-black/50">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
+            <p className="mt-5 max-w-xl leading-7 text-black/50">Böylece içerikleri yeniden izleyebilir, alıştırmaları pekiştirebilir ve canlı dersler arasında çalışmaya devam edebilirsiniz.</p>
           </div>
 
           <div className="rounded-[2.5rem] bg-[#f3eff7] p-8 sm:p-10">
@@ -270,16 +270,16 @@ export default function UeberLibellePage() {
 
             <div className="mt-7 space-y-4">
               {[
-                ["01", "Ders kayıtları", "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı."],
+                ["01", "Ders kayıtları", "Canlı ders içeriklerini daha sonra yeniden izleyin."],
                 [
                   "02",
                   "Dijital materyaller",
-                  "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+                  "Canlı dersleri ek öğrenme içerikleriyle destekleyin.",
                 ],
                 [
                   "03",
-                  "Eigenes Lerntempo",
-                  "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+                  "Kendi öğrenme temponuz",
+                  "Dersler arasında bağımsız şekilde çalışmaya devam edin.",
                 ],
               ].map(([number, title, text]) => (
                 <div
@@ -304,24 +304,24 @@ export default function UeberLibellePage() {
       <section className="bg-[#f7f5f9]">
         <div className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
           <div className="max-w-4xl">
-            <div className="text-xs font-bold tracking-[.18em] text-[#31175B]">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</div>
+            <div className="text-xs font-bold tracking-[.18em] text-[#31175B]">TEK TEK ADIMLAR DEĞİL, BİR ÖĞRENME YOLU</div>
 
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</h2>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">Öğrenme, ders ve uygulama birlikte ilerlediğinde daha güçlü olur.</h2>
 
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">Bu nedenle Libelle, dili yalnızca teori olarak ele almak yerine farklı öğrenme biçimlerini bir araya getirir.</p>
           </div>
 
           <div className="mt-12 grid gap-4 lg:grid-cols-3">
             <div className="rounded-[2rem] bg-white p-8">
               <div className="text-xs font-bold text-[#17666a]">01</div>
-              <h3 className="mt-5 text-2xl font-semibold">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</h3>
-              <p className="mt-4 leading-7 text-black/50">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
+              <h3 className="mt-5 text-2xl font-semibold">Mevcut seviyeyi belirleyin</h3>
+              <p className="mt-4 leading-7 text-black/50">Şu anda hangi dil seviyesine ve hangi ön bilgilere sahipsiniz?</p>
             </div>
 
             <div className="rounded-[2rem] bg-white p-8">
               <div className="text-xs font-bold text-[#17666a]">02</div>
-              <h3 className="mt-5 text-2xl font-semibold">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</h3>
-              <p className="mt-4 leading-7 text-black/50">Almanca seviyenize uygun yapılandırılmış öğrenme adımı.</p>
+              <h3 className="mt-5 text-2xl font-semibold">Hedefinizi belirleyin</h3>
+              <p className="mt-4 leading-7 text-black/50">Genel Almancayı geliştirmek, B2'ye ulaşmak veya medikal bir sınava hazırlanmak mı istiyorsunuz?</p>
             </div>
 
             <div className="rounded-[2rem] bg-white p-8">
@@ -329,7 +329,7 @@ export default function UeberLibellePage() {
               <h3 className="mt-5 text-2xl font-semibold">
                 FSP · FAMED · DİŞ HEKİMLİĞİ
               </h3>
-              <p className="mt-4 leading-7 text-black/50">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
+              <p className="mt-4 leading-7 text-black/50">Buna göre size uygun kursu veya birbirini tamamlayan öğrenme adımlarını belirleyin.</p>
             </div>
           </div>
         </div>
@@ -340,31 +340,31 @@ export default function UeberLibellePage() {
         <div className="grid gap-12 lg:grid-cols-[.75fr_1.25fr]">
           <div>
             <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
-              UNSER FOKUS
+              ODAĞIMIZ
             </div>
 
-            <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</h2>
+            <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">Öğrenme, ders ve uygulama birlikte ilerlediğinde daha güçlü olur.</h2>
 
-            <p className="mt-6 max-w-xl text-lg leading-8 text-black/55">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
+            <p className="mt-6 max-w-xl text-lg leading-8 text-black/55">Bazı öğrenciler Almancaya temelden başlar; bazıları ise medikal bir dil veya mesleki sınava hazırlanır.</p>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-2">
             {[
               [
-                "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
-                "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+                "Aktif iletişim",
+                "Sadece anlamak değil; kendiniz konuşmak, yanıt vermek ve ifade etmek.",
               ],
               [
-                "Klare Lernziele",
-                "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+                "Net öğrenme hedefleri",
+                "Her kurs anlaşılır ve somut bir sonraki adıma göre yapılandırılır.",
               ],
               [
-                "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
-                "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+                "Pratik uygulama",
+                "İletişim, öğrenme hedefinizle ilgili gerçek durumlarla bağlantılı çalışılır.",
               ],
               [
-                "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
-                "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+                "Sürekli öğrenme",
+                "Canlı dersler ve dijital içerikler birbirini tamamlar.",
               ],
             ].map(([title, text]) => (
               <div
@@ -386,24 +386,24 @@ export default function UeberLibellePage() {
             href="/tr/kurse"
             className="rounded-[2.5rem] bg-white p-9 sm:p-11"
           >
-            <div className="text-xs font-bold tracking-[.17em] text-[#17666a]">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</div>
+            <div className="text-xs font-bold tracking-[.17em] text-[#17666a]">KURSLAR</div>
 
-            <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</h2>
+            <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">Ne aradığınızı zaten biliyor musunuz?</h2>
 
-            <p className="mt-6 text-lg leading-8 text-black/55">Almanca seviyenize uygun yapılandırılmış öğrenme adımı.</p>
+            <p className="mt-6 text-lg leading-8 text-black/55">Genel Almanca ve medikal Almanca kurslarını tek bir yerde inceleyin.</p>
 
-            <div className="mt-8 text-sm font-semibold text-[#31175B]">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</div>
+            <div className="mt-8 text-sm font-semibold text-[#31175B]">Tüm kursları incele →</div>
           </Link>
 
           <Link
             href="/tr/pruefungsvorbereitung"
             className="rounded-[2.5rem] bg-[#31175B] p-9 text-white sm:p-11"
           >
-            <div className="text-xs font-bold tracking-[.17em] text-[#58ECF1]">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</div>
+            <div className="text-xs font-bold tracking-[.17em] text-[#58ECF1]">MEDİKAL SINAV</div>
 
-            <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">FaMed sınavına yönelik yapılandırılmış hazırlık.</h2>
+            <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">Hedefiniz FSP, FaMed veya Diş Hekimliği mi?</h2>
 
-            <p className="mt-6 text-lg leading-8 text-white/60">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
+            <p className="mt-6 text-lg leading-8 text-white/60">Medikal sınav yollarını ve mevcut hazırlık seçeneklerini karşılaştırın.</p>
 
             <div className="mt-8 text-sm font-semibold text-[#58ECF1]">
               Sınav hazırlığını incele →
@@ -420,9 +420,9 @@ export default function UeberLibellePage() {
               SONRAKİ ADIMINIZ
             </div>
 
-            <h2 className="mt-4 max-w-3xl text-4xl font-semibold tracking-[-.035em] sm:text-5xl">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</h2>
+            <h2 className="mt-4 max-w-3xl text-4xl font-semibold tracking-[-.035em] sm:text-5xl">Bize şu anda nerede olduğunuzu ve nereye ulaşmak istediğinizi söyleyin.</h2>
 
-            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/55">Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.</p>
+            <p className="mt-5 max-w-2xl text-lg leading-8 text-white/55">Mevcut hedefinize uygun kursu veya öğrenme yolunu seçmenize yardımcı olalım.</p>
           </div>
 
           <a
@@ -431,7 +431,7 @@ export default function UeberLibellePage() {
             rel="noreferrer"
             className="rounded-full bg-white px-8 py-4 text-center text-sm font-semibold text-[#31175B]"
           >
-            WhatsApp hakkında tavsiye alın
+            WhatsApp'tan yönlendirme al
           </a>
         </div>
       </section>

@@ -9,15 +9,15 @@ const situations = [
     label: "YENİ BAŞLIYORUM",
     question: "Çok az Almanca biliyorum ve baştan sağlam bir temel oluşturmak istiyorum.",
     title: "Bu durumda çok fazla materyalden daha önemli olan net bir öğrenme yoludur.",
-    text: "Almanca seviyenize uygun yapılandırılmış öğrenme adımı.",
-    next: "A1'i oluşturun → A2'i güçlendirin → B1'i genişletin → B2'i güvenle kullanın",
+    text: "A1 seviyesinden başlayarak Almancanızı adım adım ve net bir sırayla geliştirin.",
+    next: "A1'i oluşturun → A2'yi güçlendirin → B1'i genişletin → B2'yi güvenle kullanın",
   },
   {
     id: "existing",
     label: "ÖN BİLGİM VAR",
     question: "Daha önce Almanca öğrendim ancak hangi seviyeden başlamam gerektiğini bilmiyorum.",
-    title: "Almanca seviyenize uygun yapılandırılmış öğrenme adımı.",
-    text: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    title: "Doğru seviyeyi belirleyin ve oradan devam edin.",
+    text: "Önce mevcut bilginizi değerlendirin; ardından gerçekten ihtiyacınız olan seviyeden devam edin.",
     next: "Durumunuzu değerlendirin → doğru seviyeyi seçin → oradan tutarlı bir şekilde devam edin",
   },
   {
@@ -45,7 +45,7 @@ const faq = [
   ],
   [
     "Bir sonraki seviyeye gerçekten hazır olduğumu nasıl anlarım?",
-    "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    "Bir sonraki seviyeye geçmeden önce mevcut seviyedeki temel iletişim görevlerini yeterince güvenli kullanabiliyor olmanız önemlidir.",
   ],
   [
     "Libelle'ye WhatsApp'tan yazarsam ne olur?",

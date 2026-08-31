@@ -224,10 +224,10 @@ export default function FamedOfflinePage() {
               </div>
               <div className="mt-7 text-5xl font-semibold">200 €</div>
               <p className="mt-5 max-w-xl leading-7 text-white/60">
-                Der komplette Offline-Kurs mit Flexibeln, Dokumentationen und Übungen.
+                Der komplette Offline-Kurs mit strukturierten Modulen, Dokumentationen und Übungen.
               </p>
               <ul className="mt-8 space-y-3 text-sm text-white/75">
-                <li>✓ Flexibel</li>
+                <li>✓ Strukturierte Module</li>
                 <li>✓ Dokumentationen</li>
                 <li>✓ Übungen</li>
                 <li>✓ Flexible Selbstlernphase</li>

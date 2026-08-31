@@ -18,8 +18,8 @@ const tutors = [
     name: "Firdevs Murad",
     area: "FSP TIP",
     title: "FSP Tıp Eğitmeni",
-    text: "İstanbul Erkek Lisesi'nden mezun olduktan sonra Firdevs Murad tıp eğitimine Charité Berlin'de devam etti. Eğitim sırasında nörobilim alanında doktora çalışmaları başladı ve Charité'deki dokümantasyon ve doktorlar için “Doktorlar için Türkçe” dersinin kurucu ekibinde yer aldı.",
-    course: "FSP Yoğun ipucu kursu",
+    text: "İstanbul Erkek Lisesi'nden mezun olduktan sonra Firdevs Murad tıp eğitimine Charité Berlin'de devam etti. Eğitimi sırasında nörobilim alanında doktora çalışmasına başladı ve Charité'deki öğrenci ve doktorlara yönelik “Tıp Profesyonelleri için Türkçe” kursunun kurucu ekibinde yer aldı.",
+    course: "FSP Tıp Yoğun Kursu",
     href: "/tr/fsp-medizin",
   },
   {
@@ -298,11 +298,11 @@ export default function TutorenPage() {
             </div>
 
             <h3 className="mt-5 text-2xl font-semibold">
-              FSP Yoğun ipucu kursu
+              FSP Tıp Yoğun Kursu
             </h3>
 
             <p className="mt-4 leading-7 text-black/50">
-              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+              Medikal mesleki dil, anamnez, dokümantasyon ve hasta sunumunu sınav odaklı çalışın.
             </p>
 
             <div className="mt-8 text-sm font-semibold text-[#31175B]">
@@ -344,8 +344,7 @@ export default function TutorenPage() {
             </h3>
 
             <p className="mt-4 leading-7 text-black/50">
-              Medikal mesleki dil ve sınavlara özel olarak hazırlık
-              Diş hekimleri.
+              Diş hekimlerine özel medikal mesleki dil ve sınav hazırlığı.
             </p>
 
             <div className="mt-8 text-sm font-semibold text-[#31175B]">
@@ -360,12 +359,11 @@ export default function TutorenPage() {
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 py-24 lg:grid-cols-[1fr_1fr] lg:px-8">
           <div>
             <div className="text-xs font-bold tracking-[.18em] text-[#31175B]">
-              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+              Medikal mesleki dil, anamnez, dokümantasyon ve hasta sunumunu sınav odaklı çalışın.
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              Öğrenmek, bunu altta yaptığınızda özellikle değerli hale gelir
-              Sınav koşullarında test edin.
+              Öğrendiklerinizi sınav koşullarında test ettiğinizde hazırlığınız daha somut hale gelir.
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-black/55">
@@ -386,7 +384,7 @@ export default function TutorenPage() {
                 ["01", "Sınav durumunu yaşayın"],
                 ["02", "İletişimi uygula"],
                 ["03", "Geri bildirim alın"],
-                ["04", "Gezielter weitertrainieren"],
+                ["04", "Hedefli şekilde çalışmaya devam edin"],
               ].map(([number, title]) => (
                 <div
                   key={number}
@@ -417,8 +415,7 @@ export default function TutorenPage() {
             </h2>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/55">
-              Sınav hedefiniz ve mevcut hedefiniz hakkında bize kısaca yazın
-              Dur. Doğru kursu bulmanıza yardımcı olacağız.
+              Hazırlandığınız sınavı ve mevcut seviyenizi bize kısaca yazın. Size uygun kursu bulmanıza yardımcı olalım.
             </p>
           </div>
 

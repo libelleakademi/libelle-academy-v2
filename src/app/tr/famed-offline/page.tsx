@@ -5,9 +5,9 @@ import EditorialStorySection from "@/components/EditorialStorySection";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
-  title: "FSP · FAMED · DİŞ HEKİMLİĞİ",
+  title: "FaMed Offline Kursu | Libelle Academy",
   description:
-    "FaMed'e esnek şekilde hazırlanın: yapılandırılmış modüller, dokümantasyonlar ve alıştırmalar. FaMed Offline Kursuuuuuuu 200 €, 5 sınav simülasyonu dahil paket 575 €.",
+    "FaMed sınavına kendi hızınızda hazırlanın. Dijital kurs 200 €, FaMed Offline + 5 canlı sınav simülasyonu paketi 575 €.",
 };
 
 const modules = [
@@ -29,7 +29,7 @@ const benefits = [
 ];
 
 const courseMessage =
-  "Merhaba, 200 €'luk FaMed Offline Kursuuuuuuu ile ilgileniyorum. Kaynak: LANDING-FAMED-OFFLINE";
+  "Merhaba, 200 €'luk FaMed Offline Kursu ile ilgileniyorum. Detaylı bilgi alabilir miyim? Kaynak: LANDING-FAMED-OFFLINE";
 
 const bundleMessage =
   "Merhaba, 575 €'luk FaMed Offline + 5 sınav simülasyonu paketi ile ilgileniyorum. Kaynak: LANDING-FAMED-OFFLINE-BUNDLE";
@@ -55,7 +55,7 @@ export default function FamedOfflinePage() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-black/55">
-              FaMed sınavına yönelik yapılandırılmış hazırlık.
+              Yapılandırılmış dijital modüller, dokümantasyon ve alıştırmalarla FaMed sınavına kendi programınıza göre hazırlanın.
             </p>
 
             <div className="mt-8 flex flex-wrap gap-2">
@@ -76,7 +76,7 @@ export default function FamedOfflinePage() {
                 rel="noreferrer"
                 className="rounded-full bg-[#31175B] px-6 py-3.5 text-center text-sm font-semibold text-white transition hover:bg-[#4B238B]"
               >
-                200 € FaMed Çevrimdışı kursunu sor
+                200 € FaMed Offline kursunu sor
               </a>
               <a
                 href="#pakete"
@@ -100,7 +100,7 @@ export default function FamedOfflinePage() {
 
             <div className="home-orbit-delay absolute bottom-[-46px] left-10 z-20 hidden rounded-2xl bg-white px-5 py-4 shadow-[0_18px_50px_rgba(49,23,91,.16)] lg:block">
               <div className="text-[10px] font-bold tracking-[.14em] text-[#17666a]">
-                OFFLINE + LIVE
+                OFFLINE + CANLI
               </div>
               <div className="mt-1 text-sm font-semibold">
                 Simülasyonlarla birleştirilebilir
@@ -112,7 +112,7 @@ export default function FamedOfflinePage() {
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <div className="text-xs font-bold tracking-[0.14em] text-[#31175B]">
-                    LIBELLE DIGITAL LEARNING
+                    LIBELLE DİJİTAL ÖĞRENME
                   </div>
                   <div className="mt-2 text-2xl font-semibold">FaMed öğrenme alanı</div>
                 </div>
@@ -153,7 +153,7 @@ export default function FamedOfflinePage() {
 
             <div className="home-orbit-delay rounded-2xl bg-white px-4 py-4 shadow-[0_12px_35px_rgba(49,23,91,.12)]">
               <div className="text-[9px] font-bold tracking-[.13em] text-[#17666a]">
-                OFFLINE + LIVE
+                OFFLINE + CANLI
               </div>
               <div className="mt-1 text-xs font-semibold">
                 Simülasyonlarla destekleyin
@@ -172,7 +172,7 @@ export default function FamedOfflinePage() {
         text="FaMed çevrimdışı kursu, dijital içerik, belgeleme ve alıştırmalar ile esnek hazırlıklara olanak tanır. Uygulamayı sınav koşullarında ek olarak eğitmek isterseniz canlı simülasyonlarla öğrenme yolunu destekleyebilirsiniz."
         image="/images/home-medical-german-learning.jpg"
         alt="Dijital materyallerle medikal öğrenme"
-        chip="Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı."
+        chip="Yapılandırılmış dijital modüller, dokümantasyon ve alıştırmalarla kendi hızınızda FaMed hazırlığı."
         reverse
       />
 
@@ -224,11 +224,11 @@ export default function FamedOfflinePage() {
               </div>
               <div className="mt-7 text-5xl font-semibold">200 €</div>
               <p className="mt-5 max-w-xl leading-7 text-white/60">
-                Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+                Yapılandırılmış dijital modüller, dokümantasyon ve alıştırmalarla kendi hızınızda FaMed hazırlığı.
               </p>
               <ul className="mt-8 space-y-3 text-sm text-white/75">
                 <li>✓ Yapılandırılmış modüller</li>
-                <li>✓ Dokümantasyonen</li>
+                <li>✓ Dokümantasyonlar</li>
                 <li>✓ Alıştırmalar</li>
                 <li>✓ Esnek bireysel çalışma</li>
               </ul>
@@ -247,14 +247,14 @@ export default function FamedOfflinePage() {
                 KOMPLE PAKET
               </div>
               <div className="text-xs font-bold tracking-[0.16em] text-[#31175B]">
-                OFFLINE + LIVE
+                OFFLINE + CANLI
               </div>
               <div className="mt-7 text-5xl font-semibold">575 €</div>
               <p className="mt-5 max-w-xl leading-7 text-black/55">
-                FaMed Offline Kursuuuu + sınav pratiği için 5 canlı simülasyon.
+                FaMed Offline Kursu + sınav pratiği için 5 canlı simülasyon.
               </p>
               <ul className="mt-8 space-y-3 text-sm text-black/65">
-                <li>✓ FaMed Offline Kursuuuuu</li>
+                <li>✓ FaMed Offline Kursu</li>
                 <li>✓ 5 canlı simülasyon</li>
                 <li>✓ Sınav durumlarını çalışın</li>
                 <li>✓ Kişisel geri bildirim</li>
@@ -303,17 +303,17 @@ export default function FamedOfflinePage() {
         <div className="mx-auto max-w-7xl rounded-[2.5rem] bg-[#17131c] p-9 text-white sm:p-14">
           <div className="max-w-3xl">
             <div className="text-xs font-bold tracking-[0.18em] text-[#58ECF1]">
-              VAR'DA HAKKINDA SORUNUZ NEREDE?
+              HANGİ SEÇENEĞİN UYGUN OLDUĞUNDAN EMİN DEĞİL MİSİNİZ?
             </div>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
               Hangi seçenek hazırlığınıza daha uygun?
             </h2>
             <p className="mt-5 text-lg leading-8 text-white/55">
-              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+              Yapılandırılmış dijital modüller, dokümantasyon ve alıştırmalarla kendi hızınızda FaMed hazırlığı.
             </p>
             <a
               href={whatsappLink(
-                "Merhaba, FaMed Offline Kursuuuuuuu hakkında bir sorum var. Kaynak: LANDING-FAMED-OFFLINE-BERATUNG"
+                "Merhaba, FaMed Offline Kursuuu hakkında bir sorum var. Kaynak: LANDING-FAMED-OFFLINE-BERATUNG"
               )}
               target="_blank"
               rel="noreferrer"

@@ -37,7 +37,7 @@ const path = [
 const reasons = [
   {
     number: "01",
-    title: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    title: "Size uygun başlangıç noktası",
     text: "Başlangıç noktanız, mevcut dil seviyenize ve sınav hazırlığınızın hangi aşamasında olduğunuza göre belirlenir.",
   },
   {
@@ -63,7 +63,7 @@ const faqs = [
     "Hayır. Medikal Dil Yolu esnektir. Dil altyapınız yeterliyse doğrudan size uygun sınav hazırlığına başlayabilirsiniz.",
   ],
   [
-    "FaMed sınavına yönelik yapılandırılmış hazırlık.",
+    "FSP mi yoksa FaMed mi seçmeliyim?",
     "Bu, gireceğiniz sınava bağlıdır. Hangi sınava hazırlandığınızı bize yazın; size uygun yolu gösterelim.",
   ],
   [
@@ -190,7 +190,7 @@ export default function MedizinischerSprachwegPage() {
       <EditorialStorySection
         eyebrow="MESLEKİ BİLGİDEN İLETİŞİME"
         title="Medikal Almanca, mesleki bilginizi anlaşılır iletişimle birleştirir."
-        text="FaMed sınavına yönelik yapılandırılmış hazırlık."
+        text="Medikal Almancayı yalnızca terminoloji olarak değil; hasta iletişimi, dokümantasyon ve mesleki anlatım içinde güvenle kullanabilmek önemlidir."
         image="/images/medical-path-doctor-explanation.jpg"
         alt="Doktorun medikal görüşme sırasında açıklama yapması"
         chip="DİL → SINAV → SİMÜLASYON"
@@ -198,7 +198,7 @@ export default function MedizinischerSprachwegPage() {
       />
 
       {/* PATH */}
-      <section id="Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı." className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+      <section id="lernweg" className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="max-w-4xl">
           <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
             SINAVA GİDEN YOLUNUZ
@@ -367,7 +367,7 @@ export default function MedizinischerSprachwegPage() {
                 Mesleki dil, anamnez, dokümantasyon, hasta sunumu ve gerçekçi sınav durumları.
               </p>
               <div className="mt-7 text-sm font-semibold text-[#31175B]">
-                FSP Tıp'i incele →
+                FSP Tıp'ı incele →
               </div>
             </Link>
 

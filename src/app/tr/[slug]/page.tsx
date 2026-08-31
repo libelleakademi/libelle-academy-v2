@@ -6,7 +6,7 @@ import { coursePages, getCoursePage } from "@/lib/course-pages";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export function generateStaticParams() {
-  return coursePages.filter((course) => course.slug !== "famed-offline" && course.slug !== "fsp ilacı" && course.slug !== "FSP · FAMED · DİŞ HEKİMLİĞİ" && course.slug !== "famed" && course.slug !== "simülasyonlar").map((course) => ({ slug: course.slug }));
+  return coursePages.filter((course) => course.slug !== "famed-offline" && course.slug !== "fsp ilacı" && course.slug !== "WhatsApp'tan bilgi al" && course.slug !== "famed" && course.slug !== "simülasyonlar").map((course) => ({ slug: course.slug }));
 }
 
 export async function generateMetadata({
@@ -65,21 +65,21 @@ export default async function CoursePage({
                 href={whatsappLink(message)}
                 className="rounded-full bg-[#31175B] px-6 py-3.5 text-sm font-semibold text-white"
               >
-                FSP · FAMED · DİŞ HEKİMLİĞİ
+                WhatsApp'tan bilgi al
               </a>
 
               <a
                 href="#programm"
                 className="rounded-full border border-black/10 bg-white px-6 py-3.5 text-sm font-semibold"
               >
-                Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+                Programı incele
               </a>
             </div>
           </div>
 
           <div className="rounded-[2.3rem] bg-[#31175B] p-8 text-white">
             <div className="text-xs font-bold tracking-[0.16em] text-white/45">
-              KURSÜBERSICHT
+              KURS ÖZETİ
             </div>
 
             <div className="mt-8 text-5xl font-semibold">{course.price}</div>
@@ -103,7 +103,7 @@ export default async function CoursePage({
         <div className="grid gap-12 lg:grid-cols-[.75fr_1.25fr]">
           <div>
             <div className="text-xs font-bold tracking-[0.18em] text-[#31175B]">
-              PROGRAMM
+              PROGRAM
             </div>
             <h2 className="mt-4 text-4xl font-semibold tracking-tight">
               Ne beklenmeli?
@@ -131,7 +131,7 @@ export default async function CoursePage({
           <div className="grid gap-8 rounded-[2.4rem] bg-[#17131c] p-8 text-white md:grid-cols-[1fr_auto] md:items-center sm:p-12">
             <div>
               <div className="text-xs font-bold tracking-[0.16em] text-[#58ECF1]">
-                KOMPLETTPAKET
+                TAM PAKET
               </div>
               <h2 className="mt-4 text-3xl font-semibold">
                 {course.specialBundle.title}
@@ -162,14 +162,14 @@ export default async function CoursePage({
         <section className="bg-[#31175B] py-20 text-white">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
             <div className="text-xs font-bold tracking-[0.18em] text-[#58ECF1]">
-              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+              Programı incele
             </div>
 
             <div className="mt-8 grid gap-4 md:grid-cols-3">
               {course.path.map((step, index) => (
                 <div key={step}>
                   <div className="rounded-[1.6rem] bg-white/10 p-6">
-                    <div className="text-xs text-white/35">SCHRITT {index + 1}</div>
+                    <div className="text-xs text-white/35">ADIM {index + 1}</div>
                     <div className="mt-3 text-xl font-semibold">{step}</div>
                   </div>
                 </div>
@@ -182,19 +182,18 @@ export default async function CoursePage({
       <section className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="rounded-[2.5rem] bg-[#D2ECFF]/45 p-9 sm:p-12">
           <h2 className="max-w-3xl text-4xl font-semibold tracking-tight">
-            Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+            Hedefinize uygun kursu birlikte belirleyelim.
           </h2>
 
           <p className="mt-5 max-w-2xl text-lg leading-8 text-black/50">
-            WhatsApp aracılığıyla bize yazın. Doğru kursu bulmanıza yardımcı olacağız
-            veya öğrenme yolunu seçin.
+            Bize WhatsApp üzerinden yazın. Mevcut seviyenize ve hedefinize uygun kursu veya öğrenme yolunu birlikte belirleyelim.
           </p>
 
           <a
             href={whatsappLink(message)}
             className="mt-8 inline-block rounded-full bg-[#31175B] px-6 py-3 text-sm font-semibold text-white"
           >
-            Kişisel tavsiye alın
+            WhatsApp'tan yönlendirme al
           </a>
         </div>
       </section>

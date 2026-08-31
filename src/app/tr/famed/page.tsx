@@ -71,14 +71,14 @@ const phases = [
 ];
 
 const faqs = [
-  ["FaMed Yoğun Kursu ne kadar sürüyor?", "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı."],
+  ["FaMed Yoğun Kursu ne kadar sürüyor?", "Kurs 6 hafta sürer."],
   [
-    "Ders kaç ders saatinden oluşuyor mu?",
-    "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    "Kurs toplam kaç ders saatinden oluşuyor?",
+    "Program toplam 54 ders saati içerir.",
   ],
   [
     "Gruplar kaç kişilik?",
-    "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    "Kurslar 6–8 kişilik küçük gruplarda yürütülür.",
   ],
   [
     "Sınav simülasyonları dahil mi?",
@@ -86,7 +86,7 @@ const faqs = [
   ],
   [
     "Hangi dil seviyesine ihtiyacım var?",
-    "FaMed sınavına yönelik yapılandırılmış hazırlık.",
+    "FaMed sınavı için medikal iletişim, sınav formatı ve gerçekçi simülasyonları birlikte çalışın.",
   ],
   [
     "Ders kayıtlarını daha sonra izleyebilir miyim?",
@@ -111,7 +111,7 @@ export default function FamedPage() {
             </Link>
 
             <div className="mt-10 text-xs font-bold tracking-[.18em] text-[#17666a]">
-              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+              FAMED · YOĞUN KURS
             </div>
 
             <h1 className="mt-5 max-w-4xl text-5xl font-semibold leading-[1.02] tracking-[-.045em] sm:text-6xl lg:text-7xl">
@@ -269,14 +269,14 @@ export default function FamedPage() {
       <EditorialStorySection
         eyebrow="FAMED UYGULAMADA"
         title="Medikal bilginin Almanca olarak da güvenle kullanılabilmesi gerekir."
-        text="FaMed yalnızca medikal bilgiyi değil, bu bilgiyi ne kadar güvenli açıkladığınızı, yapılandırdığınızı ve profesyonel iletişimde kullanabildiğinizi da değerlendirir."
+        text="FaMed yalnızca medikal bilgiyi değil, bu bilgiyi ne kadar güvenli açıkladığınızı, yapılandırdığınızı ve profesyonel iletişimde kullanabildiğinizi de değerlendirir."
         image="/images/famed-medical-communication.jpg"
         alt="Sağlık profesyoneli ve hasta arasında medikal görüşme"
         chip="FAMED · İLETİŞİM · UYGULAMA"
         reverse
       />
 
-      <section id="Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı." className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
+      <section id="kurs" className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
         <div className="max-w-4xl">
           <div className="text-xs font-bold tracking-[.18em] text-[#17666a]">
             NELERİ ÇALIŞACAKSINIZ?
@@ -456,7 +456,7 @@ export default function FamedPage() {
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-black/55">
-              FaMed sınavına yönelik yapılandırılmış hazırlık.
+              FaMed sınavına hazırlanan ve medikal Almancasını sınav odaklı, yapılandırılmış şekilde geliştirmek isteyen hekimler için.
             </p>
           </div>
 
@@ -561,7 +561,7 @@ export default function FamedPage() {
             </h2>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/55">
-              Yeni grup, mevcut kontojan ve güncel dersi WhatsApp üzerinden öğrenin.
+              Yeni grup, mevcut kontenjan ve güncel kurs bilgilerini WhatsApp üzerinden öğrenin.
             </p>
           </div>
 
@@ -571,7 +571,7 @@ export default function FamedPage() {
             rel="noreferrer"
             className="rounded-full bg-white px-7 py-4 text-center text-sm font-semibold text-[#31175B]"
           >
-            FaMed sınavına yönelik yapılandırılmış hazırlık.
+            Kontenjan ve yeni grubu sor
           </a>
 
         </div>

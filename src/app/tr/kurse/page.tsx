@@ -5,13 +5,13 @@ import EditorialStorySection from "@/components/EditorialStorySection";
 import { whatsappLink } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
-  title: "Almanca kursları ve tıbbi Almanca kursları | Libelle Academy",
+  title: "Almanca ve Medikal Almanca Kursları | Libelle Academy",
   description:
-    "Almanca A1'ten B2'e ve Libelle Academy'te tıbbi Almanca ve sınava hazırlık kurslarına katılabilirsiniz.",
+    "Libelle Academy'de A1'den B2'ye genel Almanca, medikal Almanca ve sınav hazırlığı kurslarını inceleyin.",
 };
 
 const consultationMessage =
-  "Merhaba, Libelle Academy'teki bir kursla ilgileniyorum ve hangi kursun mevcut seviyeme ve hedeflerime uygun olduğunu bilmek istiyorum. Kaynak: KURSLAR-HUB";
+  "Merhaba, Libelle Academy kurslarıyla ilgileniyorum. Mevcut seviyeme ve hedefime hangi kursun uygun olduğunu öğrenmek istiyorum. Kaynak: KURSLAR-HUB";
 
 const germanCourses = [
   {
@@ -38,7 +38,7 @@ const germanCourses = [
   {
     level: "B2",
     title: "Almanca B2",
-    text: "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+    text: "ÖĞRENME YOLU",
     meta: "12 hafta · 399 €",
     href: "/tr/deutsch/b2",
   },
@@ -47,8 +47,8 @@ const germanCourses = [
 const medicalCourses = [
   {
     label: "FSP TIP",
-    title: "FSP Yoğun ipucu kursu",
-    text: "Tıbbi terminoloji, anamnez, dokümantasyon, hasta sunumu ve gerçekçi simülasyonları.",
+    title: "FSP Tıp Yoğun Kursu",
+    text: "Medikal mesleki dil, anamnez, dokümantasyon, hasta sunumu ve gerçekçi sınav simülasyonları.",
     meta: "8 hafta · 950 €",
     href: "/tr/fsp-medizin",
   },
@@ -69,12 +69,12 @@ const medicalCourses = [
   {
     label: "ESNEK",
     title: "FaMed Offline",
-    text: "FaMed sınavına yönelik yapılandırılmış hazırlık.",
+    text: "Dijital modüller, dokümantasyon ve alıştırmalarla kendi hızınızda FaMed hazırlığı.",
     meta: "200 €'dan başlayan fiyatlarla",
     href: "/tr/famed-offline",
   },
   {
-    label: "SIMULATION",
+    label: "SİMÜLASYON",
     title: "Sınav simülasyonları",
     text: "Bireysel geri bildirim ve hedefe yönelik hata analizi ile gerçekçi test durumları.",
     meta: "75 €'dan başlayan fiyatlarla",
@@ -100,9 +100,7 @@ export default function KursePage() {
             </h1>
 
             <p className="mt-7 max-w-2xl text-lg leading-8 text-black/60">
-              A1'ten B2'e kadar genel Almanca ve özel olanlar
-              Tıbbi sınav hazırlığı – açık öğrenme yolları ile
-              Farklı başlangıç noktaları ve hedefler.
+              A1'den B2'ye genel Almanca ve medikal sınav hazırlığı için, farklı başlangıç seviyelerine ve hedeflere uygun net öğrenme yolları.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -119,7 +117,7 @@ export default function KursePage() {
                 rel="noreferrer"
                 className="rounded-full border border-black/10 bg-white px-7 py-3.5 text-center text-sm font-semibold"
               >
-                Ders yönlendirmesi
+                Kurs yönlendirmesi
               </a>
             </div>
           </div>
@@ -160,8 +158,7 @@ export default function KursePage() {
                   </div>
                   <div className="mt-3 text-2xl font-semibold">A1 → B2</div>
                   <p className="mt-3 text-sm leading-6 text-black/50">
-                    Girişten girişe kadar yapılandırılmış bir dil yolu
-                    ileri seviye.
+                    Başlangıç seviyesinden ileri seviyeye uzanan yapılandırılmış bir Almanca öğrenme yolu.
                   </p>
                 </a>
 
@@ -176,8 +173,7 @@ export default function KursePage() {
                     FSP · FaMed · Diş Hekimliği
                   </div>
                   <p className="mt-3 text-sm leading-6 text-white/60">
-                    Teknik dil, sınav hazırlığı ve gerçekçi
-                    Simülasyonlar.
+                    Mesleki dil, sınav hazırlığı ve gerçekçi simülasyonlar.
                   </p>
                 </a>
               </div>
@@ -212,7 +208,7 @@ export default function KursePage() {
       <EditorialStorySection
         eyebrow="İKİ ÖĞRENME ALANI"
         title="Almancayı öğrenin ve sizin için gerçekten önemli olduğu yerde kullanın."
-        text="Bazıları için yolculuk A1 ile başlıyor. Tıbbi terminolojiye veya belirli bir sınava sahip olanlar için. Önemli olan başkalarının nereden başladığı değil, hangi sonraki adımın hedefinize uygun olduğudur."
+        text="Bazıları için yol A1 ile başlar; bazıları için medikal Almanca veya belirli bir sınav hazırlığıyla. Önemli olan başkalarının nereden başladığı değil, sizin hedefinize uygun bir sonraki adımdır."
         image="/images/home-general-german-learning.jpg"
         alt="Almanca öğrenen yetişkin"
         secondaryImage="/images/home-medical-german-learning.jpg"
@@ -222,7 +218,7 @@ export default function KursePage() {
 
       {/* GERMAN */}
       <section
-        id="Almanca"
+        id="deutsch"
         className="mx-auto max-w-7xl px-5 py-24 lg:px-8"
       >
         <div className="grid gap-12 lg:grid-cols-[.72fr_1.28fr]">
@@ -232,20 +228,18 @@ export default function KursePage() {
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              Almanca seviyenize uygun yapılandırılmış öğrenme adımı.
+              A1'den B2'ye net bir Almanca öğrenme yolu.
             </h2>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-black/55">
-              Mevcut bilginize uygun seviyeden başlayın
-              uyuyor ve Almanca becerilerinizi adım adım geliştirin
-              Daha ileri adım atın.
+              Mevcut bilginize uygun seviyeden başlayın ve Almanca becerilerinizi adım adım geliştirin.
             </p>
 
             <Link
               href="/tr/pakete/deutsch-a1-b2"
               className="mt-8 inline-block rounded-full bg-[#31175B] px-6 py-3 text-sm font-semibold text-white"
             >
-              Kompletten A1–B2 Öğrenme yolunu incele
+              Tam A1–B2 öğrenme yolunu incele
             </Link>
           </div>
 
@@ -288,7 +282,7 @@ export default function KursePage() {
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-24 lg:grid-cols-[1fr_1fr] lg:px-8">
           <div>
             <div className="text-xs font-bold tracking-[.18em] text-[#31175B]">
-              Almanca seviyenize uygun yapılandırılmış öğrenme adımı.
+              A1'den B2'ye net bir Almanca öğrenme yolu.
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
@@ -324,7 +318,7 @@ export default function KursePage() {
 
       {/* MEDICAL */}
       <section
-        id="Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı."
+        id="medizin"
         className="mx-auto max-w-7xl px-5 py-24 lg:px-8"
       >
         <div className="max-w-4xl">
@@ -337,9 +331,7 @@ export default function KursePage() {
           </h2>
 
           <p className="mt-6 max-w-3xl text-lg leading-8 text-black/55">
-            Tıbbi jargondan özele
-            Sınav durumu: Sınav yolunuza uygun kursu seçin
-            ve mevcut durum uyuyor.
+            Medikal mesleki dilden gerçek sınav durumlarına kadar, sınav yolunuza ve mevcut seviyenize uygun kursu seçin.
           </p>
         </div>
 
@@ -382,16 +374,15 @@ export default function KursePage() {
           >
             <div>
               <div className="text-xs font-bold tracking-[.15em] text-[#58ECF1]">
-                Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+                ÖĞRENME YOLU
               </div>
 
               <h3 className="mt-8 text-2xl font-semibold">
-                Tıbbi dil yolu
+                Medikal Dil Yolu
               </h3>
 
               <p className="mt-4 leading-7 text-white/60">
-                Birkaç hazırlık adımını anlamlı bir şekilde birleştirirseniz
-                bağlanmak istiyorum.
+                Birden fazla hazırlık adımını anlamlı ve yapılandırılmış bir yol içinde birleştirmek isteyenler için.
               </p>
             </div>
 
@@ -407,11 +398,11 @@ export default function KursePage() {
         <div className="mx-auto max-w-7xl px-5 py-24 lg:px-8">
           <div className="max-w-4xl">
             <div className="text-xs font-bold tracking-[.18em] text-[#58ECF1]">
-              Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+              ÖĞRENME YOLU
             </div>
 
             <h2 className="mt-4 text-4xl font-semibold tracking-[-.035em] sm:text-5xl">
-              Hedef rotayı belirler, tersi değil.
+              Hedefiniz kursu belirler; kurs hedefinizi değil.
             </h2>
           </div>
 
@@ -419,23 +410,23 @@ export default function KursePage() {
             {[
               [
                 "01",
-                "Almanca seviyenize uygun yapılandırılmış öğrenme adımı.",
+                "A1'den B2'ye net bir Almanca öğrenme yolu.",
                 "A1 ile veya önceki bilgilerinize göre uygun seviyeyle başlayın.",
               ],
               [
                 "02",
-                "Ses hedefi olarak B2",
-                "B2'e giden yapılandırılmış genel Almanya rotasını kullanın.",
+                "Dil hedefi olarak B2",
+                "B2'ye kadar yapılandırılmış genel Almanca öğrenme yolunu takip edin.",
               ],
               [
                 "03",
-                "Tıbbi muayene",
-                "Sınav formatınıza göre FSP, FaMed veya Diş Hekimliği seçeneğini seçiniz.",
+                "Medikal sınav",
+                "Sınav formatınıza göre FSP, FaMed veya Diş Hekimliği hazırlığını seçin.",
               ],
               [
                 "04",
-                "Sınava neredeyse hazırız",
-                "Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.",
+                "Sınava neredeyse hazırsınız",
+                "ÖĞRENME YOLU",
               ],
             ].map(([number, title, text]) => (
               <article
@@ -461,20 +452,19 @@ export default function KursePage() {
             className="rounded-[2.5rem] bg-[#D2ECFF]/60 p-9 sm:p-11"
           >
             <div className="text-xs font-bold tracking-[.17em] text-[#17666a]">
-              SPRACHWEG
+              ALMANCA ÖĞRENME YOLU
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">
-              B2'e kadar bilgi edinmek ister misiniz?
+              B2'ye kadar ilerlemek mi istiyorsunuz?
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-black/55">
-              Herkesle birlikte A1'ten B2'e kadar öğrenme yolunun tamamını görün
-              Bir tarafta adımlar.
+              A1'den B2'ye kadar tüm seviyeleri ve ilerleme adımlarını tek bir öğrenme yolunda görün.
             </p>
 
             <div className="mt-8 text-sm font-semibold text-[#31175B]">
-              Almanca A1–B2'i görüntüleyin →
+              Almanca A1–B2 yolunu incele →
             </div>
           </Link>
 
@@ -483,7 +473,7 @@ export default function KursePage() {
             className="rounded-[2.5rem] bg-[#f7f5f9] p-9 sm:p-11"
           >
             <div className="text-xs font-bold tracking-[.17em] text-[#31175B]">
-              TIBBİ MUAYENE
+              MEDİKAL SINAV
             </div>
 
             <h2 className="mt-5 text-4xl font-semibold tracking-[-.035em]">
@@ -491,12 +481,11 @@ export default function KursePage() {
             </h2>
 
             <p className="mt-6 text-lg leading-8 text-black/55">
-              Farklı sınav yollarını karşılaştırın ve bulun
-              uygun hazırlık.
+              Farklı sınav yollarını karşılaştırın ve size uygun hazırlık programını bulun.
             </p>
 
             <div className="mt-8 text-sm font-semibold text-[#31175B]">
-              Sınav hazırlığını görüntüleyin →
+              Sınav hazırlığını incele →
             </div>
           </Link>
         </div>
@@ -515,8 +504,7 @@ export default function KursePage() {
             </h2>
 
             <p className="mt-5 max-w-2xl text-lg leading-8 text-white/55">
-              Hangi kursun veya öğrenme yolunun sizin için uygun olduğunu bulmanıza yardımcı olacağız.
-              Bir sonraki adımınız mantıklı.
+              Hangi kursun veya öğrenme yolunun sizin için uygun olduğunu birlikte belirleyelim.
             </p>
           </div>
 
@@ -526,7 +514,7 @@ export default function KursePage() {
             rel="noreferrer"
             className="rounded-full bg-white px-8 py-4 text-center text-sm font-semibold text-[#31175B]"
           >
-            Hedefinize uygun yapılandırılmış öğrenme ve sınav hazırlığı.
+            ÖĞRENME YOLU
           </a>
         </div>
       </section>
