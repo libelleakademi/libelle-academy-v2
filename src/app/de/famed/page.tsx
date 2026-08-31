@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
+import FacultyTrustSection from "@/components/FacultyTrustSection";
 import EditorialStorySection from "@/components/EditorialStorySection";
 import FamedConversion from "@/components/FamedConversion";
 import { whatsappLink } from "@/lib/whatsapp";
@@ -267,6 +268,8 @@ export default function FamedPage() {
           </div>
         </div>
       </section>
+
+      <FacultyTrustSection lang="de" variant="famed" />
 
       {/* PHOTO-STORY-FAMED */}
       <EditorialStorySection

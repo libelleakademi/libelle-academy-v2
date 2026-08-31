@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
+import FacultyTrustSection from "@/components/FacultyTrustSection";
 import EditorialStorySection from "@/components/EditorialStorySection";
 import { whatsappLink } from "@/lib/whatsapp";
 
@@ -177,6 +178,8 @@ export default function UeberLibellePage() {
           </div>
         </div>
       </section>
+
+      <FacultyTrustSection lang="de" variant="about" />
 
       {/* PHOTO-STORY-ABOUT */}
       <EditorialStorySection

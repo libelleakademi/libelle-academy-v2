@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
+import FacultyTrustSection from "@/components/FacultyTrustSection";
 import EditorialStorySection from "@/components/EditorialStorySection";
 import FspConversion from "@/components/en/FspConversion";
 import { whatsappLink } from "@/lib/whatsapp";
@@ -256,6 +257,8 @@ export default function FspMedizinPage() {
           </div>
         </div>
       </section>
+
+      <FacultyTrustSection lang="en" variant="fsp" />
 
       {/* PHOTO-STORY-FSP */}
       <EditorialStorySection
